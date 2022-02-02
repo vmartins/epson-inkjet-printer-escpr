@@ -59,6 +59,8 @@ int cancel_flg;
 static FILE *debug_f = NULL;
 #endif
 
+#define safeFree(x) { if (x !=NULL) free(x); }
+
 #define HAVE_DEBUG 0
 static void debug_msg(const char *fmt, ...){
 #if (HAVE_DEBUG)	
@@ -229,6 +231,9 @@ main (int argc, char *argv[])
 				break;
 			}
 
+			if (pfp == NULL) // do not write anything if pipe is not open
+				break;
+
 			if(first_fwrite){//最初のfwriteだけ、ページ数を送信
 				fwrite (&pageNum, 1, 1, pfp);
 				first_fwrite = FALSE;
@@ -348,17 +353,25 @@ main (int argc, char *argv[])
 
 		}//while (pixel data)
 
-			free (image_raw);
+			safeFree (image_raw);
 
 			pageNum++;
 
 	}//while (cups header)
 
-	free (page_raw);
-	free (page_raw_cache);
-
-	pclose (pfp);
+	safeFree (page_raw);
+	safeFree (page_raw_cache);
+	
 	cupsRasterClose (ras);
+	
+	if (pfp == NULL)
+	{
+		debug_msg("popen error");
+		perror ("popen");
+		return 1;
+	}else{
+		pclose (pfp);
+	}
 
 	return 0;
 }
