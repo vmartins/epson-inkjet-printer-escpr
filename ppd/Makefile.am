@@ -298,6 +298,7 @@ Epson-PX-S7050_Series-epson-escpr-en.ppd \
 Epson-PX-S7050PS-epson-escpr-en.ppd \
 Epson-PX-S7050X-epson-escpr-en.ppd \
 Epson-ST-2000_Series-epson-escpr-en.ppd \
+Epson-ST-C2100_Series-epson-escpr-en.ppd \
 Epson-Stylus_CX2800-epson-escpr-en.ppd \
 Epson-Stylus_CX2900-epson-escpr-en.ppd \
 Epson-Stylus_CX3700-epson-escpr-en.ppd \
@@ -642,6 +643,7 @@ Epson-PX-S06_Series-epson-escpr-en.ppd \
 Epson-PX-S170T_Series-epson-escpr-en.ppd \
 Epson-PX-S170UT_Series-epson-escpr-en.ppd \
 Epson-ST-2000_Series-epson-escpr-en.ppd \
+Epson-ST-C2100_Series-epson-escpr-en.ppd \
 Epson-WF-110_Series-epson-escpr-en.ppd \
 Epson-WF-2810_Series-epson-escpr-en.ppd \
 Epson-WF-2830_Series-epson-escpr-en.ppd \
