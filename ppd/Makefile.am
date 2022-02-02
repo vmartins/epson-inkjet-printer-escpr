@@ -490,6 +490,12 @@ Epson-WF-R4640_Series-epson-escpr-en.ppd \
 Epson-WF-R5190_Series-epson-escpr-en.ppd \
 Epson-WF-R5690_Series-epson-escpr-en.ppd \
 Epson-WF-R8590_Series-epson-escpr-en.ppd \
+Epson-WF-2870_Series-epson-escpr-en.ppd \
+Epson-WF-2840_Series-epson-escpr-en.ppd \
+Epson-WF-2820_Series-epson-escpr-en.ppd \
+Epson-XP-4150_Series-epson-escpr-en.ppd \
+Epson-XP-3150_Series-epson-escpr-en.ppd \
+Epson-XP-2150_Series-epson-escpr-en.ppd \
 Epson-WorkForce_310-epson-escpr-en.ppd \
 Epson-WorkForce_320-epson-escpr-en.ppd \
 Epson-WorkForce_435-epson-escpr-en.ppd \
@@ -648,6 +654,12 @@ Epson-WF-110_Series-epson-escpr-en.ppd \
 Epson-WF-2810_Series-epson-escpr-en.ppd \
 Epson-WF-2830_Series-epson-escpr-en.ppd \
 Epson-WF-2850_Series-epson-escpr-en.ppd \
+Epson-WF-2870_Series-epson-escpr-en.ppd \
+Epson-WF-2840_Series-epson-escpr-en.ppd \
+Epson-WF-2820_Series-epson-escpr-en.ppd \
+Epson-XP-4150_Series-epson-escpr-en.ppd \
+Epson-XP-3150_Series-epson-escpr-en.ppd \
+Epson-XP-2150_Series-epson-escpr-en.ppd \
 Epson-XP-255_257_Series-epson-escpr-en.ppd \
 Epson-XP-352_355_Series-epson-escpr-en.ppd \
 Epson-XP-452_455_Series-epson-escpr-en.ppd \
