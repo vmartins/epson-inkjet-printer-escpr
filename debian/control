@@ -1,0 +1,20 @@
+Source: epson-inkjet-printer-escpr
+Section: contrib/misc
+Priority: optional
+Maintainer: Seiko Epson Corporation <linux-printer@epson.jp>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: epson-inkjet-printer-escpr
+Architecture: any
+Depends: ${shlibs:Depends}, cups
+Description: Epson Inkjet Printer Driver (ESC/P-R) for Linux
+ This software is a filter program used with Common UNIX Printing
+ System (CUPS) from the Linux. This can supply the high quality print
+ with Seiko Epson Color Ink Jet Printers.
+ .
+ This product supports only EPSON ESC/P-R printers. This package can be
+ used for all EPSON ESC/P-R printers.
+ .
+ For detail list of supported printer, please refer to below site:
+ http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX

@@ -1,0 +1,1261 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+*% Copyright 1987-1996 Adobe Systems Incorporated.
+*% All Rights Reserved.
+*% Copyright (c) SEIKO EPSON Corporation. 2009
+*FormatVersion: "4.3"
+*FileVersion: "1.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "EPEP-977A3 Series.PPD"
+*Product: "(EPSON EP-977A3 Series)"
+*PSVersion: "(3010.000) 550"
+*ModelName: "EPSON EP-977A3 Series"
+*ShortNickName: "EPSON EP-977A3 Series"
+*NickName: "EPSON EP-977A3 Series , Epson Inkjet Printer Driver (ESC/P-R) for Linux"
+*Manufacturer: "Epson"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: True
+*Throughput: "1"
+*TTRasterizer: Type42
+*cupsLanguages: "nl fr de it ja pt es ko zh_TW zh_CN"
+*cupsVersion: 1.2
+*cupsManualCopies: True
+*cupsModelNumber: 1
+*cupsFilter: "application/vnd.cups-raster 0 epson-escpr-wrapper"
+*LandscapeOrientation: Plus90
+*VariablePaperSize: False
+*1284DeviceID: "MFG:Epson;MDL:EP-977A3 Series;DES:EPSON EP-977A3 Series;"
+
+
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 20 AnySetup *MediaType
+*DefaultMediaType: PLAIN_NORMAL
+*MediaType PLAIN_HIGH/Plain Paper-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PLAIN_NORMAL/Plain Paper-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PMPHOTO_HIGH/EPSON Photo Paper-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PMPHOTO_NORMAL/EPSON Photo Paper-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PMMATT_HIGH/EPSON Photo Matte Paper-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType SFINE_HIGH/EPSON Super Fine Paper-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType GLOSSYHAGAKI_HIGH/Glossy Postcard-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType GLOSSYHAGAKI_NORMAL/Glossy Postcard-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType RCPC_HIGH/Postcard-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType RCPC_NORMAL/Postcard-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType IJPC_HIGH/Ink Jet Postcard-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType HAGAKIATENA_HIGH/Post Card Address Side-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType HAGAKIATENA_NORMAL/Post Card Address Side-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType CDDVD_HIGH/CD<2F>DVD Label-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType CDDVDHIGH_HIGH/CD<2F>DVD Premium Surface-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType IRON_HIGH/EPSON Iron Print Paper-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType ENV_HIGH/Envelope-Quality: "<</HWResolution[360 360]>>setpagedevice"
+*MediaType ENV_NORMAL/Envelope-Standard: "<</HWResolution[360 360]>>setpagedevice"
+*nl.Translation MediaType/Afdrukkwaliteit: ""
+*fr.Translation MediaType/Qualité: ""
+*de.Translation MediaType/Qualität: ""
+*it.Translation MediaType/Qualità: ""
+*ja.Translation MediaType/印刷品質: ""
+*pt.Translation MediaType/Qualidade: ""
+*es.Translation MediaType/Resolución: ""
+*ko.Translation MediaType/인쇄 품질: ""
+*zh_TW.Translation MediaType/列印品質: ""
+*zh_CN.Translation MediaType/打印质量: ""
+*nl.MediaType PLAIN_HIGH/Gewoon papier-Kwaliteit: ""
+*nl.MediaType PLAIN_NORMAL/Gewoon papier-Standaard: ""
+*nl.MediaType PMPHOTO_HIGH/EPSON Photo Paper-Kwaliteit: ""
+*nl.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-Standaard: ""
+*nl.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-Kwaliteit: ""
+*nl.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-Standaard: ""
+*nl.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-Kwaliteit: ""
+*nl.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-Standaard: ""
+*nl.MediaType SFINE_HIGH/EPSON Super Fine Paper-Standaard: ""
+*nl.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Kwaliteit: ""
+*nl.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Standaard: ""
+*nl.MediaType GLOSSYHAGAKI_HIGH/Briefkaart glanzend-Kwaliteit: ""
+*nl.MediaType GLOSSYHAGAKI_NORMAL/Briefkaart glanzend-Standaard: ""
+*nl.MediaType RCPC_HIGH/Briefkaart-Kwaliteit: ""
+*nl.MediaType RCPC_NORMAL/Briefkaart-Standaard: ""
+*nl.MediaType IJPC_HIGH/Briefkaart inkjet-Standaard: ""
+*nl.MediaType HAGAKIATENA_HIGH/Briefkaart adreszijde-Kwaliteit: ""
+*nl.MediaType HAGAKIATENA_NORMAL/Briefkaart adreszijde-Standaard: ""
+*nl.MediaType CDDVD_HIGH/Cd-<2F>dvd-label-Kwaliteit: ""
+*nl.MediaType CDDVDHIGH_HIGH/CD<2F>DVD Premium Surface-Kwaliteit: ""
+*nl.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-Standaard: ""
+*nl.MediaType IRON_HIGH/EPSON Iron Print Paper-Standaard: ""
+*nl.MediaType ENV_HIGH/Enveloppe-Kwaliteit: ""
+*nl.MediaType ENV_NORMAL/Enveloppe-Standaard: ""
+*fr.MediaType PLAIN_HIGH/Papier Ordinaire-Qualité: ""
+*fr.MediaType PLAIN_NORMAL/Papier Ordinaire-Standard: ""
+*fr.MediaType PMPHOTO_HIGH/EPSON Photo Paper-Qualité: ""
+*fr.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-Standard: ""
+*fr.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-Qualité: ""
+*fr.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-Standard: ""
+*fr.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-Qualité: ""
+*fr.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-Standard: ""
+*fr.MediaType SFINE_HIGH/EPSON Super Fine Paper-Standard: ""
+*fr.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Qualité: ""
+*fr.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Standard: ""
+*fr.MediaType GLOSSYHAGAKI_HIGH/Carte postale glacée-Qualité: ""
+*fr.MediaType GLOSSYHAGAKI_NORMAL/Carte postale glacée-Standard: ""
+*fr.MediaType RCPC_HIGH/Carte post<2E>-Qualité: ""
+*fr.MediaType RCPC_NORMAL/Carte post<2E>-Standard: ""
+*fr.MediaType IJPC_HIGH/Carte jet d'encre-Standard: ""
+*fr.MediaType HAGAKIATENA_HIGH/Côté adresse de la carte postale-Qualité: ""
+*fr.MediaType HAGAKIATENA_NORMAL/Côté adresse de la carte postale-Standard: ""
+*fr.MediaType CDDVD_HIGH/Étiquette CD<2F>DVD-Qualité: ""
+*fr.MediaType CDDVDHIGH_HIGH/CD<2F>DVD - Surface premium-Qualité: ""
+*fr.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-Standard: ""
+*fr.MediaType IRON_HIGH/EPSON Iron Print Paper-Standard: ""
+*fr.MediaType ENV_HIGH/Enveloppe-Qualité: ""
+*fr.MediaType ENV_NORMAL/Enveloppe-Standard: ""
+*de.MediaType PLAIN_HIGH/Normalpapier-Qualität: ""
+*de.MediaType PLAIN_NORMAL/Normalpapier-Standard: ""
+*de.MediaType PMPHOTO_HIGH/EPSON Photo Paper-Qualität: ""
+*de.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-Standard: ""
+*de.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-Qualität: ""
+*de.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-Standard: ""
+*de.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-Qualität: ""
+*de.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-Standard: ""
+*de.MediaType SFINE_HIGH/EPSON Super Fine Paper-Standard: ""
+*de.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Qualität: ""
+*de.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Standard: ""
+*de.MediaType GLOSSYHAGAKI_HIGH/Glänzende Postkarte-Qualität: ""
+*de.MediaType GLOSSYHAGAKI_NORMAL/Glänzende Postkarte-Standard: ""
+*de.MediaType RCPC_HIGH/Postkarte-Qualität: ""
+*de.MediaType RCPC_NORMAL/Postkarte-Standard: ""
+*de.MediaType IJPC_HIGH/Tintenst<2E>-Postkarte-Standard: ""
+*de.MediaType HAGAKIATENA_HIGH/Postkarte Adressseite-Qualität: ""
+*de.MediaType HAGAKIATENA_NORMAL/Postkarte Adressseite-Standard: ""
+*de.MediaType CDDVD_HIGH/CD<2F>DVD-Etikett-Qualität: ""
+*de.MediaType CDDVDHIGH_HIGH/CD<2F>DVD Premium Surface-Qualität: ""
+*de.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-Standard: ""
+*de.MediaType IRON_HIGH/EPSON Iron Print Paper-Standard: ""
+*de.MediaType ENV_HIGH/Umschlag-Qualität: ""
+*de.MediaType ENV_NORMAL/Umschlag-Standard: ""
+*it.MediaType PLAIN_HIGH/Carta comune-Qualità: ""
+*it.MediaType PLAIN_NORMAL/Carta comune-Standard: ""
+*it.MediaType PMPHOTO_HIGH/EPSON Photo Paper-Qualità: ""
+*it.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-Standard: ""
+*it.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-Qualità: ""
+*it.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-Standard: ""
+*it.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-Qualità: ""
+*it.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-Standard: ""
+*it.MediaType SFINE_HIGH/EPSON Super Fine Paper-Standard: ""
+*it.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Qualità: ""
+*it.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Standard: ""
+*it.MediaType GLOSSYHAGAKI_HIGH/Cartolina lucida-Qualità: ""
+*it.MediaType GLOSSYHAGAKI_NORMAL/Cartolina lucida-Standard: ""
+*it.MediaType RCPC_HIGH/Cartolina-Qualità: ""
+*it.MediaType RCPC_NORMAL/Cartolina-Standard: ""
+*it.MediaType IJPC_HIGH/Cartolina getto inchiostro-Standard: ""
+*it.MediaType HAGAKIATENA_HIGH/Lato dell'indirizzo della cartolina-Qualità: ""
+*it.MediaType HAGAKIATENA_NORMAL/Lato dell'indirizzo della cartolina-Standard: ""
+*it.MediaType CDDVD_HIGH/Etichetta CD<2F>DVD-Qualità: ""
+*it.MediaType CDDVDHIGH_HIGH/CD<2F>DVD Superficie Premium-Qualità: ""
+*it.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-Standard: ""
+*it.MediaType IRON_HIGH/EPSON Iron Print Paper-Standard: ""
+*it.MediaType ENV_HIGH/Busta-Qualità: ""
+*it.MediaType ENV_NORMAL/Busta-Standard: ""
+*ja.MediaType PLAIN_HIGH/普通紙-きれい: ""
+*ja.MediaType PLAIN_NORMAL/普通紙-標準: ""
+*ja.MediaType PMPHOTO_HIGH/EPSON 写真用紙-きれい: ""
+*ja.MediaType PMPHOTO_NORMAL/EPSON 写真用紙-標準: ""
+*ja.MediaType PLATINA_HIGH/EPSON 写真用紙クリスピア-きれい: ""
+*ja.MediaType PLATINA_NORMAL/EPSON 写真用紙クリスピア-標準: ""
+*ja.MediaType PMMATT_HIGH/EPSON フォトマット紙-きれい: ""
+*ja.MediaType PMMATT_NORMAL/EPSON フォトマット紙-標準: ""
+*ja.MediaType SFINE_HIGH/EPSON スーパーファイン紙-標準: ""
+*ja.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-きれい: ""
+*ja.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-標準: ""
+*ja.MediaType GLOSSYHAGAKI_HIGH/郵便光沢ハガキ-きれい: ""
+*ja.MediaType GLOSSYHAGAKI_NORMAL/郵便光沢ハガキ-標準: ""
+*ja.MediaType RCPC_HIGH/郵便ハガキ-きれい: ""
+*ja.MediaType RCPC_NORMAL/郵便ハガキ-標準: ""
+*ja.MediaType IJPC_HIGH/郵便ハガキ（インクジェット紙）-標準: ""
+*ja.MediaType HAGAKIATENA_HIGH/ハガキ宛名面-きれい: ""
+*ja.MediaType HAGAKIATENA_NORMAL/ハガキ宛名面-標準: ""
+*ja.MediaType CDDVD_HIGH/ディスクレーベル-きれい: ""
+*ja.MediaType CDDVDHIGH_HIGH/高画質対応ディスクレーベル-きれい: ""
+*ja.MediaType MINIPHOTO_HIGH/EPSON フォトシール-標準: ""
+*ja.MediaType IRON_HIGH/EPSON アイロンプリントペーパー-標準: ""
+*ja.MediaType ENV_HIGH/封筒-きれい: ""
+*ja.MediaType ENV_NORMAL/封筒-標準: ""
+*pt.MediaType PLAIN_HIGH/Papel normal-Qualidade: ""
+*pt.MediaType PLAIN_NORMAL/Papel normal-Padrão: ""
+*pt.MediaType PMPHOTO_HIGH/Papel Fotográfico EPSON-Qualidade: ""
+*pt.MediaType PMPHOTO_NORMAL/Papel Fotográfico EPSON-Padrão: ""
+*pt.MediaType PLATINA_HIGH/Papel Fotográfico CRISPIA EPSON-Qualidade: ""
+*pt.MediaType PLATINA_NORMAL/Papel Fotográfico CRISPIA EPSON-Padrão: ""
+*pt.MediaType PMMATT_HIGH/Papel Mate Fotográfico EPSON-Qualidade: ""
+*pt.MediaType PMMATT_NORMAL/Papel Mate Fotográfico EPSON-Padrão: ""
+*pt.MediaType SFINE_HIGH/Papel para Resolução Excelente EPSON-Padrão: ""
+*pt.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Qualidade: ""
+*pt.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Padrão: ""
+*pt.MediaType GLOSSYHAGAKI_HIGH/Postal Brilhante-Qualidade: ""
+*pt.MediaType GLOSSYHAGAKI_NORMAL/Postal Brilhante-Padrão: ""
+*pt.MediaType RCPC_HIGH/Cartão postal-Qualidade: ""
+*pt.MediaType RCPC_NORMAL/Cartão postal-Padrão: ""
+*pt.MediaType IJPC_HIGH/Postal jato tinta-Padrão: ""
+*pt.MediaType HAGAKIATENA_HIGH/Lado do Endereço do Postal-Qualidade: ""
+*pt.MediaType HAGAKIATENA_NORMAL/Lado do Endereço do Postal-Padrão: ""
+*pt.MediaType CDDVD_HIGH/Etiqueta de CD<2F>DVD-Qualidade: ""
+*pt.MediaType CDDVDHIGH_HIGH/CD<2F>DVD de superfície premium-Qualidade: ""
+*pt.MediaType MINIPHOTO_HIGH/Photo Sticker EPSON-Padrão: ""
+*pt.MediaType IRON_HIGH/Papel de Transferência EPSON-Padrão: ""
+*pt.MediaType ENV_HIGH/Envelope-Qualidade: ""
+*pt.MediaType ENV_NORMAL/Envelope-Padrão: ""
+*es.MediaType PLAIN_HIGH/Papel normal-Calidad: ""
+*es.MediaType PLAIN_NORMAL/Papel normal-Estándar: ""
+*es.MediaType PMPHOTO_HIGH/EPSON Photo Paper-Calidad: ""
+*es.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-Estándar: ""
+*es.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-Calidad: ""
+*es.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-Estándar: ""
+*es.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-Calidad: ""
+*es.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-Estándar: ""
+*es.MediaType SFINE_HIGH/EPSON Super Fine Paper-Estándar: ""
+*es.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-Calidad: ""
+*es.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-Estándar: ""
+*es.MediaType GLOSSYHAGAKI_HIGH/Postal de alta calidad-Calidad: ""
+*es.MediaType GLOSSYHAGAKI_NORMAL/Postal de alta calidad-Estándar: ""
+*es.MediaType RCPC_HIGH/Postal-Calidad: ""
+*es.MediaType RCPC_NORMAL/Postal-Estándar: ""
+*es.MediaType IJPC_HIGH/Postal especial-Estándar: ""
+*es.MediaType HAGAKIATENA_HIGH/Lado de dirección de la postal-Calidad: ""
+*es.MediaType HAGAKIATENA_NORMAL/Lado de dirección de la postal-Estándar: ""
+*es.MediaType CDDVD_HIGH/Carátula de CD<2F>DVD-Calidad: ""
+*es.MediaType CDDVDHIGH_HIGH/CD<2F>DVD Superficie Premium-Calidad: ""
+*es.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-Estándar: ""
+*es.MediaType IRON_HIGH/EPSON Iron Print Paper-Estándar: ""
+*es.MediaType ENV_HIGH/Sobre-Calidad: ""
+*es.MediaType ENV_NORMAL/Sobre-Estándar: ""
+*ko.MediaType PLAIN_HIGH/일반 용지-품질: ""
+*ko.MediaType PLAIN_NORMAL/일반 용지-일반: ""
+*ko.MediaType PMPHOTO_HIGH/EPSON 사진 용지-품질: ""
+*ko.MediaType PMPHOTO_NORMAL/EPSON 사진 용지-일반: ""
+*ko.MediaType PLATINA_HIGH/EPSON 사진 용지 CRISPIA-품질: ""
+*ko.MediaType PLATINA_NORMAL/EPSON 사진 용지 CRISPIA-일반: ""
+*ko.MediaType PMMATT_HIGH/EPSON 매트 사진 용지-품질: ""
+*ko.MediaType PMMATT_NORMAL/EPSON 매트 사진 용지-일반: ""
+*ko.MediaType SFINE_HIGH/EPSON 최고 품질 용지-일반: ""
+*ko.MediaType VELVET_FINE_HIGH/부드러운 고품질 아트지(Velvet)-품질: ""
+*ko.MediaType VELVET_FINE_NORMAL/부드러운 고품질 아트지(Velvet)-일반: ""
+*ko.MediaType GLOSSYHAGAKI_HIGH/광택 엽서-품질: ""
+*ko.MediaType GLOSSYHAGAKI_NORMAL/광택 엽서-일반: ""
+*ko.MediaType RCPC_HIGH/엽서-품질: ""
+*ko.MediaType RCPC_NORMAL/엽서-일반: ""
+*ko.MediaType IJPC_HIGH/잉크젯 전용 엽서-일반: ""
+*ko.MediaType HAGAKIATENA_HIGH/엽서 주소 쪽-품질: ""
+*ko.MediaType HAGAKIATENA_NORMAL/엽서 주소 쪽-일반: ""
+*ko.MediaType CDDVD_HIGH/CD<2F>DVD 라벨-품질: ""
+*ko.MediaType CDDVDHIGH_HIGH/CD<2F>DVD(프리미엄)-품질: ""
+*ko.MediaType MINIPHOTO_HIGH/EPSON 스티커 사진 용지-일반: ""
+*ko.MediaType IRON_HIGH/EPSON 전사용지-일반: ""
+*ko.MediaType ENV_HIGH/봉투-품질: ""
+*ko.MediaType ENV_NORMAL/봉투-일반: ""
+*zh_TW.MediaType PLAIN_HIGH/Plain Paper-品質: ""
+*zh_TW.MediaType PLAIN_NORMAL/Plain Paper-標準: ""
+*zh_TW.MediaType PMPHOTO_HIGH/EPSON Photo Paper-品質: ""
+*zh_TW.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-標準: ""
+*zh_TW.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-品質: ""
+*zh_TW.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-標準: ""
+*zh_TW.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-品質: ""
+*zh_TW.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-標準: ""
+*zh_TW.MediaType SFINE_HIGH/EPSON Super Fine Paper-標準: ""
+*zh_TW.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-品質: ""
+*zh_TW.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-標準: ""
+*zh_TW.MediaType GLOSSYHAGAKI_HIGH/光澤紙明信片-品質: ""
+*zh_TW.MediaType GLOSSYHAGAKI_NORMAL/光澤紙明信片-標準: ""
+*zh_TW.MediaType RCPC_HIGH/明信片-品質: ""
+*zh_TW.MediaType RCPC_NORMAL/明信片-標準: ""
+*zh_TW.MediaType IJPC_HIGH/Ink Jet Postcard-標準: ""
+*zh_TW.MediaType HAGAKIATENA_HIGH/明信片地址側-品質: ""
+*zh_TW.MediaType HAGAKIATENA_NORMAL/明信片地址側-標準: ""
+*zh_TW.MediaType CDDVD_HIGH/CD<2F>DVD標籤-品質: ""
+*zh_TW.MediaType CDDVDHIGH_HIGH/CD<2F>DVD Premium Surface-品質: ""
+*zh_TW.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-標準: ""
+*zh_TW.MediaType IRON_HIGH/EPSON Iron Print Paper-標準: ""
+*zh_TW.MediaType ENV_HIGH/Envelope-品質: ""
+*zh_TW.MediaType ENV_NORMAL/Envelope-標準: ""
+*zh_CN.MediaType PLAIN_HIGH/普通纸-质量: ""
+*zh_CN.MediaType PLAIN_NORMAL/普通纸-标准: ""
+*zh_CN.MediaType PMPHOTO_HIGH/EPSON Photo Paper-质量: ""
+*zh_CN.MediaType PMPHOTO_NORMAL/EPSON Photo Paper-标准: ""
+*zh_CN.MediaType PLATINA_HIGH/EPSON Photo Paper CRISPIA-质量: ""
+*zh_CN.MediaType PLATINA_NORMAL/EPSON Photo Paper CRISPIA-标准: ""
+*zh_CN.MediaType PMMATT_HIGH/EPSON Photo Matte Paper-质量: ""
+*zh_CN.MediaType PMMATT_NORMAL/EPSON Photo Matte Paper-标准: ""
+*zh_CN.MediaType SFINE_HIGH/EPSON Super Fine Paper-标准: ""
+*zh_CN.MediaType VELVET_FINE_HIGH/Velvet Fine Art Paper-质量: ""
+*zh_CN.MediaType VELVET_FINE_NORMAL/Velvet Fine Art Paper-标准: ""
+*zh_CN.MediaType GLOSSYHAGAKI_HIGH/光泽纸明信片-质量: ""
+*zh_CN.MediaType GLOSSYHAGAKI_NORMAL/光泽纸明信片-标准: ""
+*zh_CN.MediaType RCPC_HIGH/明信片-质量: ""
+*zh_CN.MediaType RCPC_NORMAL/明信片-标准: ""
+*zh_CN.MediaType IJPC_HIGH/喷墨明信片-标准: ""
+*zh_CN.MediaType HAGAKIATENA_HIGH/明信片地址侧-质量: ""
+*zh_CN.MediaType HAGAKIATENA_NORMAL/明信片地址侧-标准: ""
+*zh_CN.MediaType CDDVD_HIGH/CD<2F>DVD封面-质量: ""
+*zh_CN.MediaType CDDVDHIGH_HIGH/CD<2F>DVD 高质量表面-质量: ""
+*zh_CN.MediaType MINIPHOTO_HIGH/EPSON Photo Sticker-标准: ""
+*zh_CN.MediaType IRON_HIGH/EPSON Iron Print Paper-标准: ""
+*zh_CN.MediaType ENV_HIGH/信封-质量: ""
+*zh_CN.MediaType ENV_NORMAL/信封-标准: ""
+*CloseUI: *MediaType
+
+
+*OpenUI *Ink/Grayscale: PickOne
+*OrderDependency: 120 AnySetup *Ink
+*DefaultInk: COLOR
+*Ink COLOR/Off: "<</cupsBitsPerColor 8/cupsColorOrder 0/cupsColorSpace 1/cupsCompression 1>>setpagedevice"
+*Ink MONO/On: "<</cupsBitsPerColor 8/cupsColorOrder 0/cupsColorSpace 0/cupsCompression 1>>setpagedevice"
+*nl.Translation Ink/Grijswaarden: ""
+*fr.Translation Ink/Niveaux de gris: ""
+*de.Translation Ink/Graustufen: ""
+*it.Translation Ink/Scala di grigio: ""
+*ja.Translation Ink/グレースケール: ""
+*pt.Translation Ink/Tons de cinza: ""
+*es.Translation Ink/Escala de Grises: ""
+*ko.Translation Ink/그레이스케일: ""
+*zh_TW.Translation Ink/灰階: ""
+*zh_CN.Translation Ink/灰度模式: ""
+*nl.Ink COLOR/Uit: ""
+*nl.Ink MONO/Aan: ""
+*fr.Ink COLOR/Non: ""
+*fr.Ink MONO/Oui: ""
+*de.Ink COLOR/Aus: ""
+*de.Ink MONO/Ein: ""
+*it.Ink COLOR/Off: ""
+*it.Ink MONO/On: ""
+*ja.Ink COLOR/オフ: ""
+*ja.Ink MONO/オン: ""
+*pt.Ink COLOR/Não: ""
+*pt.Ink MONO/Sim: ""
+*es.Ink COLOR/Desactivado: ""
+*es.Ink MONO/Activado: ""
+*ko.Ink COLOR/사용 안 함: ""
+*ko.Ink MONO/사용: ""
+*zh_TW.Ink COLOR/關閉: ""
+*zh_TW.Ink MONO/開啟: ""
+*zh_CN.Ink COLOR/关: ""
+*zh_CN.Ink MONO/开: ""
+*CloseUI: *Ink
+
+
+*OpenUI *Duplex/Duplex Tumble: PickOne
+*OrderDependency: 110 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: ""
+*Duplex DuplexNoTumble/2-sided long edge: ""
+*Duplex DuplexTumble/DuplexTumble-sided short edge: ""
+*nl.Translation Duplex/Bindkant: ""
+*fr.Translation Duplex/Bord de reliure: ""
+*de.Translation Duplex/Heftkante: ""
+*it.Translation Duplex/Lato rilegatura: ""
+*ja.Translation Duplex/とじ方向: ""
+*pt.Translation Duplex/Borda de encadernação: ""
+*es.Translation Duplex/Posición encuadernado: ""
+*ko.Translation Duplex/철하는 위치: ""
+*zh_TW.Translation Duplex/裝訂邊: ""
+*zh_CN.Translation Duplex/装订边: ""
+*nl.Duplex None/Uit: ""
+*nl.Duplex DuplexNoTumble/Tweezijdig lange zijde: ""
+*nl.Duplex DuplexTumble/Tweezijdig korte zijde: ""
+*fr.Duplex None/Non: ""
+*fr.Duplex DuplexNoTumble/Bord long recto verso: ""
+*fr.Duplex DuplexTumble/Bord court recto verso: ""
+*de.Duplex None/Aus: ""
+*de.Duplex DuplexNoTumble/Zweiseitig, lange Kante: ""
+*de.Duplex DuplexTumble/Zweiseitig, kurze Kante: ""
+*it.Duplex None/Off: ""
+*it.Duplex DuplexNoTumble/Bordo lungo doppio lato: ""
+*it.Duplex DuplexTumble/Bordo corto doppio lato: ""
+*ja.Duplex None/オフ: ""
+*ja.Duplex DuplexNoTumble/長辺とじ: ""
+*ja.Duplex DuplexTumble/短辺とじ: ""
+*pt.Duplex None/Não: ""
+*pt.Duplex DuplexNoTumble/Margem longa de dois lados: ""
+*pt.Duplex DuplexTumble/Margem curta de dois lados: ""
+*es.Duplex None/Desactivado: ""
+*es.Duplex DuplexNoTumble/Dos caras borde largo: ""
+*es.Duplex DuplexTumble/Dos caras borde corto: ""
+*ko.Duplex None/사용 안 함: ""
+*ko.Duplex DuplexNoTumble/양면 긴 방향: ""
+*ko.Duplex DuplexTumble/양면 짧은 방향: ""
+*zh_TW.Duplex None/關閉: ""
+*zh_TW.Duplex DuplexNoTumble/雙面長邊: ""
+*zh_TW.Duplex DuplexTumble/雙面短邊: ""
+*zh_CN.Duplex None/关: ""
+*zh_CN.Duplex DuplexNoTumble/双面长边: ""
+*zh_CN.Duplex DuplexTumble/双面短边: ""
+*CloseUI: *Duplex
+
+
+*OpenUI *PageSize: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*PageSize TA4/A4 (Borderless): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*PageSize TA3/A3 (Borderless): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*PageSize L/3<2E>5 x 5 in <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*PageSize TL/3<2E>5 x 5 in <2F> 89 x 127 mm (Borderless): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*PageSize 4X6FULL/KG size: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*PageSize T4X6FULL/KG size (Borderless): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*PageSize 2L/5 x 7 in <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*PageSize T2L/5 x 7 in <2F> 127 x 178 mm (Borderless): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*PageSize 8x10/8 x 10 in: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*PageSize T8x10/8 x 10 in (Borderless): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*PageSize 10X12/10 x 12 in: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*PageSize T10X12/10 x 12 in (Borderless): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*PageSize 4X7/Hi-Vision size: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*PageSize T4X7/Hi-Vision size (Borderless): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*PageSize ENVY4/Envelope 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/US Letter: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*PageSize TLetter/US Letter (Borderless): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/US Legal: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*nl.Translation PageSize/Papierformaat: ""
+*fr.Translation PageSize/Taille papier: ""
+*de.Translation PageSize/Papierformat: ""
+*it.Translation PageSize/Formato carta: ""
+*ja.Translation PageSize/用紙サイズ: ""
+*pt.Translation PageSize/Tamanho do papel: ""
+*es.Translation PageSize/Tamaño papel: ""
+*ko.Translation PageSize/용지 크기: ""
+*zh_TW.Translation PageSize/紙張大小: ""
+*zh_CN.Translation PageSize/打印纸尺寸: ""
+*nl.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*nl.PageSize TA4/A4 (Randloos): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*nl.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*nl.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*nl.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*nl.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*nl.PageSize TA3/A3 (Randloos): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*nl.PageSize L/3,5 x 5 inch <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize TL/3,5 x 5 inch <2F> 89 x 127 mm (Randloos): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize 4X6FULL/KG-formaat: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize T4X6FULL/KG-formaat (Randloos): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize 2L/5 x 7 inch <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*nl.PageSize T2L/5 x 7 inch <2F> 127 x 178 mm (Randloos): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*nl.PageSize 8x10/8 x 10 in: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize T8x10/8 x 10 in (Randloos): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize 10X12/10 x 12 in: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize T10X12/10 x 12 in (Randloos): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize 4X7/Hi-Vision-formaat: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize T4X7/Hi-Vision-formaat (Randloos): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize ENVY4/Enveloppe 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*nl.PageSize Letter/US Letter: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize TLetter/US Letter (Randloos): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize Legal/US Legal: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*fr.PageSize TA4/A4 (Sans marges): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*fr.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*fr.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*fr.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*fr.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*fr.PageSize TA3/A3 (Sans marges): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*fr.PageSize L/3,5 x 5 p<2E> <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize TL/3,5 x 5 p<2E> <2F> 89 x 127 mm (Sans marges): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize 4X6FULL/Format KG: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize T4X6FULL/Format KG (Sans marges): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize 2L/5 x 7 p<2E> <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*fr.PageSize T2L/5 x 7 p<2E> <2F> 127 x 178 mm (Sans marges): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*fr.PageSize 8x10/8 x 10 p<2E>: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize T8x10/8 x 10 p<2E> (Sans marges): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize 10X12/10 x 12 p<2E>: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize T10X12/10 x 12 p<2E> (Sans marges): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize 4X7/Format HD: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize T4X7/Format HD (Sans marges): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize ENVY4/Enveloppe 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*fr.PageSize Letter/Lettre US: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize TLetter/Lettre US (Sans marges): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize Legal/Légal US: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize A4/DIN A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*de.PageSize TA4/DIN A4 (Randlos): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*de.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*de.PageSize A5/DIN A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*de.PageSize A6/DIN A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*de.PageSize A3/DIN A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*de.PageSize TA3/DIN A3 (Randlos): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*de.PageSize L/3,5 x 5 Zoll <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize TL/3,5 x 5 Zoll <2F> 89 x 127 mm (Randlos): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize 4X6FULL/KG-Größe: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize T4X6FULL/KG-Größe (Randlos): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize 2L/5 x 7 Zoll <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*de.PageSize T2L/5 x 7 Zoll <2F> 127 x 178 mm (Randlos): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*de.PageSize 8x10/8 x 10 Zoll: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize T8x10/8 x 10 Zoll (Randlos): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize 10X12/10 x 12 Zoll: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize T10X12/10 x 12 Zoll (Randlos): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize 4X7/HD-Größe: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize T4X7/HD-Größe (Randlos): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize ENVY4/Umschlag 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*de.PageSize Letter/US Brief: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize TLetter/US Brief (Randlos): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize Legal/US Lang: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*it.PageSize TA4/A4 (Senza margini): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*it.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*it.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*it.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*it.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*it.PageSize TA3/A3 (Senza margini): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*it.PageSize L/3,5 x 5 pol<2E> <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize TL/3,5 x 5 pol<2E> <2F> 89 x 127 mm (Senza margini): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize 4X6FULL/Formato KG: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize T4X6FULL/Formato KG (Senza margini): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize 2L/5 x 7 pol<2E> <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*it.PageSize T2L/5 x 7 pol<2E> <2F> 127 x 178 mm (Senza margini): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*it.PageSize 8x10/8 x 10 pol<2E>: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize T8x10/8 x 10 pol<2E> (Senza margini): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize 10X12/10 x 12 pol<2E>: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize T10X12/10 x 12 pol<2E> (Senza margini): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize 4X7/Formato Hi-Vision: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize T4X7/Formato Hi-Vision (Senza margini): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize ENVY4/Busta 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*it.PageSize Letter/Lettera USA: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize TLetter/Lettera USA (Senza margini): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize Legal/Legale USA: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ja.PageSize TA4/A4 (四辺フチなし): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ja.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*ja.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ja.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*ja.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ja.PageSize TA3/A3 (四辺フチなし): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ja.PageSize L/L判: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize TL/L判 (四辺フチなし): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize 4X6FULL/KGサイズ: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize T4X6FULL/KGサイズ (四辺フチなし): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize 2L/2L判: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ja.PageSize T2L/2L判 (四辺フチなし): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ja.PageSize 8x10/六切: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize T8x10/六切 (四辺フチなし): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize 10X12/四切: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize T10X12/四切 (四辺フチなし): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize 4X7/ハイビジョンサイズ: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize T4X7/ハイビジョンサイズ (四辺フチなし): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize ENVY4/洋形４号封筒: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*ja.PageSize Letter/レター: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize TLetter/レター (四辺フチなし): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize Legal/リーガル: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*pt.PageSize TA4/A4 (Sem margens): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*pt.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*pt.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*pt.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*pt.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*pt.PageSize TA3/A3 (Sem margens): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*pt.PageSize L/3,5 x 5<22> <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize TL/3,5 x 5<22> <2F> 89 x 127 mm (Sem margens): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize 4X6FULL/Formato KG: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize T4X6FULL/Formato KG (Sem margens): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize 2L/5 x 7<22> <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*pt.PageSize T2L/5 x 7<22> <2F> 127 x 178 mm (Sem margens): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*pt.PageSize 8x10/8 x 10 pol<2E> (203 x 254 mm): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize T8x10/8 x 10 pol<2E> (203 x 254 mm) (Sem margens): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize 10X12/10 x 12 pol<2E>: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize T10X12/10 x 12 pol<2E> (Sem margens): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize 4X7/Formato Visão Elevada: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize T4X7/Formato Visão Elevada (Sem margens): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize ENVY4/Envelope 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*pt.PageSize Letter/Carta EUA: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize TLetter/Carta EUA (Sem margens): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize Legal/Ofício EUA: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*es.PageSize TA4/A4 (Sin márgenes): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*es.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*es.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*es.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*es.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*es.PageSize TA3/A3 (Sin márgenes): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*es.PageSize L/3,5 x 5 pulg<2E> <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize TL/3,5 x 5 pulg<2E> <2F> 89 x 127 mm (Sin márgenes): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize 4X6FULL/Tamaño KG: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize T4X6FULL/Tamaño KG (Sin márgenes): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize 2L/5 x 7 pulg<2E> <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*es.PageSize T2L/5 x 7 pulg<2E> <2F> 127 x 178 mm (Sin márgenes): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*es.PageSize 8x10/8 x 10 pulg: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize T8x10/8 x 10 pulg (Sin márgenes): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize 10X12/10 x 12 pulg: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize T10X12/10 x 12 pulg (Sin márgenes): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize 4X7/Tamaño Alta visión: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize T4X7/Tamaño Alta visión (Sin márgenes): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize ENVY4/Sobre 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*es.PageSize Letter/Carta EE<2E> UU<2E>: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize TLetter/Carta EE<2E> UU<2E> (Sin márgenes): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize Legal/Legal: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ko.PageSize TA4/A4 (여백 없음): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ko.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*ko.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ko.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*ko.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ko.PageSize TA3/A3 (여백 없음): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ko.PageSize L/3<2E>5 x 5 in <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize TL/3<2E>5 x 5 in <2F> 89 x 127 mm (여백 없음): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize 4X6FULL/KG 크기: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize T4X6FULL/KG 크기 (여백 없음): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize 2L/5 x 7 in <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ko.PageSize T2L/5 x 7 in <2F> 127 x 178 mm (여백 없음): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ko.PageSize 8x10/8 x 10 in: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize T8x10/8 x 10 in (여백 없음): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize 10X12/10 x 12 in: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize T10X12/10 x 12 in (여백 없음): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize 4X7/Hi-Vision 크기: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize T4X7/Hi-Vision 크기 (여백 없음): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize ENVY4/Envelope 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*ko.PageSize Letter/US 편지지: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize TLetter/US 편지지 (여백 없음): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize Legal/US 공문서: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize TA4/A4 (無邊): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize TA3/A3 (無邊): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize L/3<2E>5 x 5 in <2F> 89 x 127 mm: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize TL/3<2E>5 x 5 in <2F> 89 x 127 mm (無邊): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize 4X6FULL/KG size: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize T4X6FULL/KG size (無邊): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize 2L/5 x 7 in <2F> 127 x 178 mm: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize T2L/5 x 7 in <2F> 127 x 178 mm (無邊): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize 8x10/8 x 10 in: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize T8x10/8 x 10 in (無邊): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize 10X12/10 x 12 in: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize T10X12/10 x 12 in (無邊): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize 4X7/Hi-Vision size: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize T4X7/Hi-Vision size (無邊): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize ENVY4/Envelope 105 x 235 mm: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize Letter/美式信紙（US Letter）: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize TLetter/美式信紙（US Letter） (無邊): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize Legal/美式法定紙（US Legal）: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize A4/A4: "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize TA4/A4 (无边距): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize A3/A3: "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize TA3/A3 (无边距): "<</PageSize[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize L/3<2E>5 x 5 英寸 <2F> 89 x 127 毫米: "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize TL/3<2E>5 x 5 英寸 <2F> 89 x 127 毫米 (无边距): "<</PageSize[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize 4X6FULL/KG 尺寸: "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize T4X6FULL/KG 尺寸 (无边距): "<</PageSize[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize 2L/5 x 7 英寸 <2F> 127 x 178 毫米: "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize T2L/5 x 7 英寸 <2F> 127 x 178 毫米 (无边距): "<</PageSize[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize 8x10/8 x 10 英寸: "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize T8x10/8 x 10 英寸 (无边距): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize 10X12/10 x 12 英寸: "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize T10X12/10 x 12 英寸 (无边距): "<</PageSize[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize 4X7/Hi-Vision 尺寸: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize T4X7/Hi-Vision 尺寸 (无边距): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize ENVY4/信封 105 x 235 毫米: "<</PageSize[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize Letter/美国信纸: "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize TLetter/美国信纸 (无边距): "<</PageSize[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize Legal/美国法定用纸: "<</PageSize[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 50 AnySetup *InputSlot
+*DefaultInputSlot: Auto
+*InputSlot Auto/Auto Select: ""
+*InputSlot Upper/Upper Cassette: ""
+*InputSlot Lower/Lower Cassette: ""
+*InputSlot Rear/Rear Paper Feed Slot: ""
+*nl.Translation InputSlot/Papierbron: ""
+*fr.Translation InputSlot/Alimentation: ""
+*de.Translation InputSlot/Papierquelle: ""
+*it.Translation InputSlot/Origine carta: ""
+*ja.Translation InputSlot/給紙方法: ""
+*pt.Translation InputSlot/Origem do papel: ""
+*es.Translation InputSlot/Origen de papel: ""
+*ko.Translation InputSlot/용지 공급 장치: ""
+*zh_TW.Translation InputSlot/紙張來源: ""
+*zh_CN.Translation InputSlot/打印纸来源: ""
+*nl.InputSlot Auto/Automatisch selecteren: ""
+*nl.InputSlot Upper/Bovenste cassette: ""
+*nl.InputSlot Lower/Onderste cassette: ""
+*nl.InputSlot Rear/Papiertoevoer achter: ""
+*fr.InputSlot Auto/Automatique: ""
+*fr.InputSlot Upper/Bac supérieur: ""
+*fr.InputSlot Lower/Bac inférieur: ""
+*fr.InputSlot Rear/Fente insertion arrière: ""
+*de.InputSlot Auto/Automatische Auswahl: ""
+*de.InputSlot Upper/Obere Kassette: ""
+*de.InputSlot Lower/Untere Kassette: ""
+*de.InputSlot Rear/Hinterer Papiereinzug: ""
+*it.InputSlot Auto/Selezione automatica: ""
+*it.InputSlot Upper/Cassetto superiore: ""
+*it.InputSlot Lower/Cassetto inferiore: ""
+*it.InputSlot Rear/Alimentaz<2E> posteriore: ""
+*ja.InputSlot Auto/自動選択: ""
+*ja.InputSlot Upper/上トレイ: ""
+*ja.InputSlot Lower/下トレイ: ""
+*ja.InputSlot Rear/手差し給紙: ""
+*pt.InputSlot Auto/Seleção automática: ""
+*pt.InputSlot Upper/Gaveta superior: ""
+*pt.InputSlot Lower/Gaveta inferior: ""
+*pt.InputSlot Rear/Alimentador traseiro: ""
+*es.InputSlot Auto/Auto Selección: ""
+*es.InputSlot Upper/Casete superior: ""
+*es.InputSlot Lower/Casete inferior: ""
+*es.InputSlot Rear/Ranura alim post<2E> papel: ""
+*ko.InputSlot Auto/자동 선택: ""
+*ko.InputSlot Upper/상단 카세트: ""
+*ko.InputSlot Lower/하단 카세트: ""
+*ko.InputSlot Rear/후면 용지 급지 슬롯: ""
+*zh_TW.InputSlot Auto/自動選取: ""
+*zh_TW.InputSlot Upper/上方進紙匣: ""
+*zh_TW.InputSlot Lower/下方進紙匣: ""
+*zh_TW.InputSlot Rear/後方進紙槽: ""
+*zh_CN.InputSlot Auto/自动选择: ""
+*zh_CN.InputSlot Upper/上进纸器: ""
+*zh_CN.InputSlot Lower/下进纸器: ""
+*zh_CN.InputSlot Rear/后部进纸槽: ""
+*CloseUI: *InputSlot
+
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*PageRegion TA4/A4 (Borderless): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*PageRegion TA3/A3 (Borderless): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*PageRegion L/3<2E>5 x 5 in <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*PageRegion TL/3<2E>5 x 5 in <2F> 89 x 127 mm (Borderless): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*PageRegion 4X6FULL/KG size: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*PageRegion T4X6FULL/KG size (Borderless): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*PageRegion 2L/5 x 7 in <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*PageRegion T2L/5 x 7 in <2F> 127 x 178 mm (Borderless): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*PageRegion 8x10/8 x 10 in: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*PageRegion T8x10/8 x 10 in (Borderless): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*PageRegion 10X12/10 x 12 in: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*PageRegion T10X12/10 x 12 in (Borderless): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*PageRegion 4X7/Hi-Vision size: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*PageRegion T4X7/Hi-Vision size (Borderless): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*PageRegion ENVY4/Envelope 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/US Letter: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*PageRegion TLetter/US Letter (Borderless): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/US Legal: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*nl.Translation PageRegion/Papierformaat: ""
+*fr.Translation PageRegion/Taille papier: ""
+*de.Translation PageRegion/Papierformat: ""
+*it.Translation PageRegion/Formato carta: ""
+*ja.Translation PageRegion/用紙サイズ: ""
+*pt.Translation PageRegion/Tamanho do papel: ""
+*es.Translation PageRegion/Tamaño papel: ""
+*ko.Translation PageRegion/용지 크기: ""
+*zh_TW.Translation PageRegion/紙張大小: ""
+*zh_CN.Translation PageRegion/打印纸尺寸: ""
+*nl.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion TA4/A4 (Randloos): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion TA3/A3 (Randloos): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion L/3,5 x 5 inch <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion TL/3,5 x 5 inch <2F> 89 x 127 mm (Randloos): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion 4X6FULL/KG-formaat: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion T4X6FULL/KG-formaat (Randloos): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion 2L/5 x 7 inch <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion T2L/5 x 7 inch <2F> 127 x 178 mm (Randloos): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion 8x10/8 x 10 in: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion T8x10/8 x 10 in (Randloos): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion 10X12/10 x 12 in: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion T10X12/10 x 12 in (Randloos): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion 4X7/Hi-Vision-formaat: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion T4X7/Hi-Vision-formaat (Randloos): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion ENVY4/Enveloppe 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion Letter/US Letter: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion TLetter/US Letter (Randloos): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion Legal/US Legal: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion TA4/A4 (Sans marges): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion TA3/A3 (Sans marges): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion L/3,5 x 5 p<2E> <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion TL/3,5 x 5 p<2E> <2F> 89 x 127 mm (Sans marges): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion 4X6FULL/Format KG: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion T4X6FULL/Format KG (Sans marges): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion 2L/5 x 7 p<2E> <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion T2L/5 x 7 p<2E> <2F> 127 x 178 mm (Sans marges): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion 8x10/8 x 10 p<2E>: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion T8x10/8 x 10 p<2E> (Sans marges): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion 10X12/10 x 12 p<2E>: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion T10X12/10 x 12 p<2E> (Sans marges): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion 4X7/Format HD: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion T4X7/Format HD (Sans marges): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion ENVY4/Enveloppe 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion Letter/Lettre US: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion TLetter/Lettre US (Sans marges): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion Legal/Légal US: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion A4/DIN A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*de.PageRegion TA4/DIN A4 (Randlos): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*de.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*de.PageRegion A5/DIN A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*de.PageRegion A6/DIN A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*de.PageRegion A3/DIN A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*de.PageRegion TA3/DIN A3 (Randlos): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*de.PageRegion L/3,5 x 5 Zoll <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion TL/3,5 x 5 Zoll <2F> 89 x 127 mm (Randlos): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion 4X6FULL/KG-Größe: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion T4X6FULL/KG-Größe (Randlos): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion 2L/5 x 7 Zoll <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*de.PageRegion T2L/5 x 7 Zoll <2F> 127 x 178 mm (Randlos): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*de.PageRegion 8x10/8 x 10 Zoll: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion T8x10/8 x 10 Zoll (Randlos): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion 10X12/10 x 12 Zoll: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion T10X12/10 x 12 Zoll (Randlos): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion 4X7/HD-Größe: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion T4X7/HD-Größe (Randlos): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion ENVY4/Umschlag 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*de.PageRegion Letter/US Brief: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion TLetter/US Brief (Randlos): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion Legal/US Lang: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*it.PageRegion TA4/A4 (Senza margini): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*it.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*it.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*it.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*it.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*it.PageRegion TA3/A3 (Senza margini): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*it.PageRegion L/3,5 x 5 pol<2E> <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion TL/3,5 x 5 pol<2E> <2F> 89 x 127 mm (Senza margini): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion 4X6FULL/Formato KG: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion T4X6FULL/Formato KG (Senza margini): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion 2L/5 x 7 pol<2E> <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*it.PageRegion T2L/5 x 7 pol<2E> <2F> 127 x 178 mm (Senza margini): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*it.PageRegion 8x10/8 x 10 pol<2E>: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion T8x10/8 x 10 pol<2E> (Senza margini): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion 10X12/10 x 12 pol<2E>: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion T10X12/10 x 12 pol<2E> (Senza margini): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion 4X7/Formato Hi-Vision: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion T4X7/Formato Hi-Vision (Senza margini): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion ENVY4/Busta 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*it.PageRegion Letter/Lettera USA: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion TLetter/Lettera USA (Senza margini): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion Legal/Legale USA: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion TA4/A4 (四辺フチなし): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion TA3/A3 (四辺フチなし): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion L/L判: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion TL/L判 (四辺フチなし): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion 4X6FULL/KGサイズ: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion T4X6FULL/KGサイズ (四辺フチなし): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion 2L/2L判: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion T2L/2L判 (四辺フチなし): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion 8x10/六切: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion T8x10/六切 (四辺フチなし): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion 10X12/四切: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion T10X12/四切 (四辺フチなし): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion 4X7/ハイビジョンサイズ: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion T4X7/ハイビジョンサイズ (四辺フチなし): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion ENVY4/洋形４号封筒: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion Letter/レター: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion TLetter/レター (四辺フチなし): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion Legal/リーガル: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion TA4/A4 (Sem margens): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion TA3/A3 (Sem margens): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion L/3,5 x 5<22> <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion TL/3,5 x 5<22> <2F> 89 x 127 mm (Sem margens): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion 4X6FULL/Formato KG: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion T4X6FULL/Formato KG (Sem margens): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion 2L/5 x 7<22> <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion T2L/5 x 7<22> <2F> 127 x 178 mm (Sem margens): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion 8x10/8 x 10 pol<2E> (203 x 254 mm): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion T8x10/8 x 10 pol<2E> (203 x 254 mm) (Sem margens): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion 10X12/10 x 12 pol<2E>: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion T10X12/10 x 12 pol<2E> (Sem margens): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion 4X7/Formato Visão Elevada: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion T4X7/Formato Visão Elevada (Sem margens): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion ENVY4/Envelope 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion Letter/Carta EUA: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion TLetter/Carta EUA (Sem margens): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion Legal/Ofício EUA: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*es.PageRegion TA4/A4 (Sin márgenes): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*es.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*es.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*es.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*es.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*es.PageRegion TA3/A3 (Sin márgenes): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*es.PageRegion L/3,5 x 5 pulg<2E> <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion TL/3,5 x 5 pulg<2E> <2F> 89 x 127 mm (Sin márgenes): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion 4X6FULL/Tamaño KG: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion T4X6FULL/Tamaño KG (Sin márgenes): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion 2L/5 x 7 pulg<2E> <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*es.PageRegion T2L/5 x 7 pulg<2E> <2F> 127 x 178 mm (Sin márgenes): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*es.PageRegion 8x10/8 x 10 pulg: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion T8x10/8 x 10 pulg (Sin márgenes): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion 10X12/10 x 12 pulg: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion T10X12/10 x 12 pulg (Sin márgenes): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion 4X7/Tamaño Alta visión: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion T4X7/Tamaño Alta visión (Sin márgenes): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion ENVY4/Sobre 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*es.PageRegion Letter/Carta EE<2E> UU<2E>: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion TLetter/Carta EE<2E> UU<2E> (Sin márgenes): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion Legal/Legal: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion TA4/A4 (여백 없음): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion TA3/A3 (여백 없음): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion L/3<2E>5 x 5 in <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion TL/3<2E>5 x 5 in <2F> 89 x 127 mm (여백 없음): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion 4X6FULL/KG 크기: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion T4X6FULL/KG 크기 (여백 없음): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion 2L/5 x 7 in <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion T2L/5 x 7 in <2F> 127 x 178 mm (여백 없음): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion 8x10/8 x 10 in: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion T8x10/8 x 10 in (여백 없음): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion 10X12/10 x 12 in: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion T10X12/10 x 12 in (여백 없음): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion 4X7/Hi-Vision 크기: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion T4X7/Hi-Vision 크기 (여백 없음): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion ENVY4/Envelope 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion Letter/US 편지지: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion TLetter/US 편지지 (여백 없음): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion Legal/US 공문서: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion TA4/A4 (無邊): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion TA3/A3 (無邊): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion L/3<2E>5 x 5 in <2F> 89 x 127 mm: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion TL/3<2E>5 x 5 in <2F> 89 x 127 mm (無邊): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion 4X6FULL/KG size: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion T4X6FULL/KG size (無邊): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion 2L/5 x 7 in <2F> 127 x 178 mm: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion T2L/5 x 7 in <2F> 127 x 178 mm (無邊): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion 8x10/8 x 10 in: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion T8x10/8 x 10 in (無邊): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion 10X12/10 x 12 in: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion T10X12/10 x 12 in (無邊): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion 4X7/Hi-Vision size: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion T4X7/Hi-Vision size (無邊): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion ENVY4/Envelope 105 x 235 mm: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion Letter/美式信紙（US Letter）: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion TLetter/美式信紙（US Letter） (無邊): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion Legal/美式法定紙（US Legal）: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion A4/A4: "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion TA4/A4 (无边距): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion A3/A3: "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion TA3/A3 (无边距): "<</PageRegion[841.80 1190.60]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion L/3<2E>5 x 5 英寸 <2F> 89 x 127 毫米: "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion TL/3<2E>5 x 5 英寸 <2F> 89 x 127 毫米 (无边距): "<</PageRegion[252.20 360.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion 4X6FULL/KG 尺寸: "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion T4X6FULL/KG 尺寸 (无边距): "<</PageRegion[288.00 432.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion 2L/5 x 7 英寸 <2F> 127 x 178 毫米: "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion T2L/5 x 7 英寸 <2F> 127 x 178 毫米 (无边距): "<</PageRegion[360.00 504.40]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion 8x10/8 x 10 英寸: "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion T8x10/8 x 10 英寸 (无边距): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion 10X12/10 x 12 英寸: "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion T10X12/10 x 12 英寸 (无边距): "<</PageRegion[720.00 864.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion 4X7/Hi-Vision 尺寸: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion T4X7/Hi-Vision 尺寸 (无边距): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion ENVY4/信封 105 x 235 毫米: "<</PageRegion[297.60 666.20]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion Letter/美国信纸: "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion TLetter/美国信纸 (无边距): "<</PageRegion[612.00 792.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion Legal/美国法定用纸: "<</PageRegion[612.00 1008.00]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+
+*DefaultImageableArea: A4
+*ImageableArea A4/A4: "8.40 8.40 586.80 833.40"
+*ImageableArea TA4/A4 (Borderless): "0.00 0.00 595.20 841.80"
+*ImageableArea B5/JIS B5: "8.40 8.40 507.60 720.20"
+*ImageableArea A5/A5: "8.40 8.40 411.20 586.80"
+*ImageableArea A6/A6: "8.40 8.40 289.20 411.20"
+*ImageableArea A3/A3: "8.40 8.40 833.40 1182.20"
+*ImageableArea TA3/A3 (Borderless): "0.00 0.00 841.80 1190.60"
+*ImageableArea L/3<2E>5 x 5 in <2F> 89 x 127 mm: "8.40 8.40 243.80 351.60"
+*ImageableArea TL/3<2E>5 x 5 in <2F> 89 x 127 mm (Borderless): "0.00 0.00 252.20 360.00"
+*ImageableArea 4X6FULL/KG size: "8.40 8.40 279.60 423.60"
+*ImageableArea T4X6FULL/KG size (Borderless): "0.00 0.00 288.00 432.00"
+*ImageableArea 2L/5 x 7 in <2F> 127 x 178 mm: "8.40 8.40 351.60 496.00"
+*ImageableArea T2L/5 x 7 in <2F> 127 x 178 mm (Borderless): "0.00 0.00 360.00 504.40"
+*ImageableArea 8x10/8 x 10 in: "8.40 8.40 567.60 711.60"
+*ImageableArea T8x10/8 x 10 in (Borderless): "0.00 0.00 576.00 720.00"
+*ImageableArea 10X12/10 x 12 in: "8.40 8.40 711.60 855.60"
+*ImageableArea T10X12/10 x 12 in (Borderless): "0.00 0.00 720.00 864.00"
+*ImageableArea 4X7/Hi-Vision size: "8.40 8.40 279.60 503.60"
+*ImageableArea T4X7/Hi-Vision size (Borderless): "0.00 0.00 288.00 512.00"
+*ImageableArea ENVY4/Envelope 105 x 235 mm: "8.40 8.40 289.20 657.80"
+*ImageableArea Letter/US Letter: "8.40 8.40 603.60 783.60"
+*ImageableArea TLetter/US Letter (Borderless): "0.00 0.00 612.00 792.00"
+*ImageableArea Legal/US Legal: "8.40 8.40 603.60 999.60"
+
+
+*DefaultPaperDimension: A4
+*PaperDimension A4/A4: "595.20 841.80"
+*PaperDimension TA4/A4 (Borderless): "595.20 841.80"
+*PaperDimension B5/JIS B5: "516.00 728.60"
+*PaperDimension A5/A5: "419.60 595.20"
+*PaperDimension A6/A6: "297.60 419.60"
+*PaperDimension A3/A3: "841.80 1190.60"
+*PaperDimension TA3/A3 (Borderless): "841.80 1190.60"
+*PaperDimension L/3<2E>5 x 5 in <2F> 89 x 127 mm: "252.20 360.00"
+*PaperDimension TL/3<2E>5 x 5 in <2F> 89 x 127 mm (Borderless): "252.20 360.00"
+*PaperDimension 4X6FULL/KG size: "288.00 432.00"
+*PaperDimension T4X6FULL/KG size (Borderless): "288.00 432.00"
+*PaperDimension 2L/5 x 7 in <2F> 127 x 178 mm: "360.00 504.40"
+*PaperDimension T2L/5 x 7 in <2F> 127 x 178 mm (Borderless): "360.00 504.40"
+*PaperDimension 8x10/8 x 10 in: "576.00 720.00"
+*PaperDimension T8x10/8 x 10 in (Borderless): "576.00 720.00"
+*PaperDimension 10X12/10 x 12 in: "720.00 864.00"
+*PaperDimension T10X12/10 x 12 in (Borderless): "720.00 864.00"
+*PaperDimension 4X7/Hi-Vision size: "288.00 512.00"
+*PaperDimension T4X7/Hi-Vision size (Borderless): "288.00 512.00"
+*PaperDimension ENVY4/Envelope 105 x 235 mm: "297.60 666.20"
+*PaperDimension Letter/US Letter: "612.00 792.00"
+*PaperDimension TLetter/US Letter (Borderless): "612.00 792.00"
+*PaperDimension Legal/US Legal: "612.00 1008.00"
+
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+
+*UIConstraints: *Duplex DuplexNoTumble *MediaType PMPHOTO_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType PMPHOTO_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType PLATINA_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType PLATINA_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType PMMATT_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType PMMATT_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType SFINE_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType VELVET_FINE_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType VELVET_FINE_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType GLOSSYHAGAKI_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType GLOSSYHAGAKI_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType RCPC_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType RCPC_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType IJPC_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType HAGAKIATENA_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType HAGAKIATENA_NORMAL
+*UIConstraints: *Duplex DuplexNoTumble *MediaType CDDVD_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType MINIPHOTO_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType IRON_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType ENV_HIGH
+*UIConstraints: *Duplex DuplexNoTumble *MediaType ENV_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType PMPHOTO_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType PMPHOTO_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType PLATINA_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType PLATINA_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType PMMATT_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType PMMATT_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType SFINE_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType VELVET_FINE_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType VELVET_FINE_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType GLOSSYHAGAKI_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType GLOSSYHAGAKI_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType RCPC_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType RCPC_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType IJPC_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType HAGAKIATENA_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType HAGAKIATENA_NORMAL
+*UIConstraints: *Duplex DuplexTumble *MediaType CDDVD_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType MINIPHOTO_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType IRON_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType ENV_HIGH
+*UIConstraints: *Duplex DuplexTumble *MediaType ENV_NORMAL
+*UIConstraints: *PageSize TA4 *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize TA4 *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize TA4 *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize TA4 *MediaType IRON_HIGH
+*UIConstraints: *PageSize TA4 *MediaType ENV_HIGH
+*UIConstraints: *PageSize TA4 *MediaType ENV_NORMAL
+*UIConstraints: *PageSize TA4 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize TA4 *Duplex DuplexTumble
+*UIConstraints: *PageSize A5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A5 *Duplex DuplexTumble
+*UIConstraints: *PageSize A6 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A6 *Duplex DuplexTumble
+*UIConstraints: *PageSize A3 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A3 *Duplex DuplexTumble
+*UIConstraints: *PageSize TA3 *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize TA3 *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize TA3 *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize TA3 *MediaType IRON_HIGH
+*UIConstraints: *PageSize TA3 *MediaType ENV_HIGH
+*UIConstraints: *PageSize TA3 *MediaType ENV_NORMAL
+*UIConstraints: *PageSize TA3 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize TA3 *Duplex DuplexTumble
+*UIConstraints: *PageSize L *Duplex DuplexNoTumble
+*UIConstraints: *PageSize L *Duplex DuplexTumble
+*UIConstraints: *PageSize TL *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize TL *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize TL *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize TL *MediaType IRON_HIGH
+*UIConstraints: *PageSize TL *MediaType ENV_HIGH
+*UIConstraints: *PageSize TL *MediaType ENV_NORMAL
+*UIConstraints: *PageSize TL *Duplex DuplexNoTumble
+*UIConstraints: *PageSize TL *Duplex DuplexTumble
+*UIConstraints: *PageSize 4X6FULL *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 4X6FULL *Duplex DuplexTumble
+*UIConstraints: *PageSize T4X6FULL *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize T4X6FULL *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize T4X6FULL *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize T4X6FULL *MediaType IRON_HIGH
+*UIConstraints: *PageSize T4X6FULL *MediaType ENV_HIGH
+*UIConstraints: *PageSize T4X6FULL *MediaType ENV_NORMAL
+*UIConstraints: *PageSize T4X6FULL *Duplex DuplexNoTumble
+*UIConstraints: *PageSize T4X6FULL *Duplex DuplexTumble
+*UIConstraints: *PageSize 2L *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 2L *Duplex DuplexTumble
+*UIConstraints: *PageSize T2L *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize T2L *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize T2L *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize T2L *MediaType IRON_HIGH
+*UIConstraints: *PageSize T2L *MediaType ENV_HIGH
+*UIConstraints: *PageSize T2L *MediaType ENV_NORMAL
+*UIConstraints: *PageSize T2L *Duplex DuplexNoTumble
+*UIConstraints: *PageSize T2L *Duplex DuplexTumble
+*UIConstraints: *PageSize 8x10 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 8x10 *Duplex DuplexTumble
+*UIConstraints: *PageSize T8x10 *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize T8x10 *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize T8x10 *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize T8x10 *MediaType IRON_HIGH
+*UIConstraints: *PageSize T8x10 *MediaType ENV_HIGH
+*UIConstraints: *PageSize T8x10 *MediaType ENV_NORMAL
+*UIConstraints: *PageSize T8x10 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize T8x10 *Duplex DuplexTumble
+*UIConstraints: *PageSize 10X12 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 10X12 *Duplex DuplexTumble
+*UIConstraints: *PageSize T10X12 *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize T10X12 *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize T10X12 *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize T10X12 *MediaType IRON_HIGH
+*UIConstraints: *PageSize T10X12 *MediaType ENV_HIGH
+*UIConstraints: *PageSize T10X12 *MediaType ENV_NORMAL
+*UIConstraints: *PageSize T10X12 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize T10X12 *Duplex DuplexTumble
+*UIConstraints: *PageSize 4X7 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 4X7 *Duplex DuplexTumble
+*UIConstraints: *PageSize T4X7 *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize T4X7 *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize T4X7 *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize T4X7 *MediaType IRON_HIGH
+*UIConstraints: *PageSize T4X7 *MediaType ENV_HIGH
+*UIConstraints: *PageSize T4X7 *MediaType ENV_NORMAL
+*UIConstraints: *PageSize T4X7 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize T4X7 *Duplex DuplexTumble
+*UIConstraints: *PageSize ENVY4 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ENVY4 *Duplex DuplexTumble
+*UIConstraints: *PageSize TLetter *MediaType CDDVD_HIGH
+*UIConstraints: *PageSize TLetter *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *PageSize TLetter *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize TLetter *MediaType IRON_HIGH
+*UIConstraints: *PageSize TLetter *MediaType ENV_HIGH
+*UIConstraints: *PageSize TLetter *MediaType ENV_NORMAL
+*UIConstraints: *PageSize TLetter *Duplex DuplexNoTumble
+*UIConstraints: *PageSize TLetter *Duplex DuplexTumble
+*UIConstraints: *PageSize Legal *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Legal *Duplex DuplexTumble
+*UIConstraints: *InputSlot Auto *MediaType VELVET_FINE_HIGH
+*UIConstraints: *InputSlot Auto *MediaType VELVET_FINE_NORMAL
+*UIConstraints: *InputSlot Auto *PageSize A3
+*UIConstraints: *InputSlot Auto *PageSize TA3
+*UIConstraints: *InputSlot Auto *PageSize 10X12
+*UIConstraints: *InputSlot Auto *PageSize T10X12
+*UIConstraints: *InputSlot Upper *MediaType VELVET_FINE_HIGH
+*UIConstraints: *InputSlot Upper *MediaType VELVET_FINE_NORMAL
+*UIConstraints: *InputSlot Upper *MediaType CDDVD_HIGH
+*UIConstraints: *InputSlot Upper *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *InputSlot Upper *PageSize A4
+*UIConstraints: *InputSlot Upper *PageSize TA4
+*UIConstraints: *InputSlot Upper *PageSize B5
+*UIConstraints: *InputSlot Upper *PageSize A5
+*UIConstraints: *InputSlot Upper *PageSize A3
+*UIConstraints: *InputSlot Upper *PageSize TA3
+*UIConstraints: *InputSlot Upper *PageSize 8x10
+*UIConstraints: *InputSlot Upper *PageSize T8x10
+*UIConstraints: *InputSlot Upper *PageSize 10X12
+*UIConstraints: *InputSlot Upper *PageSize T10X12
+*UIConstraints: *InputSlot Upper *PageSize ENVY4
+*UIConstraints: *InputSlot Upper *PageSize Letter
+*UIConstraints: *InputSlot Upper *PageSize TLetter
+*UIConstraints: *InputSlot Upper *PageSize Legal
+*UIConstraints: *InputSlot Lower *MediaType VELVET_FINE_HIGH
+*UIConstraints: *InputSlot Lower *MediaType VELVET_FINE_NORMAL
+*UIConstraints: *InputSlot Lower *MediaType CDDVD_HIGH
+*UIConstraints: *InputSlot Lower *MediaType CDDVDHIGH_HIGH
+*UIConstraints: *InputSlot Lower *PageSize A3
+*UIConstraints: *InputSlot Lower *PageSize TA3
+*UIConstraints: *InputSlot Lower *PageSize 10X12
+*UIConstraints: *InputSlot Lower *PageSize T10X12
+*UIConstraints: *InputSlot Rear *MediaType CDDVD_HIGH
+*UIConstraints: *InputSlot Rear *MediaType CDDVDHIGH_HIGH
+
+

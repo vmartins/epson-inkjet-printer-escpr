@@ -1,0 +1,313 @@
+Epson Inkjet Printer Driver (ESC/P-R) Manual
+
+Copyright (C) Seiko Epson Corporation 2005-2019.
+
+Please visit our website for the latest information.
+Please refer to follows for the information about this driver
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+Contents
+1  License Agreement
+2  Revision History
+3  Product Description
+4  Installation and CUPS setting
+    4.1  Installing
+    4.2  Settings after installation
+5  Printing
+    5.1  Items to be set
+    5.2  Details of setting items
+    5.3  How to Set
+    5.4  How to Print
+6  How to build in non-LSB distribution
+    6.1  For Redhat based distributions
+    6.2  For Debian based distributions
+    6.3  Other distributions
+
+-------------------------------------------------------------------------------
+1  License Agreement
+-------------------------------------------------------------------------------
+This software is covered by the GNU General Public License (GPL). 
+Refer to the file "COPYING" for more information about the GPL.
+
+-------------------------------------------------------------------------------
+2  Revision History
+-------------------------------------------------------------------------------
+See ./NEWS.
+
+-------------------------------------------------------------------------------
+3  Product Description
+-------------------------------------------------------------------------------
+This software is a filter program used with the Common UNIX Printing
+System (CUPS) on the Linux platform.
+The software offers high quality printing with Seiko Epson color ink jet printers.
+
+This product can only be used with printers that support the Epson ESC/P-R language.
+
+Please see refer to follows for a list of supported printers.
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+This software is based on LSB 3.2. It can be used in distribution supporting LSB 3.2 later.
+If it is used in non-LSB distribution, you can use it by building from the source code.
+
+-------------------------------------------------------------------------------
+4  Installation and CUPS Setting
+-------------------------------------------------------------------------------
+4.1  Installation
+	4.1.1  In the case of LSB supported distributions
+	   Choose the appropriate command for your distribution from the list below
+	   and execute it with root privileges.
+	   Note: The following package name differs depending on the version
+	   you are using.
+	   For Redhat based distributions:
+	   -----------------
+	   # rpm -i epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.i486.rpm
+	   -----------------
+	   For Debian based distributions:
+	   -----------------
+	   # dpkg -i epson-inkjet-printer-escpr_1.7.xx-1lsb3.2_i386.deb
+	   -----------------
+	   
+	4.1.2  In the case of non-LSB supported distributions
+	   Refer to "6  How to build in non-LSB distribution".
+
+
+4.2  Settings after installation
+   CUPS must be set to enable use of this software.
+   Before printing, be sure to carry out the following steps.
+
+	4.2.1  Restart CUPS
+	     Restart CUPS, to enable the installed filter.
+	     Execute the following command with root privileges.
+
+	     Example: With Red Hat Linux
+	     -----------------
+	     # /etc/init.d/cups restart
+	     -----------------
+	     With Debian GNU/Linux
+	     -----------------
+	     # /etc/init.d/cupsys restart
+	     -----------------
+
+	4.2.2  Add a printer
+
+	  Using commands
+	     Execute the following command with root privileges.
+	     -----------------
+	     # lpadmin -p [PRINTER_NAME] -v [DEVICE_URI] -P [PPD_FILE] -E
+	     -----------------
+
+	     Options: -p      Specifies the setting name of the printer
+	                        -E      Enables the printer
+	                        -v      Specifies the driver and connection
+	                        -P      Specifies the setting file (PPD file)
+
+	     Example: With the PM-A950 printer 
+	     -----------------
+	     # lpadmin -p ep901a -v usb:/EPSON/EP-901A -P /opt/epson-inkjet-printer-escpr/ppds/EPSON/EPSON-EP-901A-epson-escpr-en.ppd.gz -E
+	     -----------------
+
+	     For details of lpadmin, see lpadmin(8).
+
+
+	  Using a browser
+	     CUPS is provided with a CGI for settings so that you can set your printer
+	     using a browser. To add a printer, follow the steps below.
+	       Note: The following menu items might differ depending on the CUPS
+	             version and the environment used.
+
+	     (1) Turn on the printer, and please be connected to the PC with a USB cable.
+	     (2) Connect to CUPS Server (Port: 631) with the browser
+	         Example: When CUPS is on localhost, access the following URL.
+	             -----------------
+	             http://localhost:631/
+	             -----------------
+	     (3) Select "Add Printer"
+	     (4) Enter a printer setting name in "Name", and select "Continue"
+	          (Other items are not mandatory)
+	     (5) In "Device", USB, and select "Continue"
+	         Example: With the EP-901A printer, "Model" is displayed as follows.
+	             -----------------
+	             "EP-901A USB #1(EP-901A)"
+	             -----------------
+	     (6) In "Model", set "EPSON-ESC/P-R Printer Driver for Linux", and
+	         select "Add Printer"
+	         Example: With the EP-901A printer, "Model" is displayed as follows.
+	             -----------------
+	             "EPSON EP-901A, EPSON-ESC/P-R Printer Driver for Linux (en,en,ja,nl,fr,de,it,pt,es,ko,zh_CN,zh_TW)"
+	             -----------------
+	     (6') Instead of steps (6), specify the PPD file directly from "Browse"
+	          Example: With the EP-901A printer, you would specify the following file.
+	              -----------------
+	              /opt/epson-inkjet-printer-escpr/ppds/EPSON/EPSON-EP-901A-epson-escpr-en.ppd.gz
+	              -----------------
+
+This completes adding a printer for this software.
+
+
+-------------------------------------------------------------------------------
+5  Printing
+-------------------------------------------------------------------------------
+5.1  Items to be set
+   The following items can be set with this software.
+
+   * Ink
+        Select color or monochrome printing.
+
+   * Paper size
+        Select the paper size for your document.
+
+   * Print quality
+        Select the media type and its print quality for your printing.
+
+
+5.2  Details of setting items
+   Followings is a list of setting options available for this software.
+
+   * The meaning of the list items
+     - Keyword          Text string used when specifying an option
+     - Browser display  Text string displayed in the browser window for CUPS settings
+     - Explanation      An explanation of the setting
+
+   Ink
+      Setting name for optional settings: Ink
+      Setting name in the browser: Ink
+
+      Keyword  | Browser display        | Explanation
+      ---------+------------------------+------------------------------------
+      COLOR    | Color                  | Color printing
+      MONO     | Monochrome             | Monochrome printing
+
+   Paper size
+      Setting name for optional settings: PageSize or media
+      Setting name in the browser: MediaSize
+
+      Note: When adding multiple settings in the media option, put paper size
+            at the beginning. For the media options, see the CUPS documentation.
+
+   Print quality
+      Setting name for optional settings: Quality
+      Setting name in the browser: Quality
+
+   Duplex printing
+      Setting name for optional settings: Duplex
+      Setting name in the browser: Duplex
+
+   Paper source
+      Setting name for optional settings: InputSlot
+      Setting name in the browser: InputSlot
+
+5.3  How to set
+
+   There are three methods for print settings.
+
+   * Using commands
+        Use lpoptions. For details of the command, see lpoptions(1).
+
+        Example: For the registered printer name ep901a
+            To specify ink = COLOR, page size = A4, quality = PLAIN_NORMAL
+        -----------------
+        $ lpoptions -p ep901a -o ink=COLOR -o media=A4 -o quality=PLAIN_NORMAL
+        -----------------
+
+   * Use a browser
+        Select "Configure Printer" from the printer window to display
+        the setting window.
+
+   * Specify options when printing
+        As with lpoptions, set options with -o. For details of the commands,
+        see lpr(1) and lp(1).
+
+5.4  How to Print
+
+   To print, as with the existing LPR, execute the lpr or lp commands.
+   The formats that can be printed are as follows.
+
+   * Postscript
+   * PDF
+   * Text
+   * Various image files
+
+   Example:
+      When printing with the defaults
+      -----------------
+      $ lpr -P PRINTER_NAME <file>
+      $ lp -d PRINTER_NAME <file>
+      -----------------
+
+      With printer_name = a950, ink = MONO, media = Legal
+      -----------------
+      $ lpr -P a950 -o ink=MONO -o media=Legal <file>
+      $ lp -d a950 -o ink=MONO -o media=Legal <file>
+      -----------------
+
+The method of printing depends on the implementation of CUPS.
+For more details, see the CUPS documentation.
+
+-------------------------------------------------------------------------------
+6  How to build in non-LSB distribution
+-------------------------------------------------------------------------------
+6.1  For Redhat based distributions
+	6.1.1  Uncompress the src.rpm file
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+
+	6.1.2  Configure and Create source tarball
+	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ ./bootstrap && ./configure --prefix=/usr && make dist
+
+	6.1.3  Create the directory for RPM packages
+	   $ mkdir -p ~/rpmbuild/SOURCES
+	   $ mkdir -p ~/rpmbuild/SPECS
+	   $ mkdir -p ~/rpmbuild/BUILD
+	   $ mkdir -p ~/rpmbuild/RPMS
+	   $ mkdir -p ~/rpmbuild/SRPMS
+	   
+	   You can specifiy the another directory in ~/.rpmmacros
+	   
+	6.1.4  Copy the source tarball and the spec file to the directory
+	   $ cp epson-inkjet-printer-escpr-1.7.xx.tar.gz ~/rpmbuild/SOURCES/.
+	   $ cp epson-inkjet-printer-escpr.spec ~/rpmbuild/SPECS
+
+	6.1.5  Create RPM package
+	   $ cd ~/rpmbuild/SPECS
+	   $ rpmbuild -ba --clean epson-inkjet-printer-escpr.spec
+
+
+6.2  For Debian based distributions
+	6.2.1  Uncompress the src.rpm file
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+
+	6.2.2  Configure
+	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ ./bootstrap && ./configure --prefix=/usr
+
+	6.2.3  Create DEB package
+	   $ make
+	   $ debuild -us -uc -b
+
+6.3  For other distributions
+	6.3.1  Uncompress the src.rpm file
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+
+	6.3.2  Configure
+	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ ./bootstrap && ./configure --prefix=/usr
+
+	The location of CUPS filter and ppd files are decided automatically,
+	but you can specify with the follwing configure options.
+	
+	* "--with-cupsfilterdir"    The location of CUPS filter
+	                            ex) /usr/lib/cups/filter
+	                            
+	* "--with-cupsppddir"       The location of PPD files
+	                            ex) /usr/share/ppd
+
+	6.3.3  Make and Install
+	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ make 
+	   $ sudo make install
+
+
+***End of file

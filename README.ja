@@ -1,0 +1,327 @@
+Epson Inkjet Printer Driver (ESC/P-R) 説明書
+
+Copyright (C) Seiko Epson Corporation 2005-2019.
+
+本ドライバーに関する情報は、下記を参照して下さい。
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+目次
+1  使用許諾契約
+2  修正履歴
+3  製品説明
+4  インストールとCUPSの設定
+    4.1  インストール
+    4.2  インストール後の設定
+5  印刷
+    5.1  設定項目
+    5.2  設定項目詳細
+    5.3  設定方法
+    5.4  印刷方法
+6  LSB非対応ディストリビューションでのビルド方法
+    6.1 Redhat系ディストリビューションの場合
+    6.2 Debian系ディストリビューションの場合
+    6.3 それ以外のディストリビューションの場合
+
+-------------------------------------------------------------------------------
+1  使用許諾契約
+-------------------------------------------------------------------------------
+本ソフトウェアは、GNU General Public License (GPL)に準拠しています。
+GPLの詳細はCOPYINGファイルを参照して下さい。
+
+-------------------------------------------------------------------------------
+2  修正履歴
+-------------------------------------------------------------------------------
+./NEWSに記載。
+
+
+-------------------------------------------------------------------------------
+3  製品説明
+-------------------------------------------------------------------------------
+本ソフトウェアは、Linuxプラットフォーム上において、Common UNIX Printing
+System(CUPS)より利用されるフィルタプログラムです。Seiko Epson製カラー
+インクジェットプリンタを使った、高品質印刷を提供致します。
+
+本ソフトウェアは、Epson ESC/P-R言語に対応するプリンタでのみ利用可能です。
+対象機種については、以下のウェブサイトをご覧下さい。
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+本ソフトウェアは、LSB 3.2に準拠しており、LSB3.2以上をサポートするディストリ
+ビューションで使用可能ですが、LSBに対応していないディストリビューションにおいても、
+ソースコードからビルドすることにより利用可能です。
+
+-------------------------------------------------------------------------------
+4  インストールとCUPSの設定
+-------------------------------------------------------------------------------
+4.1  インストール
+	4.1.1  LSB3.2対応のディストリビューションの場合
+	   お使いのディストリビューションに合わせて、rpm、debパッケージをインストールします。
+	   以下のコマンドをroot権限で実行して下さい。
+	   注) 以下のパッケージ名はお使いのバージョンにより異なります。
+	   
+	   Redhat系Linuxの場合
+	   -----------------
+	   # rpm -i epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.i486.rpm
+	   -----------------
+	   Debian系Linuxの場合
+	   -----------------
+	   # dpkg -i epson-inkjet-printer-escpr_1.7.xx-1lsb3.2_i386.deb
+	   -----------------
+
+	4.1.2  LSB3.2以上に非対応のディストリビューションの場合
+	   「6  LSB非対応ディストリビューションでのビルド方法」を参照してください。
+
+
+4.2  インストール後の設定
+   本ソフトウェアを使用する為に、CUPSの設定を行う必要があります。
+   印刷を行う前に、必ず以下の手順を実行して下さい。
+
+	4.2.1  CUPSの再起動
+	     インストールされたフィルタを有効化する為に、CUPSを再起動して下さい。
+	     root権限で以下のコマンドを実行します。
+
+	     例) Redhat系ディストリビューションの場合
+	     -----------------
+	     # /etc/init.d/cups restart
+	     -----------------
+	     Debian系ディストリビューションの場合
+	     -----------------
+	     # /etc/init.d/cupsys restart
+	     -----------------
+
+	4.2.2  プリンタの追加
+
+	  [ コマンドによる追加 ]
+	     root権限で以下のコマンドを実行します。
+	     -----------------
+	     # lpadmin -p [PRINTER_NAME] -v [DEVICE_URI] -P [PPD_FILE] -E
+	     -----------------
+
+	     オプションの説明： -p   プリンタ設定名称の指定
+	                        -E   プリンタを有効にする
+	                        -v   接続に使用するドライバと接続先の指定
+	                        -P   設定ファイル(PPDファイル)の指定
+
+	     例) 利用するプリンタがEP-901Aの場合
+	     -----------------
+	     # lpadmin -p ep901a -v usb:/EPSON/EP-901A -P /opt/epson-inkjet-printer-escpr/ppds/EPSON/EPSON-EP-901A-epson-escpr-en.ppd.gz -E
+	     -----------------
+
+	     lpadminの詳細については、lpadmin(8)を参照下さい。
+
+
+	  [ ブラウザからの追加 ]
+	     CUPSでは、設定用のCGIが用意されており、プリンタの設定をブラウザ上
+	     で行うことができます。プリンタの追加には、以下の手順を実行します。
+	       注) 以下のメニュー項目は、CUPSのバージョンやお使いの環境により
+	           異なります。
+
+	     (1) プリンターの電源を入れて、PCにUSBケーブルで接続してください。
+	     (2) ブラウザから、CUPSサーバ (Port:631) に接続
+	         例) CUPSがlocalhost上にある場合、以下のURLに
+	             アクセスして下さい。
+	             -----------------
+	             http://localhost:631/
+	             -----------------
+	     (3) "Add Printer" を選択
+	     (4) "Name" にプリンタ設定名称を記述して、"Continue" を選択
+	          (他の項目は必須ではありません)
+	     (5) "Device" に USB を設定して、"Continue" を選択
+	         例) 利用するプリンタがEP-901Aの場合、"Model" は以下のように
+	             表示されます。
+	             -----------------
+	             "EP-901A USB #1(EP-901A)"
+	             -----------------
+	     (6) "Model" に "EPSON-ESC/P-R Printer Driver for Linux" を設定して、
+	         "Add Printer" を選択
+	         例) 利用するプリンタがEP-901Aの場合、"Model" は以下のように
+	             表示されます。
+	             -----------------
+	             "EPSON EP-901A, EPSON-ESC/P-R Printer Driver for Linux (en,en,ja,nl,fr,de,it,pt,es,ko,zh_CN,zh_TW)"
+	             -----------------
+	     (6') 上記(6)の代わりに、[Browse]から直接PPDファイルを指定
+	          例) 利用するプリンタがEP-901Aの場合、
+	              以下のファイルを指定します。
+	              -----------------
+	              /opt/epson-inkjet-printer-escpr/ppds/EPSON/EPSON-EP-901A-epson-escpr-en.ppd.gz
+	              -----------------
+
+以上で、本ソフトウェア用のプリンタが追加されます。
+
+
+-------------------------------------------------------------------------------
+5  印刷
+-------------------------------------------------------------------------------
+5.1  設定項目
+   本ソフトウェアにて設定可能な項目は、以下の通りです。
+
+   * インク
+        カラー印刷かモノクロ印刷かを選択します。
+
+   * 用紙サイズ
+        印刷物の用紙サイズを選択します。
+
+   * 印刷品質
+        印刷物のメディアタイプ、及びその際の印刷品質を選択します。
+
+
+5.2  設定項目詳細
+   本ソフトウェアで指定可能なオプションのリストを示します。
+
+   * リスト項目の意味
+     - Keyword          オプション指定時に使用する設定文字列
+     - ブラウザ表示     CUPSの設定ブラウザ画面上に表示される文字列
+     - 説明             設定に関する解説
+
+   [ インク ]
+      オプション指定での設定名称 : Ink
+      ブラウザ上での設定名称 : Ink
+
+      Keyword  | ブラウザ表示  | 説明
+      ---------+---------------+---------------------------------------------
+      COLOR    | Color         | カラー印刷
+      MONO     | Monochrome    | モノクロ印刷
+
+   [ 用紙サイズ ]
+      オプション指定での設定名称 : PageSizeまたはmedia
+      ブラウザ上での設定名称 : MediaSize
+
+      注) mediaオプションに複数の設定を記述する場合は、用紙サイズを
+          先頭に記述して下さい。mediaオプションの使用方法については、
+          CUPSのドキュメントを参照下さい。
+
+   [ 印刷品質 ]
+      オプション指定での設定名称 : Quality
+      ブラウザ上での設定名称 : Quality
+      
+   [ 両面印刷 ]
+      オプション指定での設定名称 : Duplex
+      ブラウザ上での設定名称 : Duplex
+
+   [ 給紙装置 ]
+      オプション指定での設定名称 : InputSlot
+      ブラウザ上での設定名称 : InputSlot
+
+
+
+5.3  設定方法
+
+   印刷設定を行うには、以下の3つの方法があります。
+
+   * コマンドから設定する
+        lpoptionsを使用します。コマンドの詳細についてはlpoptions(1)を
+        参照下さい。
+
+        例) 登録プリンタ名 ep901a に対して
+            ink=COLOR, PageSize=A4, quality=PLAIN_NORMAL を指定する場合
+        -----------------
+        $ lpoptions -p ep901a -o ink=COLOR -o media=A4 -o quality=PLAIN_NORMAL
+        -----------------
+
+   * ブラウザから設定する
+        プリンタ画面より、"Configure Printer" を選択すると、設定画面が
+        表示されます。
+
+   * 印刷時にオプションを指定する
+        lpoptions と同様に、-oオプションで設定します。コマンドの
+        詳細については、lpr(1)、lp(1)を参照下さい。
+
+5.4  印刷方法
+
+   印刷には、従来のLPRと同様にlprコマンドもしくはlpコマンドを用いて
+   実行します。印刷できるフォーマットは以下の通りです。
+
+   * Postscript
+   * PDF
+   * Text
+   * 各種画像ファイル
+
+   例)
+      デフォルト設定での印刷の場合
+      -----------------
+      $ lpr -P PRINTER_NAME <file>
+      $ lp -d PRINTER_NAME <file>
+      -----------------
+
+      printer_name=a950, ink=MONO, media=Legal の場合
+      -----------------
+      $ lpr -P a950 -o ink=MONO -o media=Legal <file>
+      $ lp -d a950 -o ink=MONO -o media=Legal <file>
+      -----------------
+
+印刷の方法については、CUPSの実装に依存します。より詳しい情報については、
+CUPSのドキュメントを参照下さい。
+
+-------------------------------------------------------------------------------
+6  LSB非対応ディストリビューションでのビルド方法
+-------------------------------------------------------------------------------
+6.1 Redhat系ディストリビューションの場合
+
+	6.1.1 ダウンロードしたsrs.rpmを解凍します。
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+
+	6.1.2 configureを実行し、ソースtarballを作成します。
+	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ ./bootstrap && ./configure --prefix=/usr && make dist
+
+	6.1.3 パッケージ作成用ディレクトリを作成します。
+	   $ mkdir -p ~/rpmbuild/SOURCES
+	   $ mkdir -p ~/rpmbuild/SPECS
+	   $ mkdir -p ~/rpmbuild/BUILD
+	   $ mkdir -p ~/rpmbuild/RPMS
+	   $ mkdir -p ~/rpmbuild/SRPMS
+
+	   (~/.rpmmacrosでrpmbuild以外のディレクトリを指定することもできます。)
+
+	6.1.4 ソースtarballとspecファイルを、上記のディレクトリにコピーします。
+	   $ cp epson-inkjet-printer-escpr-1.7.xx.tar.gz ~/rpmbuild/SOURCES/.
+	   $ cp epson-inkjet-printer-escpr.spec ~/rpmbuild/SPECS
+	   
+	6.1.5 rpmパッケージを作成します。
+	   $ cd ~/rpmbuild/SPECS
+	   $ rpmbuild -ba --clean epson-inkjet-printer-escpr.spec
+	   
+	   成功すると、~/rpmbuild/RPMSにrpmパッケージが作成されます。
+
+
+6.2 Debian系ディストリビューションの場合
+
+6.2.1 ダウンロードしたsrs.rpmを解凍します。
+   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
+   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+
+6.2.2 configureを実行します。
+   $ cd epson-inkjet-printer-escpr-1.7.xx
+   $ ./bootstrap && ./configure --prefix=/usr
+
+6.2.3 debパッケージを作成します。
+   $ make
+   $ debuild -us -uc -b
+   
+   成功すると、ひとつ上のディレクトリにdebパッケージが作成されます。
+
+
+6.3 それ以外のディストリビューションの場合
+
+6.3.1 ダウンロードしたsrs.rpmを解凍します。
+   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
+   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+
+6.3.2 configureを実行します。
+   $ cd epson-inkjet-printer-escpr-1.7.xx
+   $ ./bootstrap && ./configure --prefix=/usr
+
+   CUPS filterとPPDファイルのインストール先は自動判定していますが、
+   以下のconfigure オプションで、明示的に指定することもできます。
+   
+   * "--with-cupsfilterdir" ..... CUPSフィルターの保存先
+                                  例) /usr/lib/cups/filter
+   * "--with-cupsppddir" ........ PPDファイルの保存先
+                                  例) /usr/share/ppd
+                                      
+6.3.3 make, make install を実行します
+   $ cd epson-inkjet-printer-escpr-1.7.xx
+   $ make 
+   $ sudo make install
+
+***End of file

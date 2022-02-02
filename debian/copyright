@@ -1,0 +1,22 @@
+Epson Inkjet Printer Driver (ESC/P-R) for Linux
+written and maintained by Seiko Epson Corporation.
+
+The original source can be found at:
+
+  http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+
+Copyright holder:  Seiko Epson Corporation
+
+
+License:
+
+  This software is distributed under the terms of the GNU General Public License.
+  Please refer to the 'README' file for the details.
+
+----------------------------------------------------------------------
+GNU General Public License:
+
+  Please refer to the 'COPYING' file for the full license terms.  On
+  Debian systems, the complete text of the GNU General Public License
+  can be found in '/usr/share/common-licenses/GPL-2'.
