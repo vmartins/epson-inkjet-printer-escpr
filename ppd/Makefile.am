@@ -111,6 +111,9 @@ Epson-ET-2710_Series-epson-escpr-en.ppd \
 Epson-ET-2720_Series-epson-escpr-en.ppd \
 Epson-ET-2750_Series-epson-escpr-en.ppd \
 Epson-ET-2760_Series-epson-escpr-en.ppd \
+Epson-ET-2810_Series-epson-escpr-en.ppd \
+Epson-ET-2820_Series-epson-escpr-en.ppd \
+Epson-ET-2850_Series-epson-escpr-en.ppd \
 Epson-ET-4500_Series-epson-escpr-en.ppd \
 Epson-ET-4550_Series-epson-escpr-en.ppd \
 Epson-ET-4700_Series-epson-escpr-en.ppd \
@@ -600,6 +603,9 @@ Epson-ET-1110_Series-epson-escpr-en.ppd \
 Epson-ET-2710_Series-epson-escpr-en.ppd \
 Epson-ET-2720_Series-epson-escpr-en.ppd \
 Epson-ET-2760_Series-epson-escpr-en.ppd \
+Epson-ET-2810_Series-epson-escpr-en.ppd \
+Epson-ET-2820_Series-epson-escpr-en.ppd \
+Epson-ET-2850_Series-epson-escpr-en.ppd \
 Epson-ET-4700_Series-epson-escpr-en.ppd \
 Epson-ET-4800_Series-epson-escpr-en.ppd \
 Epson-ET-7700_Series-epson-escpr-en.ppd \
