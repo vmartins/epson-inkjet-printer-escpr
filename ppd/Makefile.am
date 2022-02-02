@@ -101,6 +101,7 @@ Epson-EP-M552T_Series-epson-escpr-en.ppd \
 Epson-EP-M553T_Series-epson-escpr-en.ppd \
 Epson-EP-M570T_Series-epson-escpr-en.ppd \
 Epson-ET-1110_Series-epson-escpr-en.ppd \
+Epson-ET-1810_Series-epson-escpr-en.ppd \
 Epson-ET-2500_Series-epson-escpr-en.ppd \
 Epson-ET-2550_Series-epson-escpr-en.ppd \
 Epson-ET-2600_Series-epson-escpr-en.ppd \
@@ -111,6 +112,7 @@ Epson-ET-2710_Series-epson-escpr-en.ppd \
 Epson-ET-2720_Series-epson-escpr-en.ppd \
 Epson-ET-2750_Series-epson-escpr-en.ppd \
 Epson-ET-2760_Series-epson-escpr-en.ppd \
+Epson-ET-2800_Series-epson-escpr-en.ppd \
 Epson-ET-2810_Series-epson-escpr-en.ppd \
 Epson-ET-2820_Series-epson-escpr-en.ppd \
 Epson-ET-2850_Series-epson-escpr-en.ppd \
@@ -160,9 +162,13 @@ Epson-L3100_Series-epson-escpr-en.ppd \
 Epson-L3110_Series-epson-escpr-en.ppd \
 Epson-L3150_Series-epson-escpr-en.ppd \
 Epson-L3160_Series-epson-escpr-en.ppd \
+Epson-L3250_Series-epson-escpr-en.ppd \
+Epson-L3260_Series-epson-escpr-en.ppd \
 Epson-L4150_Series-epson-escpr-en.ppd \
 Epson-L4160_Series-epson-escpr-en.ppd \
+Epson-L4260_Series-epson-escpr-en.ppd \
 Epson-L5190_Series-epson-escpr-en.ppd \
+Epson-L5290_Series-epson-escpr-en.ppd \
 Epson-L7160_Series-epson-escpr-en.ppd \
 Epson-L7180_Series-epson-escpr-en.ppd \
 Epson-M200_Series-epson-escpr-en.ppd \
@@ -600,9 +606,11 @@ Epson-EP-813A_Series-epson-escpr-en.ppd \
 Epson-EP-M552T_Series-epson-escpr-en.ppd \
 Epson-EP-M553T_Series-epson-escpr-en.ppd \
 Epson-ET-1110_Series-epson-escpr-en.ppd \
+Epson-ET-1810_Series-epson-escpr-en.ppd \
 Epson-ET-2710_Series-epson-escpr-en.ppd \
 Epson-ET-2720_Series-epson-escpr-en.ppd \
 Epson-ET-2760_Series-epson-escpr-en.ppd \
+Epson-ET-2800_Series-epson-escpr-en.ppd \
 Epson-ET-2810_Series-epson-escpr-en.ppd \
 Epson-ET-2820_Series-epson-escpr-en.ppd \
 Epson-ET-2850_Series-epson-escpr-en.ppd \
@@ -620,7 +628,11 @@ Epson-L3100_Series-epson-escpr-en.ppd \
 Epson-L3110_Series-epson-escpr-en.ppd \
 Epson-L3150_Series-epson-escpr-en.ppd \
 Epson-L3160_Series-epson-escpr-en.ppd \
+Epson-L3250_Series-epson-escpr-en.ppd \
+Epson-L3260_Series-epson-escpr-en.ppd \
+Epson-L4260_Series-epson-escpr-en.ppd \
 Epson-L5190_Series-epson-escpr-en.ppd \
+Epson-L5290_Series-epson-escpr-en.ppd \
 Epson-L7180_Series-epson-escpr-en.ppd \
 Epson-M1100_Series-epson-escpr-en.ppd \
 Epson-M1120_Series-epson-escpr-en.ppd \
