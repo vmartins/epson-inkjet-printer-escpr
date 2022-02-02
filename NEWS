@@ -1,10 +1,15 @@
 NEWS -- an overview of user-visible changes with each release
 
 ----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.7.11                         (2021-06-02)
+----------------------------------------------------------------------
+* Supported new model.
+
+----------------------------------------------------------------------
 epson-inkjet-printer-escpr-1.7.10                         (2021-04-19)
 ----------------------------------------------------------------------
-* Fixed the problem that epson-escpr-wrapper filter crashed 
-  when cupsRasterReadHeader was failed.
+* Fixed the problem that epson-escpr-wrapper filter would crash
+  when cupsRasterReadHeader failed.
 
 ----------------------------------------------------------------------
 epson-inkjet-printer-escpr-1.7.9                          (2021-02-15)

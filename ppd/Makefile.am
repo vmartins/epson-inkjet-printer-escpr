@@ -114,6 +114,7 @@ Epson-ET-2760_Series-epson-escpr-en.ppd \
 Epson-ET-4500_Series-epson-escpr-en.ppd \
 Epson-ET-4550_Series-epson-escpr-en.ppd \
 Epson-ET-4700_Series-epson-escpr-en.ppd \
+Epson-ET-4800_Series-epson-escpr-en.ppd \
 Epson-ET-7700_Series-epson-escpr-en.ppd \
 Epson-ET-7750_Series-epson-escpr-en.ppd \
 Epson-ET-16500_Series-epson-escpr-en.ppd \
@@ -600,6 +601,7 @@ Epson-ET-2710_Series-epson-escpr-en.ppd \
 Epson-ET-2720_Series-epson-escpr-en.ppd \
 Epson-ET-2760_Series-epson-escpr-en.ppd \
 Epson-ET-4700_Series-epson-escpr-en.ppd \
+Epson-ET-4800_Series-epson-escpr-en.ppd \
 Epson-ET-7700_Series-epson-escpr-en.ppd \
 Epson-ET-7750_Series-epson-escpr-en.ppd \
 Epson-ET-M1100_Series-epson-escpr-en.ppd \
