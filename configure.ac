@@ -17,7 +17,7 @@
 
 AC_PREREQ(2.53)
 AC_INIT([Epson Inkjet Printer Driver (ESC/P-R) for Linux],
-	[1.7.7],
+	[1.7.8],
 	[Seiko Epson Corporation <linux-printer@epson.jp>],
 	[epson-inkjet-printer-escpr])
 dnl  keep ALL versioning info in one location

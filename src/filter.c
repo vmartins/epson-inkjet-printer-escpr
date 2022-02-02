@@ -225,7 +225,7 @@ main (int argc, char *argv[])
 	EPS_BANDBMP bandBmp;
 
 	/* Fifo for Backend */
-	context = (void*)XFIFOOpen();
+//	context = (void*)XFIFOOpen();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 	memset (&jobAttr, 0, sizeof(jobAttr));
@@ -710,7 +710,7 @@ quit:;
 	mem_free(paper);
 	debug_msg("PRINT SUCCESS\n");
 
-	XFIFOClose(&context);
+//	XFIFOClose(&context);
 
 	return 0;
 }
@@ -871,7 +871,7 @@ static int  getMediaTypeID(char *rsc_name)
 
 EPS_INT32 print_spool_fnc(void* hParam, const EPS_UINT8* pBuf, EPS_UINT32 cbBuf) 
 {
-#if 0
+#if 1
 	long int i;
 	for (i = 0; i < cbBuf; i++)
 		putc(*(pBuf + i), outfp);
@@ -879,7 +879,7 @@ EPS_INT32 print_spool_fnc(void* hParam, const EPS_UINT8* pBuf, EPS_UINT32 cbBuf)
 
 //	fwrite (pBuf, cbBuf, 1, outfp);
 
-	XFIFOWrite(context, pBuf, cbBuf);
+//	XFIFOWrite(context, pBuf, cbBuf);
 
 	return 1;
 }
