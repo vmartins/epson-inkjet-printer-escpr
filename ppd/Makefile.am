@@ -458,6 +458,8 @@ Epson-WF-2760_Series-epson-escpr-en.ppd \
 Epson-WF-2810_Series-epson-escpr-en.ppd \
 Epson-WF-2830_Series-epson-escpr-en.ppd \
 Epson-WF-2850_Series-epson-escpr-en.ppd \
+Epson-WF-2930_Series-epson-escpr-en.ppd \
+Epson-WF-2950_Series-epson-escpr-en.ppd \
 Epson-WF-3010_Series-epson-escpr-en.ppd \
 Epson-WF-3520_Series-epson-escpr-en.ppd \
 Epson-WF-3530_Series-epson-escpr-en.ppd \
@@ -606,6 +608,7 @@ Epson-XP-960_Series-epson-escpr-en.ppd \
 Epson-XP-2100_Series-epson-escpr-en.ppd \
 Epson-XP-3100_Series-epson-escpr-en.ppd \
 Epson-XP-4100_Series-epson-escpr-en.ppd \
+Epson-XP-4200_Series-epson-escpr-en.ppd \
 Epson-XP-7100_Series-epson-escpr-en.ppd
 else
 cupsppd_DATA = \
@@ -663,6 +666,8 @@ Epson-WF-2850_Series-epson-escpr-en.ppd \
 Epson-WF-2870_Series-epson-escpr-en.ppd \
 Epson-WF-2840_Series-epson-escpr-en.ppd \
 Epson-WF-2820_Series-epson-escpr-en.ppd \
+Epson-WF-2930_Series-epson-escpr-en.ppd \
+Epson-WF-2950_Series-epson-escpr-en.ppd \
 Epson-XP-4150_Series-epson-escpr-en.ppd \
 Epson-XP-3150_Series-epson-escpr-en.ppd \
 Epson-XP-2150_Series-epson-escpr-en.ppd \
@@ -672,6 +677,7 @@ Epson-XP-452_455_Series-epson-escpr-en.ppd \
 Epson-XP-2100_Series-epson-escpr-en.ppd \
 Epson-XP-3100_Series-epson-escpr-en.ppd \
 Epson-XP-4100_Series-epson-escpr-en.ppd \
+Epson-XP-4200_Series-epson-escpr-en.ppd \
 Epson-XP-7100_Series-epson-escpr-en.ppd
 endif
 
