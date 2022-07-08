@@ -104,6 +104,7 @@ Epson-EP-M553T_Series-epson-escpr-en.ppd \
 Epson-EP-M570T_Series-epson-escpr-en.ppd \
 Epson-ET-1110_Series-epson-escpr-en.ppd \
 Epson-ET-1810_Series-epson-escpr-en.ppd \
+Epson-ET-2400_Series-epson-escpr-en.ppd \
 Epson-ET-2500_Series-epson-escpr-en.ppd \
 Epson-ET-2550_Series-epson-escpr-en.ppd \
 Epson-ET-2600_Series-epson-escpr-en.ppd \
@@ -618,6 +619,7 @@ Epson-EP-M552T_Series-epson-escpr-en.ppd \
 Epson-EP-M553T_Series-epson-escpr-en.ppd \
 Epson-ET-1110_Series-epson-escpr-en.ppd \
 Epson-ET-1810_Series-epson-escpr-en.ppd \
+Epson-ET-2400_Series-epson-escpr-en.ppd \
 Epson-ET-2710_Series-epson-escpr-en.ppd \
 Epson-ET-2720_Series-epson-escpr-en.ppd \
 Epson-ET-2760_Series-epson-escpr-en.ppd \
