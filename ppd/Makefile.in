@@ -334,6 +334,7 @@ cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
 @LSB_FALSE@Epson-WF-2870_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-WF-2840_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-WF-2820_Series-epson-escpr-en.ppd \
+@LSB_FALSE@Epson-WF-2910_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-WF-2930_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-WF-2950_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-4150_Series-epson-escpr-en.ppd \
@@ -343,7 +344,9 @@ cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
 @LSB_FALSE@Epson-XP-352_355_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-452_455_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-2100_Series-epson-escpr-en.ppd \
+@LSB_FALSE@Epson-XP-2200_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-3100_Series-epson-escpr-en.ppd \
+@LSB_FALSE@Epson-XP-3200_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-4100_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-4200_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-7100_Series-epson-escpr-en.ppd
@@ -829,8 +832,10 @@ cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
 @LSB_TRUE@Epson-WF-2870_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-WF-2840_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-WF-2820_Series-epson-escpr-en.ppd \
+@LSB_TRUE@Epson-WF-2910_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-4150_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-3150_Series-epson-escpr-en.ppd \
+@LSB_TRUE@Epson-XP-3200_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-2150_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-WorkForce_310-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-WorkForce_320-epson-escpr-en.ppd \
@@ -937,6 +942,7 @@ cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
 @LSB_TRUE@Epson-XP-950_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-960_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-2100_Series-epson-escpr-en.ppd \
+@LSB_TRUE@Epson-XP-2200_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-3100_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-4100_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-4200_Series-epson-escpr-en.ppd \
