@@ -66,6 +66,7 @@ Epson-EP-711A_Series-epson-escpr-en.ppd \
 Epson-EP-712A_Series-epson-escpr-en.ppd \
 Epson-EP-713A_Series-epson-escpr-en.ppd \
 Epson-EP-714A_Series-epson-escpr-en.ppd \
+Epson-EP-715A_Series-epson-escpr-en.ppd \
 Epson-EP-774A-epson-escpr-en.ppd \
 Epson-EP-775A_Series-epson-escpr-en.ppd \
 Epson-EP-776A_Series-epson-escpr-en.ppd \
@@ -83,6 +84,7 @@ Epson-EP-811A_Series-epson-escpr-en.ppd \
 Epson-EP-812A_Series-epson-escpr-en.ppd \
 Epson-EP-813A_Series-epson-escpr-en.ppd \
 Epson-EP-814A_Series-epson-escpr-en.ppd \
+Epson-EP-815A_Series-epson-escpr-en.ppd \
 Epson-EP-901A-epson-escpr-en.ppd \
 Epson-EP-901F-epson-escpr-en.ppd \
 Epson-EP-902A-epson-escpr-en.ppd \
@@ -618,9 +620,11 @@ cupsppd_DATA = \
 Epson-EP-711A_Series-epson-escpr-en.ppd \
 Epson-EP-713A_Series-epson-escpr-en.ppd \
 Epson-EP-714A_Series-epson-escpr-en.ppd \
+Epson-EP-715A_Series-epson-escpr-en.ppd \
 Epson-EP-811A_Series-epson-escpr-en.ppd \
 Epson-EP-813A_Series-epson-escpr-en.ppd \
 Epson-EP-814A_Series-epson-escpr-en.ppd \
+Epson-EP-815A_Series-epson-escpr-en.ppd \
 Epson-EP-M552T_Series-epson-escpr-en.ppd \
 Epson-EP-M553T_Series-epson-escpr-en.ppd \
 Epson-ET-1110_Series-epson-escpr-en.ppd \
