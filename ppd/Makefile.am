@@ -53,6 +53,7 @@ Epson-EC-C110_Series-epson-escpr-en.ppd \
 Epson-EP-10VA_Series-epson-escpr-en.ppd \
 Epson-EP-30VA_Series-epson-escpr-en.ppd \
 Epson-EP-306_Series-epson-escpr-en.ppd \
+Epson-EP-315_Series-epson-escpr-en.ppd \
 Epson-EP-702A-epson-escpr-en.ppd \
 Epson-EP-703A-epson-escpr-en.ppd \
 Epson-EP-704A-epson-escpr-en.ppd \
@@ -292,8 +293,10 @@ Epson-PX-M7050FP-epson-escpr-en.ppd \
 Epson-PX-M7050FX-epson-escpr-en.ppd \
 Epson-PX-S05_Series-epson-escpr-en.ppd \
 Epson-PX-S06_Series-epson-escpr-en.ppd \
+Epson-PX-S155_Series-epson-escpr-en.ppd \
 Epson-PX-S170T_Series-epson-escpr-en.ppd \
 Epson-PX-S170UT_Series-epson-escpr-en.ppd \
+Epson-PX-S505_Series-epson-escpr-en.ppd \
 Epson-PX-S740-epson-escpr-en.ppd \
 Epson-PX-S840-epson-escpr-en.ppd \
 Epson-PX-S840X-epson-escpr-en.ppd \
@@ -617,6 +620,7 @@ Epson-XP-4200_Series-epson-escpr-en.ppd \
 Epson-XP-7100_Series-epson-escpr-en.ppd
 else
 cupsppd_DATA = \
+Epson-EP-315_Series-epson-escpr-en.ppd \
 Epson-EP-711A_Series-epson-escpr-en.ppd \
 Epson-EP-713A_Series-epson-escpr-en.ppd \
 Epson-EP-714A_Series-epson-escpr-en.ppd \
@@ -662,8 +666,10 @@ Epson-M1120_Series-epson-escpr-en.ppd \
 Epson-M2110_Series-epson-escpr-en.ppd \
 Epson-M2120_Series-epson-escpr-en.ppd \
 Epson-PX-S06_Series-epson-escpr-en.ppd \
+Epson-PX-S155_Series-epson-escpr-en.ppd \
 Epson-PX-S170T_Series-epson-escpr-en.ppd \
 Epson-PX-S170UT_Series-epson-escpr-en.ppd \
+Epson-PX-S505_Series-epson-escpr-en.ppd \
 Epson-ST-2000_Series-epson-escpr-en.ppd \
 Epson-ST-C2100_Series-epson-escpr-en.ppd \
 Epson-WF-110_Series-epson-escpr-en.ppd \
