@@ -342,6 +342,7 @@ cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
 @LSB_FALSE@Epson-WF-2910_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-WF-2930_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-WF-2950_Series-epson-escpr-en.ppd \
+@LSB_FALSE@Epson-XP-65_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-4150_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-3150_Series-epson-escpr-en.ppd \
 @LSB_FALSE@Epson-XP-2150_Series-epson-escpr-en.ppd \
@@ -893,6 +894,7 @@ cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
 @LSB_TRUE@Epson-WP-M4525_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-WP-M4595_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-55_Series-epson-escpr-en.ppd \
+@LSB_TRUE@Epson-XP-65_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-200_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-201_204_208_Series-epson-escpr-en.ppd \
 @LSB_TRUE@Epson-XP-202_203_206_Series-epson-escpr-en.ppd \

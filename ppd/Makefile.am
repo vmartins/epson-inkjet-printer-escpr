@@ -554,6 +554,7 @@ Epson-WP-M4521_Series-epson-escpr-en.ppd \
 Epson-WP-M4525_Series-epson-escpr-en.ppd \
 Epson-WP-M4595_Series-epson-escpr-en.ppd \
 Epson-XP-55_Series-epson-escpr-en.ppd \
+Epson-XP-65_Series-epson-escpr-en.ppd \
 Epson-XP-200_Series-epson-escpr-en.ppd \
 Epson-XP-201_204_208_Series-epson-escpr-en.ppd \
 Epson-XP-202_203_206_Series-epson-escpr-en.ppd \
@@ -682,6 +683,7 @@ Epson-WF-2820_Series-epson-escpr-en.ppd \
 Epson-WF-2910_Series-epson-escpr-en.ppd \
 Epson-WF-2930_Series-epson-escpr-en.ppd \
 Epson-WF-2950_Series-epson-escpr-en.ppd \
+Epson-XP-65_Series-epson-escpr-en.ppd \
 Epson-XP-4150_Series-epson-escpr-en.ppd \
 Epson-XP-3150_Series-epson-escpr-en.ppd \
 Epson-XP-2150_Series-epson-escpr-en.ppd \
