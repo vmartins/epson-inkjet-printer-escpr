@@ -500,6 +500,7 @@ Epson-WF-R4640_Series-epson-escpr-en.ppd \
 Epson-WF-R5190_Series-epson-escpr-en.ppd \
 Epson-WF-R5690_Series-epson-escpr-en.ppd \
 Epson-WF-R8590_Series-epson-escpr-en.ppd \
+Epson-WF-2110_Series-epson-escpr-en.ppd \
 Epson-WF-2870_Series-epson-escpr-en.ppd \
 Epson-WF-2840_Series-epson-escpr-en.ppd \
 Epson-WF-2820_Series-epson-escpr-en.ppd \
@@ -674,6 +675,7 @@ Epson-PX-S505_Series-epson-escpr-en.ppd \
 Epson-ST-2000_Series-epson-escpr-en.ppd \
 Epson-ST-C2100_Series-epson-escpr-en.ppd \
 Epson-WF-110_Series-epson-escpr-en.ppd \
+Epson-WF-2110_Series-epson-escpr-en.ppd \
 Epson-WF-2810_Series-epson-escpr-en.ppd \
 Epson-WF-2830_Series-epson-escpr-en.ppd \
 Epson-WF-2850_Series-epson-escpr-en.ppd \
