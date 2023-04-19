@@ -493,6 +493,7 @@ Epson-WF-8010_Series-epson-escpr-en.ppd \
 Epson-WF-8090_Series-epson-escpr-en.ppd \
 Epson-WF-8510_Series-epson-escpr-en.ppd \
 Epson-WF-8590_Series-epson-escpr-en.ppd \
+Epson-WF-M1130_Series-epson-escpr-en.ppd \
 Epson-WF-M1560_Series-epson-escpr-en.ppd \
 Epson-WF-M5190_Series-epson-escpr-en.ppd \
 Epson-WF-M5690_Series-epson-escpr-en.ppd \
@@ -685,6 +686,7 @@ Epson-WF-2820_Series-epson-escpr-en.ppd \
 Epson-WF-2910_Series-epson-escpr-en.ppd \
 Epson-WF-2930_Series-epson-escpr-en.ppd \
 Epson-WF-2950_Series-epson-escpr-en.ppd \
+Epson-WF-M1130_Series-epson-escpr-en.ppd \
 Epson-XP-65_Series-epson-escpr-en.ppd \
 Epson-XP-4150_Series-epson-escpr-en.ppd \
 Epson-XP-3150_Series-epson-escpr-en.ppd \
