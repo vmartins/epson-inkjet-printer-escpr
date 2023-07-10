@@ -16,25 +16,25 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA.
 
 %define pkg     epson-inkjet-printer-escpr
-%define ver     1.7.26
+%define ver     1.8.0
 %define rel     1
 
 # used in RPM macro set for the LSB Driver Development Kit
 %define drivername      epson-inkjet-printer-escpr
 %define driverstr       epson-inkjet-printer-escpr
-%define distribution    LSB
+#%define distribution    LSB
 %define manufacturer    EPSON
 %define supplier        %{drivername}
-%define lsbver          3.2
+# %define lsbver          3.2
 
-%define extraversion    -%{rel}lsb%{lsbver}
+%define extraversion    -%{rel}
 %define supplierstr     Seiko Epson Corporation
 
 AutoReqProv: no
 
 Name: %{pkg}
 Version: %{ver}
-Release: %{rel}lsb%{lsbver}
+Release: %{rel}
 Source0: %{name}-%{version}-%{release}.tar.gz
 License: GPL
 Vendor: Seiko Epson Corporation
@@ -42,7 +42,7 @@ URL: http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 Packager: Seiko Epson Corporation <linux-printer@epson.jp>
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 Group: Applications/System
-Requires: lsb >= %{lsbver}
+# Requires: lsb >= %{lsbver}
 Summary: Epson Inkjet Printer Driver (ESC/P-R) for Linux
 
 %description

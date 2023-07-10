@@ -1,6 +1,6 @@
 Epson Inkjet Printer Driver (ESC/P-R) 説明書
 
-Copyright (C) Seiko Epson Corporation 2005-2019.
+Copyright (C) Seiko Epson Corporation 2005-2023.
 
 本ドライバーに関する情報は、下記を参照して下さい。
 http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
@@ -17,7 +17,7 @@ http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
     5.2  設定項目詳細
     5.3  設定方法
     5.4  印刷方法
-6  LSB非対応ディストリビューションでのビルド方法
+6  ビルド方法
     6.1 Redhat系ディストリビューションの場合
     6.2 Debian系ディストリビューションの場合
     6.3 それ以外のディストリビューションの場合
@@ -45,30 +45,22 @@ System(CUPS)より利用されるフィルタプログラムです。Seiko Epson
 対象機種については、以下のウェブサイトをご覧下さい。
 http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 
-本ソフトウェアは、LSB 3.2に準拠しており、LSB3.2以上をサポートするディストリ
-ビューションで使用可能ですが、LSBに対応していないディストリビューションにおいても、
-ソースコードからビルドすることにより利用可能です。
-
 -------------------------------------------------------------------------------
 4  インストールとCUPSの設定
 -------------------------------------------------------------------------------
 4.1  インストール
-	4.1.1  LSB3.2対応のディストリビューションの場合
 	   お使いのディストリビューションに合わせて、rpm、debパッケージをインストールします。
 	   以下のコマンドをroot権限で実行して下さい。
 	   注) 以下のパッケージ名はお使いのバージョンにより異なります。
 	   
 	   Redhat系Linuxの場合
 	   -----------------
-	   # rpm -i epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.i486.rpm
+	   # rpm -i epson-inkjet-printer-escpr-1.8.xx-1.x86_64.rpm
 	   -----------------
 	   Debian系Linuxの場合
 	   -----------------
-	   # dpkg -i epson-inkjet-printer-escpr_1.7.xx-1lsb3.2_i386.deb
+	   # dpkg -i epson-inkjet-printer-escpr_1.8.xx-1_amd64.deb
 	   -----------------
-
-	4.1.2  LSB3.2以上に非対応のディストリビューションの場合
-	   「6  LSB非対応ディストリビューションでのビルド方法」を参照してください。
 
 
 4.2  インストール後の設定
@@ -252,16 +244,16 @@ http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 CUPSのドキュメントを参照下さい。
 
 -------------------------------------------------------------------------------
-6  LSB非対応ディストリビューションでのビルド方法
+6  ビルド方法
 -------------------------------------------------------------------------------
 6.1 Redhat系ディストリビューションの場合
 
 	6.1.1 ダウンロードしたsrs.rpmを解凍します。
-	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
-	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.8.xx-1.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.8.xx-1.tar.gz
 
 	6.1.2 configureを実行し、ソースtarballを作成します。
-	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ cd epson-inkjet-printer-escpr-1.8.xx
 	   $ ./bootstrap && ./configure --prefix=/usr && make dist
 
 	6.1.3 パッケージ作成用ディレクトリを作成します。
@@ -274,7 +266,7 @@ CUPSのドキュメントを参照下さい。
 	   (~/.rpmmacrosでrpmbuild以外のディレクトリを指定することもできます。)
 
 	6.1.4 ソースtarballとspecファイルを、上記のディレクトリにコピーします。
-	   $ cp epson-inkjet-printer-escpr-1.7.xx.tar.gz ~/rpmbuild/SOURCES/.
+	   $ cp epson-inkjet-printer-escpr-1.8.xx.tar.gz ~/rpmbuild/SOURCES/.
 	   $ cp epson-inkjet-printer-escpr.spec ~/rpmbuild/SPECS
 	   
 	6.1.5 rpmパッケージを作成します。
@@ -287,11 +279,11 @@ CUPSのドキュメントを参照下さい。
 6.2 Debian系ディストリビューションの場合
 
 6.2.1 ダウンロードしたsrs.rpmを解凍します。
-   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
-   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+   $ rpm2cpio epson-inkjet-printer-escpr-1.8.xx-1.src.rpm | cpio -id
+   $ tar zxvf epson-inkjet-printer-escpr-1.8.xx-1.tar.gz
 
 6.2.2 configureを実行します。
-   $ cd epson-inkjet-printer-escpr-1.7.xx
+   $ cd epson-inkjet-printer-escpr-1.8.xx
    $ ./bootstrap && ./configure --prefix=/usr
 
 6.2.3 debパッケージを作成します。
@@ -304,11 +296,11 @@ CUPSのドキュメントを参照下さい。
 6.3 それ以外のディストリビューションの場合
 
 6.3.1 ダウンロードしたsrs.rpmを解凍します。
-   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
-   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+   $ rpm2cpio epson-inkjet-printer-escpr-1.8.xx-1.src.rpm | cpio -id
+   $ tar zxvf epson-inkjet-printer-escpr-1.8.xx-1.tar.gz
 
 6.3.2 configureを実行します。
-   $ cd epson-inkjet-printer-escpr-1.7.xx
+   $ cd epson-inkjet-printer-escpr-1.8.xx
    $ ./bootstrap && ./configure --prefix=/usr
 
    CUPS filterとPPDファイルのインストール先は自動判定していますが、
@@ -320,7 +312,7 @@ CUPSのドキュメントを参照下さい。
                                   例) /usr/share/ppd
                                       
 6.3.3 make, make install を実行します
-   $ cd epson-inkjet-printer-escpr-1.7.xx
+   $ cd epson-inkjet-printer-escpr-1.8.xx
    $ make 
    $ sudo make install
 

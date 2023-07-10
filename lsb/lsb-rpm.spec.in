@@ -22,19 +22,19 @@
 # used in RPM macro set for the LSB Driver Development Kit
 %define drivername      @PACKAGE_TARNAME@
 %define driverstr       @PACKAGE_TARNAME@
-%define distribution    LSB
+#%define distribution    LSB
 %define manufacturer    EPSON
 %define supplier        %{drivername}
-%define lsbver          @LSB_VER@
+# %define lsbver          @LSB_VER@
 
-%define extraversion    -%{rel}lsb%{lsbver}
+%define extraversion    -%{rel}
 %define supplierstr     @VENDOR_NAME@
 
 AutoReqProv: no
 
 Name: %{pkg}
 Version: %{ver}
-Release: %{rel}lsb%{lsbver}
+Release: %{rel}
 Source0: %{name}-%{version}-%{release}.tar.gz
 License: GPL
 Vendor: @VENDOR_NAME@
@@ -42,7 +42,7 @@ URL: http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 Packager: @PACKAGE_BUGREPORT@
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 Group: Applications/System
-Requires: lsb >= %{lsbver}
+# Requires: lsb >= %{lsbver}
 Summary: @PACKAGE_NAME@
 
 %description

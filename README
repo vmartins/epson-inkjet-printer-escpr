@@ -1,6 +1,6 @@
 Epson Inkjet Printer Driver (ESC/P-R) Manual
 
-Copyright (C) Seiko Epson Corporation 2005-2019.
+Copyright (C) Seiko Epson Corporation 2005-2023.
 
 Please visit our website for the latest information.
 Please refer to follows for the information about this driver
@@ -18,7 +18,7 @@ Contents
     5.2  Details of setting items
     5.3  How to Set
     5.4  How to Print
-6  How to build in non-LSB distribution
+6  How to build
     6.1  For Redhat based distributions
     6.2  For Debian based distributions
     6.3  Other distributions
@@ -46,31 +46,23 @@ This product can only be used with printers that support the Epson ESC/P-R langu
 Please see refer to follows for a list of supported printers.
 http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 
-This software is based on LSB 3.2. It can be used in distribution supporting LSB 3.2 later.
-If it is used in non-LSB distribution, you can use it by building from the source code.
-
 -------------------------------------------------------------------------------
 4  Installation and CUPS Setting
 -------------------------------------------------------------------------------
 4.1  Installation
-	4.1.1  In the case of LSB supported distributions
 	   Choose the appropriate command for your distribution from the list below
 	   and execute it with root privileges.
 	   Note: The following package name differs depending on the version
 	   you are using.
 	   For Redhat based distributions:
 	   -----------------
-	   # rpm -i epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.i486.rpm
+	   # rpm -i epson-inkjet-printer-escpr-1.8.xx-1.x86_64.rpm
 	   -----------------
 	   For Debian based distributions:
 	   -----------------
-	   # dpkg -i epson-inkjet-printer-escpr_1.7.xx-1lsb3.2_i386.deb
+	   # dpkg -i epson-inkjet-printer-escpr_1.8.xx-1_amd64.deb
 	   -----------------
 	   
-	4.1.2  In the case of non-LSB supported distributions
-	   Refer to "6  How to build in non-LSB distribution".
-
-
 4.2  Settings after installation
    CUPS must be set to enable use of this software.
    Before printing, be sure to carry out the following steps.
@@ -244,15 +236,15 @@ The method of printing depends on the implementation of CUPS.
 For more details, see the CUPS documentation.
 
 -------------------------------------------------------------------------------
-6  How to build in non-LSB distribution
+6  How to build 
 -------------------------------------------------------------------------------
 6.1  For Redhat based distributions
 	6.1.1  Uncompress the src.rpm file
-	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
-	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.8.xx-1.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.8.xx-1.tar.gz
 
 	6.1.2  Configure and Create source tarball
-	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ cd epson-inkjet-printer-escpr-1.8.xx
 	   $ ./bootstrap && ./configure --prefix=/usr && make dist
 
 	6.1.3  Create the directory for RPM packages
@@ -265,7 +257,7 @@ For more details, see the CUPS documentation.
 	   You can specifiy the another directory in ~/.rpmmacros
 	   
 	6.1.4  Copy the source tarball and the spec file to the directory
-	   $ cp epson-inkjet-printer-escpr-1.7.xx.tar.gz ~/rpmbuild/SOURCES/.
+	   $ cp epson-inkjet-printer-escpr-1.8.xx.tar.gz ~/rpmbuild/SOURCES/.
 	   $ cp epson-inkjet-printer-escpr.spec ~/rpmbuild/SPECS
 
 	6.1.5  Create RPM package
@@ -275,11 +267,11 @@ For more details, see the CUPS documentation.
 
 6.2  For Debian based distributions
 	6.2.1  Uncompress the src.rpm file
-	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
-	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.8.xx-1.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.8.xx-1.tar.gz
 
 	6.2.2  Configure
-	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ cd epson-inkjet-printer-escpr-1.8.xx
 	   $ ./bootstrap && ./configure --prefix=/usr
 
 	6.2.3  Create DEB package
@@ -288,11 +280,11 @@ For more details, see the CUPS documentation.
 
 6.3  For other distributions
 	6.3.1  Uncompress the src.rpm file
-	   $ rpm2cpio epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.src.rpm | cpio -id
-	   $ tar zxvf epson-inkjet-printer-escpr-1.7.xx-1lsb3.2.tar.gz
+	   $ rpm2cpio epson-inkjet-printer-escpr-1.8.xx-1.src.rpm | cpio -id
+	   $ tar zxvf epson-inkjet-printer-escpr-1.8.xx-1.tar.gz
 
 	6.3.2  Configure
-	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ cd epson-inkjet-printer-escpr-1.8.xx
 	   $ ./bootstrap && ./configure --prefix=/usr
 
 	The location of CUPS filter and ppd files are decided automatically,
@@ -305,7 +297,7 @@ For more details, see the CUPS documentation.
 	                            ex) /usr/share/ppd
 
 	6.3.3  Make and Install
-	   $ cd epson-inkjet-printer-escpr-1.7.xx
+	   $ cd epson-inkjet-printer-escpr-1.8.xx
 	   $ make 
 	   $ sudo make install
 
