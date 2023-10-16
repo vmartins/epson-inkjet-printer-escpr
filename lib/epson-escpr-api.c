@@ -241,6 +241,13 @@ static const EPS_UINT8 PrintNumCmd2[] = {
                             's', 'e', 't', 'n',
                            0x00};
 
+	/*** ESC/P-R Commands (Image Processing Mode)                                                    */
+    /*** -------------------------------------------------------------------------------*/
+static const EPS_UINT8 SetiCmd[]   = {
+	                        0x1B, 'q', 0x0a, 0x00, 0x00, 0x00,
+                            's', 'e', 't', 'i',
+                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
 
     /*** ESC/P-R Commands (custom setting)                                              */
     /*** -------------------------------------------------------------------------------*/
@@ -4333,6 +4340,18 @@ EPS_UINT32      retBufSize = 0;             /* Size of buffer written           
 //		SendStartJob_ADDCMD(CustomCmd)
 //		*(pCmdPos-1) = (EPS_UINT8)(printJob.attr.mediaSizeIdx & 0xFF);
 
+		/*** Image Processing mode                                                             */
+		SendStartJob_ADDCMD(SetiCmd)
+
+		// Binding Position
+		if(EPS_DUPLEX_LONG == printJob.attr.duplex){
+			*(pCmdPos-1) = 2;
+		}else if(EPS_DUPLEX_SHORT == printJob.attr.duplex){
+			*(pCmdPos-1) = 1;
+		}else{
+			*(pCmdPos-1) = 0;
+		}
+
 		if( 3 <= printJob.printer->pmData.version ){
 			SendStartJob_ADDCMD(Chkcmd)
 		} else{
@@ -4353,6 +4372,19 @@ EPS_UINT32      retBufSize = 0;             /* Size of buffer written           
 			*(--pCmdPos) = (EPS_UINT8)(printJob.attr.copies & 0xff);
 			pCmdPos++;
 		}
+
+		/*** Image Processing mode                                                             */
+		SendStartJob_ADDCMD(SetiCmd)
+
+		// Binding Position
+		if(EPS_DUPLEX_LONG == printJob.attr.duplex){
+			*(pCmdPos-1) = 2;
+		}else if(EPS_DUPLEX_SHORT == printJob.attr.duplex){
+			*(pCmdPos-1) = 1;
+		}else{
+			*(pCmdPos-1) = 0;
+		}
+
 
 		if(printJob.attr.mediaSizeIdx == EPS_MSID_USER){
 			SendStartJob_ADDCMD(JobCmd)				/* set user defined size */

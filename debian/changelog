@@ -1,14 +1,32 @@
-epson-inkjet-printer-escpr (1.8.0) stable; urgency=low
+epson-inkjet-printer-escpr (1.8.1) stable; urgency=low
 
   * Please refer to ./NEWS
 
- -- Seiko Epson Corporation <linux-printer@epson.jp>  Fri, 23 Jun 2023 14:30:00 +0900
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Mon, 25 Sep 2023 17:00:00 +0900
+
+epson-inkjet-printer-escpr (1.8.0.3) stable; urgency=low
+
+  * Please refer to ./NEWS
+
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Mon, 25 Sep 2023 17:00:00 +0900
+
+epson-inkjet-printer-escpr (1.8.0.2) stable; urgency=low
+
+  * Please refer to ./NEWS
+
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Mon, 28 Aug 2023 17:00:00 +0900
 
 epson-inkjet-printer-escpr (1.8.0.1) stable; urgency=low
 
   * Please refer to ./NEWS
 
- -- Seiko Epson Corporation <linux-printer@epson.jp>  Wed, 21 Jun 2023 18:30:00 +0900
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Wed, 23 Jun 2023 18:30:00 +0900
+
+epson-inkjet-printer-escpr (1.8.0) stable; urgency=low
+
+  * Please refer to ./NEWS
+
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Fri, 21 Jun 2023 14:30:00 +0900
 
 epson-inkjet-printer-escpr (1.7.26.1) stable; urgency=low
 

@@ -16,7 +16,6 @@
 ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA.
 
 cupsppddir = $(CUPS_PPD_DIR)/epson-inkjet-printer-escpr
-if LSB
 cupsppd_DATA = \
 Epson-Artisan_630-epson-escpr-en.ppd \
 Epson-Artisan_700-epson-escpr-en.ppd \
@@ -68,6 +67,7 @@ Epson-EP-712A_Series-epson-escpr-en.ppd \
 Epson-EP-713A_Series-epson-escpr-en.ppd \
 Epson-EP-714A_Series-epson-escpr-en.ppd \
 Epson-EP-715A_Series-epson-escpr-en.ppd \
+Epson-EP-716A_Series-epson-escpr-en.ppd \
 Epson-EP-774A-epson-escpr-en.ppd \
 Epson-EP-775A_Series-epson-escpr-en.ppd \
 Epson-EP-776A_Series-epson-escpr-en.ppd \
@@ -86,6 +86,7 @@ Epson-EP-812A_Series-epson-escpr-en.ppd \
 Epson-EP-813A_Series-epson-escpr-en.ppd \
 Epson-EP-814A_Series-epson-escpr-en.ppd \
 Epson-EP-815A_Series-epson-escpr-en.ppd \
+Epson-EP-816A_Series-epson-escpr-en.ppd \
 Epson-EP-901A-epson-escpr-en.ppd \
 Epson-EP-901F-epson-escpr-en.ppd \
 Epson-EP-902A-epson-escpr-en.ppd \
@@ -621,87 +622,6 @@ Epson-XP-3100_Series-epson-escpr-en.ppd \
 Epson-XP-4100_Series-epson-escpr-en.ppd \
 Epson-XP-4200_Series-epson-escpr-en.ppd \
 Epson-XP-7100_Series-epson-escpr-en.ppd
-else
-cupsppd_DATA = \
-Epson-EP-315_Series-epson-escpr-en.ppd \
-Epson-EP-711A_Series-epson-escpr-en.ppd \
-Epson-EP-713A_Series-epson-escpr-en.ppd \
-Epson-EP-714A_Series-epson-escpr-en.ppd \
-Epson-EP-715A_Series-epson-escpr-en.ppd \
-Epson-EP-811A_Series-epson-escpr-en.ppd \
-Epson-EP-813A_Series-epson-escpr-en.ppd \
-Epson-EP-814A_Series-epson-escpr-en.ppd \
-Epson-EP-815A_Series-epson-escpr-en.ppd \
-Epson-EP-M552T_Series-epson-escpr-en.ppd \
-Epson-EP-M553T_Series-epson-escpr-en.ppd \
-Epson-ET-1110_Series-epson-escpr-en.ppd \
-Epson-ET-1810_Series-epson-escpr-en.ppd \
-Epson-ET-2400_Series-epson-escpr-en.ppd \
-Epson-ET-2710_Series-epson-escpr-en.ppd \
-Epson-ET-2720_Series-epson-escpr-en.ppd \
-Epson-ET-2760_Series-epson-escpr-en.ppd \
-Epson-ET-2800_Series-epson-escpr-en.ppd \
-Epson-ET-2810_Series-epson-escpr-en.ppd \
-Epson-ET-2820_Series-epson-escpr-en.ppd \
-Epson-ET-2850_Series-epson-escpr-en.ppd \
-Epson-ET-4700_Series-epson-escpr-en.ppd \
-Epson-ET-4800_Series-epson-escpr-en.ppd \
-Epson-ET-7700_Series-epson-escpr-en.ppd \
-Epson-ET-7750_Series-epson-escpr-en.ppd \
-Epson-ET-M1100_Series-epson-escpr-en.ppd \
-Epson-ET-M1120_Series-epson-escpr-en.ppd \
-Epson-ET-M2120_Series-epson-escpr-en.ppd \
-Epson-EW-M770T_Series-epson-escpr-en.ppd \
-Epson-EW-M970A3T_Series-epson-escpr-en.ppd \
-Epson-L1110_Series-epson-escpr-en.ppd \
-Epson-L3100_Series-epson-escpr-en.ppd \
-Epson-L3110_Series-epson-escpr-en.ppd \
-Epson-L3150_Series-epson-escpr-en.ppd \
-Epson-L3160_Series-epson-escpr-en.ppd \
-Epson-L3250_Series-epson-escpr-en.ppd \
-Epson-L3260_Series-epson-escpr-en.ppd \
-Epson-L4260_Series-epson-escpr-en.ppd \
-Epson-L5190_Series-epson-escpr-en.ppd \
-Epson-L5290_Series-epson-escpr-en.ppd \
-Epson-L7180_Series-epson-escpr-en.ppd \
-Epson-M1100_Series-epson-escpr-en.ppd \
-Epson-M1120_Series-epson-escpr-en.ppd \
-Epson-M2110_Series-epson-escpr-en.ppd \
-Epson-M2120_Series-epson-escpr-en.ppd \
-Epson-PX-S06_Series-epson-escpr-en.ppd \
-Epson-PX-S155_Series-epson-escpr-en.ppd \
-Epson-PX-S170T_Series-epson-escpr-en.ppd \
-Epson-PX-S170UT_Series-epson-escpr-en.ppd \
-Epson-PX-S505_Series-epson-escpr-en.ppd \
-Epson-ST-2000_Series-epson-escpr-en.ppd \
-Epson-ST-C2100_Series-epson-escpr-en.ppd \
-Epson-WF-110_Series-epson-escpr-en.ppd \
-Epson-WF-2110_Series-epson-escpr-en.ppd \
-Epson-WF-2810_Series-epson-escpr-en.ppd \
-Epson-WF-2830_Series-epson-escpr-en.ppd \
-Epson-WF-2850_Series-epson-escpr-en.ppd \
-Epson-WF-2870_Series-epson-escpr-en.ppd \
-Epson-WF-2840_Series-epson-escpr-en.ppd \
-Epson-WF-2820_Series-epson-escpr-en.ppd \
-Epson-WF-2910_Series-epson-escpr-en.ppd \
-Epson-WF-2930_Series-epson-escpr-en.ppd \
-Epson-WF-2950_Series-epson-escpr-en.ppd \
-Epson-WF-M1130_Series-epson-escpr-en.ppd \
-Epson-XP-65_Series-epson-escpr-en.ppd \
-Epson-XP-4150_Series-epson-escpr-en.ppd \
-Epson-XP-3150_Series-epson-escpr-en.ppd \
-Epson-XP-2150_Series-epson-escpr-en.ppd \
-Epson-XP-255_257_Series-epson-escpr-en.ppd \
-Epson-XP-352_355_Series-epson-escpr-en.ppd \
-Epson-XP-452_455_Series-epson-escpr-en.ppd \
-Epson-XP-2100_Series-epson-escpr-en.ppd \
-Epson-XP-2200_Series-epson-escpr-en.ppd \
-Epson-XP-3100_Series-epson-escpr-en.ppd \
-Epson-XP-3200_Series-epson-escpr-en.ppd \
-Epson-XP-4100_Series-epson-escpr-en.ppd \
-Epson-XP-4200_Series-epson-escpr-en.ppd \
-Epson-XP-7100_Series-epson-escpr-en.ppd
-endif
 
 EXTRA_DIST = $(cupsppd_DATA)
 
