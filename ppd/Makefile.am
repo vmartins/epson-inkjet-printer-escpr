@@ -103,6 +103,7 @@ Epson-EP-977A3_Series-epson-escpr-en.ppd \
 Epson-EP-978A3_Series-epson-escpr-en.ppd \
 Epson-EP-979A3_Series-epson-escpr-en.ppd \
 Epson-EP-4004-epson-escpr-en.ppd \
+Epson-EP-M476T_Series-epson-escpr-en.ppd \
 Epson-EP-M552T_Series-epson-escpr-en.ppd \
 Epson-EP-M553T_Series-epson-escpr-en.ppd \
 Epson-EP-M570T_Series-epson-escpr-en.ppd \
