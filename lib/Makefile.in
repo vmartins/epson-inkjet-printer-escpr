@@ -132,10 +132,6 @@ am__installdirs = "$(DESTDIR)$(libdir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libescpr_la_LIBADD =
 am_libescpr_la_OBJECTS = libescpr_la-epson-cbt.lo \
-	libescpr_la-epson-escpage.lo \
-	libescpr_la-epson-escpage-color.lo \
-	libescpr_la-epson-escpage-comp.lo \
-	libescpr_la-epson-escpage-mono.lo \
 	libescpr_la-epson-escpr-api.lo libescpr_la-epson-escpr-dbg.lo \
 	libescpr_la-epson-escpr-mem.lo libescpr_la-epson-escpr-pm.lo \
 	libescpr_la-epson-escpr-services.lo \
@@ -344,27 +340,25 @@ top_srcdir = @top_srcdir@
 ################################################################
 # Extend function
 ################################################################
+#DEFINES 		+=	-DGCOMSW_CMD_ESCPAGE
 
 ################################################################
 # Language
 ################################################################
+#DEFINES 		+=	-DGCOMSW_CMD_ESCPAGE
 
 ################################################################
 # Use Async job process
 # Use raw file print
 DEFINES = -DGCOMSW_PRT_USE_USB -DGCOMSW_PRT_USE_LPR \
-	-DGCOMSW_PRT_USE_RAW -DGCOMSW_CMD_ESCPAGE -DGCOMSW_EL_CDLABEL \
-	-DGCOMSW_EF_MAINTE -DGCOMSW_CMD_ESCPAGE -DEPS_FILTER \
-	-DGCOMSW_ASYNCJOB_SUPPORT -DGCOMSW_RAWFILE_SUPPORT
+	-DGCOMSW_PRT_USE_RAW -DGCOMSW_EL_CDLABEL -DGCOMSW_EF_MAINTE \
+	-DEPS_FILTER -DGCOMSW_ASYNCJOB_SUPPORT \
+	-DGCOMSW_RAWFILE_SUPPORT
 lib_LTLIBRARIES = libescpr.la
 libescpr_la_CFLAGS = -Wall $(DEFINES)
 CLEANFILES = libescpr.la
 libescpr_la_SOURCES = \
 	epson-cbt.c epson-cbt.h \
-	epson-escpage.c epson-escpage.h \
-	epson-escpage-color.c epson-escpage-color.h \
-	epson-escpage-comp.c epson-escpage-comp.h \
-	epson-escpage-mono.c epson-escpage-mono.h \
 	epson-escpr-api.c epson-escpr-api.h \
 	epson-escpr-dbg.c epson-escpr-dbg.h \
 	epson-escpr-def.h \
@@ -462,10 +456,6 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-cbt.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpage-color.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpage-comp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpage-mono.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpage.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpr-api.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpr-dbg.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libescpr_la-epson-escpr-mem.Plo@am__quote@
@@ -505,34 +495,6 @@ libescpr_la-epson-cbt.lo: epson-cbt.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epson-cbt.c' object='libescpr_la-epson-cbt.lo' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -c -o libescpr_la-epson-cbt.lo `test -f 'epson-cbt.c' || echo '$(srcdir)/'`epson-cbt.c
-
-libescpr_la-epson-escpage.lo: epson-escpage.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -MT libescpr_la-epson-escpage.lo -MD -MP -MF $(DEPDIR)/libescpr_la-epson-escpage.Tpo -c -o libescpr_la-epson-escpage.lo `test -f 'epson-escpage.c' || echo '$(srcdir)/'`epson-escpage.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libescpr_la-epson-escpage.Tpo $(DEPDIR)/libescpr_la-epson-escpage.Plo
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epson-escpage.c' object='libescpr_la-epson-escpage.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -c -o libescpr_la-epson-escpage.lo `test -f 'epson-escpage.c' || echo '$(srcdir)/'`epson-escpage.c
-
-libescpr_la-epson-escpage-color.lo: epson-escpage-color.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -MT libescpr_la-epson-escpage-color.lo -MD -MP -MF $(DEPDIR)/libescpr_la-epson-escpage-color.Tpo -c -o libescpr_la-epson-escpage-color.lo `test -f 'epson-escpage-color.c' || echo '$(srcdir)/'`epson-escpage-color.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libescpr_la-epson-escpage-color.Tpo $(DEPDIR)/libescpr_la-epson-escpage-color.Plo
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epson-escpage-color.c' object='libescpr_la-epson-escpage-color.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -c -o libescpr_la-epson-escpage-color.lo `test -f 'epson-escpage-color.c' || echo '$(srcdir)/'`epson-escpage-color.c
-
-libescpr_la-epson-escpage-comp.lo: epson-escpage-comp.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -MT libescpr_la-epson-escpage-comp.lo -MD -MP -MF $(DEPDIR)/libescpr_la-epson-escpage-comp.Tpo -c -o libescpr_la-epson-escpage-comp.lo `test -f 'epson-escpage-comp.c' || echo '$(srcdir)/'`epson-escpage-comp.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libescpr_la-epson-escpage-comp.Tpo $(DEPDIR)/libescpr_la-epson-escpage-comp.Plo
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epson-escpage-comp.c' object='libescpr_la-epson-escpage-comp.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -c -o libescpr_la-epson-escpage-comp.lo `test -f 'epson-escpage-comp.c' || echo '$(srcdir)/'`epson-escpage-comp.c
-
-libescpr_la-epson-escpage-mono.lo: epson-escpage-mono.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -MT libescpr_la-epson-escpage-mono.lo -MD -MP -MF $(DEPDIR)/libescpr_la-epson-escpage-mono.Tpo -c -o libescpr_la-epson-escpage-mono.lo `test -f 'epson-escpage-mono.c' || echo '$(srcdir)/'`epson-escpage-mono.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libescpr_la-epson-escpage-mono.Tpo $(DEPDIR)/libescpr_la-epson-escpage-mono.Plo
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epson-escpage-mono.c' object='libescpr_la-epson-escpage-mono.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -c -o libescpr_la-epson-escpage-mono.lo `test -f 'epson-escpage-mono.c' || echo '$(srcdir)/'`epson-escpage-mono.c
 
 libescpr_la-epson-escpr-api.lo: epson-escpr-api.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libescpr_la_CFLAGS) $(CFLAGS) -MT libescpr_la-epson-escpr-api.lo -MD -MP -MF $(DEPDIR)/libescpr_la-epson-escpr-api.Tpo -c -o libescpr_la-epson-escpr-api.lo `test -f 'epson-escpr-api.c' || echo '$(srcdir)/'`epson-escpr-api.c

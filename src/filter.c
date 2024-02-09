@@ -350,14 +350,14 @@ main (int argc, char *argv[])
 
 	epsInitVariable();
 	
-	debug_msg("begin pageAllocBuffer()\n");
-	err = pageAllocBuffer();
-	if(err){
-		debug_msg ("Error occurred in \"pageAllocBuffer\".");	/* exit */
-		err_fatal ("Error occurred in \"pageAllocBuffer\".");	/* exit */
-	}else{
-		debug_msg ("pageAllocBuffer() success\n");
-	}
+//	debug_msg("begin pageAllocBuffer()\n");
+//	err = pageAllocBuffer();
+//	if(err){
+//		debug_msg ("Error occurred in \"pageAllocBuffer\".");	/* exit */
+//		err_fatal ("Error occurred in \"pageAllocBuffer\".");	/* exit */
+//	}else{
+//		debug_msg ("pageAllocBuffer() success\n");
+//	}
 
 	EPS_PRINTER_INN curPrinter;
 	memset(&curPrinter, 0, sizeof(curPrinter));

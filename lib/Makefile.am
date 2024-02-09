@@ -26,14 +26,14 @@ DEFINES 		+=	-DGCOMSW_PRT_USE_RAW
 ################################################################
 # Extend function
 ################################################################
-DEFINES 		+=	-DGCOMSW_CMD_ESCPAGE
+#DEFINES 		+=	-DGCOMSW_CMD_ESCPAGE
 DEFINES 		+=	-DGCOMSW_EL_CDLABEL
 DEFINES 		+=	-DGCOMSW_EF_MAINTE
 
 ################################################################
 # Language
 ################################################################
-DEFINES 		+=	-DGCOMSW_CMD_ESCPAGE
+#DEFINES 		+=	-DGCOMSW_CMD_ESCPAGE
 DEFINES 		+= 	-DEPS_FILTER
 
 ################################################################
@@ -49,10 +49,6 @@ libescpr_la_CFLAGS = -Wall $(DEFINES)
 CLEANFILES = libescpr.la
 libescpr_la_SOURCES = \
 	epson-cbt.c epson-cbt.h \
-	epson-escpage.c epson-escpage.h \
-	epson-escpage-color.c epson-escpage-color.h \
-	epson-escpage-comp.c epson-escpage-comp.h \
-	epson-escpage-mono.c epson-escpage-mono.h \
 	epson-escpr-api.c epson-escpr-api.h \
 	epson-escpr-dbg.c epson-escpr-dbg.h \
 	epson-escpr-def.h \
