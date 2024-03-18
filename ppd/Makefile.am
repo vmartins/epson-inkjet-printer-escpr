@@ -166,6 +166,7 @@ Epson-L805_Series-epson-escpr-en.ppd \
 Epson-L810_Series-epson-escpr-en.ppd \
 Epson-L850_Series-epson-escpr-en.ppd \
 Epson-L1110_Series-epson-escpr-en.ppd \
+Epson-L1270_Series-epson-escpr-en.ppd \
 Epson-L1455_Series-epson-escpr-en.ppd \
 Epson-L3050_Series-epson-escpr-en.ppd \
 Epson-L3060_Series-epson-escpr-en.ppd \
@@ -176,11 +177,14 @@ Epson-L3150_Series-epson-escpr-en.ppd \
 Epson-L3160_Series-epson-escpr-en.ppd \
 Epson-L3250_Series-epson-escpr-en.ppd \
 Epson-L3260_Series-epson-escpr-en.ppd \
+Epson-L3270_Series-epson-escpr-en.ppd \
+Epson-L3280_Series-epson-escpr-en.ppd \
 Epson-L4150_Series-epson-escpr-en.ppd \
 Epson-L4160_Series-epson-escpr-en.ppd \
 Epson-L4260_Series-epson-escpr-en.ppd \
 Epson-L5190_Series-epson-escpr-en.ppd \
 Epson-L5290_Series-epson-escpr-en.ppd \
+Epson-L5310_Series-epson-escpr-en.ppd \
 Epson-L7160_Series-epson-escpr-en.ppd \
 Epson-L7180_Series-epson-escpr-en.ppd \
 Epson-M200_Series-epson-escpr-en.ppd \
