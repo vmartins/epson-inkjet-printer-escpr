@@ -53,6 +53,11 @@ typedef struct rtp_filter_option {
 	char brightness[NAME_MAX + 1];
 	char contrast[NAME_MAX + 1];
 	char saturation[NAME_MAX + 1];
+	char quietmode[NAME_MAX + 1];
+	double custom_width_min;
+	double custom_width_max;
+	double custom_height_min;
+	double custom_height_max;	
 } filter_option_t;
 
 

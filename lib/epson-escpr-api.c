@@ -193,6 +193,10 @@ static const EPS_UINT8 RemoteJH[] = {
                              'J',  'H', 0x0e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             0x45, 0x53, 0x43, 0x50, 0x52, 0x4c, 0x69, 0x62              };
 
+//Quiet Mode
+static const EPS_UINT8 RemoteQM[] = {
+                            'U', 'S', 0x03, 0x00, 0x00, 0x05, 0x00                      };
+
 static const EPS_UINT8 RemotePP[] = {
                             'P', 'P', 0x03, 0x00, 0x00, 0x00, 0x00                      };
 
@@ -346,6 +350,9 @@ EPS_UINT8*   tmpLineBuf;
 
 /*--------------------------------  Local Functions   ----------------------------------*/
 /*******************************************|********************************************/
+static EPS_BOOL     IsValidMediaSize        (EPS_INT32                                  );
+static EPS_BOOL     IsValidMediaType        (EPS_INT32                                  );
+
 static EPS_ERR_CODE MonitorStatus           (EPS_STATUS_INFO *                          );
 static EPS_ERR_CODE SendLeftovers           (void                                       );
 static EPS_ERR_CODE SendBlankBand           (void                                       );
@@ -2554,12 +2561,7 @@ EPS_LOG_FUNCIN;
 
 /*** Validate/Confirm Page Attribute Data                                               */
     /*** Media Size                                                                     */
-    if (! ( ( (jobAttr->mediaSizeIdx       >= EPS_MSID_A4              ) &&
-              (jobAttr->mediaSizeIdx       <= EPS_MSID_A5_24HOLE       )    ) ||
-            ( (jobAttr->mediaSizeIdx       >= EPS_MSID_A3NOBI          ) &&
-			  (jobAttr->mediaSizeIdx       <= EPS_MSID_12X12           )    ) ||
-            ( (jobAttr->mediaSizeIdx       == EPS_MSID_USER            )    ) )  )
-	{
+    if ( !IsValidMediaSize(jobAttr->mediaSizeIdx) ){
         EPS_RETURN( EPS_ERR_INV_MEDIA_SIZE );
 	}
 
@@ -3138,7 +3140,27 @@ epsMakeMainteCmd_END:
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+static EPS_BOOL IsValidMediaSize(EPS_INT32 ms)
+{
+	EPS_INT32 i;
+	for (i = 0; epsMediaSize[i].id != -1; i++) {
+		if(epsMediaSize[i].id == ms){
+			return TRUE;
+		}
+	}
+	return FALSE;
+}
 
+static EPS_BOOL IsValidMediaType(EPS_INT32 mt)
+{
+	EPS_INT32 i;
+	for (i = 0; i < EPS_NUM_MEDIA_TYPES; i++) {
+		if(epsMediaTypeIndex[i] == mt){
+			return TRUE;
+		}
+	}
+	return FALSE;
+}
 /*******************************************|********************************************/
 /*                                                                                      */
 /* Function name:   MonitorStatus()                                                     */
@@ -3763,14 +3785,7 @@ EPS_LOG_FUNCIN;
 
 	} else{												/* Image(RGB, Jpeg) */
 		/*** Media Size                                                                     */
-		if (! ( ( (jobAttr->mediaSizeIdx       >= EPS_MSID_A4              ) &&
-				  (jobAttr->mediaSizeIdx       <= EPS_MSID_A5_24HOLE       )    ) ||
-				( (jobAttr->mediaSizeIdx       >= EPS_MSID_A3NOBI          ) &&
-				  (jobAttr->mediaSizeIdx       <= EPS_MSID_8K           )    ) ||
-				( (jobAttr->mediaSizeIdx       == EPS_MSID_CHOKEI_40            )    ) ||
-				( (jobAttr->mediaSizeIdx       >= EPS_MSID_HALFCUT          ) &&
-				  (jobAttr->mediaSizeIdx       <= EPS_MSID_16X20           )    ) ||
-                ( (jobAttr->mediaSizeIdx       == EPS_MSID_USER            )    ) )  )
+		if ( !IsValidMediaSize(jobAttr->mediaSizeIdx) )
 		{
 			EPS_RETURN( EPS_ERR_INV_MEDIA_SIZE )
 		} else if (jobAttr->mediaSizeIdx       == EPS_MSID_USER ) {
@@ -3782,19 +3797,7 @@ EPS_LOG_FUNCIN;
 		}
 
 		/*** Media Type                                                                     */
-		if (! ( ( (jobAttr->mediaTypeIdx       >= EPS_MTID_PLAIN           ) &&
-				  (jobAttr->mediaTypeIdx       <= EPS_MTID_BUSINESS_PLAIN)    ) ||
-				( (jobAttr->mediaTypeIdx       >= EPS_MTID_PLAIN_ROLL_STICKER           ) &&
-				  (jobAttr->mediaTypeIdx       <= EPS_MTID_GROSSY_ROLL_STICKER     )    ) ||
-				( (jobAttr->mediaTypeIdx       >= EPS_MTID_THICKPAPER1           ) &&
-				  (jobAttr->mediaTypeIdx       <= EPS_MTID_THICKPAPER3     )    ) ||
-				( (jobAttr->mediaTypeIdx       >= EPS_MTID_HIGH_QUALITY_PLAIN           ) &&
-				  (jobAttr->mediaTypeIdx       <= EPS_MTID_BS_HALFGLOSSY_DS     )    ) ||
-				( (jobAttr->mediaTypeIdx       >= EPS_MTID_CDDVD           ) &&
-				  (jobAttr->mediaTypeIdx       <= EPS_MTID_CDDVDGLOSSY     )    ) ||
-				( (jobAttr->mediaTypeIdx       == EPS_MTID_CLEANING        )    ) ||
-				( (jobAttr->mediaTypeIdx       == EPS_MTID_PLOOFING_WHITE_MAT        )    ) ||
-				( (jobAttr->mediaTypeIdx       == EPS_MTID_AUTO_PLAIN        )    )    ) ){
+		if ( !IsValidMediaType(jobAttr->mediaTypeIdx) ){
 			EPS_RETURN( EPS_ERR_INV_MEDIA_TYPE )
 		}
 		/*** Print Quality                                                                  */
@@ -4311,6 +4314,28 @@ EPS_UINT32      retBufSize = 0;             /* Size of buffer written           
 		break;
 	}
 	pCmdPos += sizeof(RemotePP);
+
+	/*** Remote Command - QM(quietmode) ***/ 
+	char qm_Buffer[7];
+	memcpy(qm_Buffer , RemoteQM, 7);
+
+	switch(printJob.attr.quietmode){
+	case 0:			// off
+		qm_Buffer[6] = 0x00;
+		break;
+	case 1:			// on
+		qm_Buffer[6] = 0x01;
+		break;
+	case 2:			// low
+		qm_Buffer[6] = 0x02;
+		break;	
+	case 3:			// printer setting
+		qm_Buffer[6] = 0xff;
+		break;
+
+	}
+
+	SendStartJob_ADDCMD(qm_Buffer)
 
 	/*** Remote Command - DP(duplex)                                                    */
 	if(EPS_DUPLEX_NONE != printJob.attr.duplex){

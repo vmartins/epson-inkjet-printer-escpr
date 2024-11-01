@@ -393,6 +393,7 @@ typedef struct _tagEPS_JOB_ATTRIB_ {
 	EPS_INT32			duplex;             /* Duplex print                             */
 	EPS_INT32           copies;             /* copies count                             */
 	EPS_INT32           feedDirection;      /* paper feed direction                     */
+	EPS_INT32           quietmode;			/* Quiet Mode                               */
 
 	/* -------------------------------------------------------------------------------- */
 	/* Ver 4                                                                            */

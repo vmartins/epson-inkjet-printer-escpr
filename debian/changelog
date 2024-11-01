@@ -1,3 +1,15 @@
+epson-inkjet-printer-escpr (1.8.6) stable; urgency=low
+
+  * Please refer to ./NEWS
+
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Wed, 2 Oct 2024 12:00:00 +0900
+
+epson-inkjet-printer-escpr (1.8.5.1) stable; urgency=low
+
+  * Please refer to ./NEWS
+
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Wed, 27 Mar 2024 14:56:00 +0900
+
 epson-inkjet-printer-escpr (1.8.5) stable; urgency=low
 
   * Please refer to ./NEWS

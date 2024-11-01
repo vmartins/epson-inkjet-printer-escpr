@@ -89,6 +89,7 @@ OPTION_DATA mediaSizeData[] = {
     {PM_MSID_A5_24HOLE,     "A5_24HOLE", N_("A5_24HOLE 148 x 210 mm")},	// Lib5.6
     {PM_MSID_CHOKEI_40,     "ENVC40",   N_("CHOKEI_40 90 x 225 mm")},	// Lib5.6
 
+    {EPS_MSID_INDIAN_LEGAL, "215x345mm", N_("Indian-Legal 215 x 345 mm")},
     {PM_MSID_A3NOBI,        "A3+",      N_("A3+ 329x483 mm")          },
     {PM_MSID_A3,            "A3",       N_("A3  297x420 mm")                    },
     {PM_MSID_B4,            "B4",       N_("B4  257x364 mm")                    },
@@ -107,6 +108,8 @@ OPTION_DATA mediaSizeData[] = {
     {PM_MSID_SP5,           "SP5",      N_("SP5 192 x 132 mm")},		// Lib5.6
     {PM_MSID_16K,           "16K",      N_("16K 195 x 270 mm")},		// Lib5.6
     {PM_MSID_8K,            "8K",       N_("8K 270 x 390 mm")},			// Lib5.6
+
+    {EPS_MSID_8_5X13,       "FanFoldGermanLegal",  N_("8.5 x 13 in")},
 
     {PM_MSID_USER,          "USER",     N_("User Defined")},
 

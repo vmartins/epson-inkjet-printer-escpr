@@ -108,6 +108,7 @@ PROGRAMS = $(cupsfilter_PROGRAMS)
 am_epson_escpr_OBJECTS = epson_escpr-filter.$(OBJEXT) \
 	epson_escpr-debug.$(OBJEXT) epson_escpr-str.$(OBJEXT) \
 	epson_escpr-err.$(OBJEXT) epson_escpr-mem.$(OBJEXT) \
+	epson_escpr-custompage.$(OBJEXT) \
 	epson_escpr-linux_cmn.$(OBJEXT) epson_escpr-xfifo.$(OBJEXT)
 epson_escpr_OBJECTS = $(am_epson_escpr_OBJECTS)
 epson_escpr_DEPENDENCIES = $(top_builddir)/lib/libescpr.la
@@ -119,7 +120,8 @@ epson_escpr_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(epson_escpr_CFLAGS) \
 	$(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 am_epson_escpr_wrapper_OBJECTS =  \
-	epson_escpr_wrapper-wrapper.$(OBJEXT)
+	epson_escpr_wrapper-wrapper.$(OBJEXT) \
+	epson_escpr_wrapper-custompage.$(OBJEXT)
 epson_escpr_wrapper_OBJECTS = $(am_epson_escpr_wrapper_OBJECTS)
 epson_escpr_wrapper_LDADD = $(LDADD)
 epson_escpr_wrapper_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
@@ -312,7 +314,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-AM_LDFLAGS = -lpthread
+AM_LDFLAGS = -lpthread -lm
 cupsfilterdir = $(CUPS_FILTER_DIR)
 ESCPR_LIB_DIR = ../escprlib
 epson_escpr_wrapper_CFLAGS = \
@@ -321,7 +323,9 @@ epson_escpr_wrapper_CFLAGS = \
 	-DCUPS_FILTER_PATH=\"$(CUPS_FILTER_DIR)\" 
 
 epson_escpr_wrapper_SOURCES = \
-	wrapper.c
+	wrapper.c \
+	custompage.c \
+	custompage.h 
 
 epson_escpr_CFLAGS = \
 	-I$(top_srcdir)/lib
@@ -335,6 +339,7 @@ epson_escpr_SOURCES = \
 	str.c str.h \
 	err.c err.h \
 	mem.c mem.h \
+	custompage.c custompage.h \
 	linux_cmn.h linux_cmn.c \
 	xfifo.h xfifo.c
 
@@ -438,6 +443,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-custompage.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-debug.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-err.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-filter.Po@am__quote@
@@ -445,6 +451,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-mem.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-str.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr-xfifo.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr_wrapper-custompage.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epson_escpr_wrapper-wrapper.Po@am__quote@
 
 .c.o:
@@ -538,6 +545,20 @@ epson_escpr-mem.obj: mem.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_CFLAGS) $(CFLAGS) -c -o epson_escpr-mem.obj `if test -f 'mem.c'; then $(CYGPATH_W) 'mem.c'; else $(CYGPATH_W) '$(srcdir)/mem.c'; fi`
 
+epson_escpr-custompage.o: custompage.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_CFLAGS) $(CFLAGS) -MT epson_escpr-custompage.o -MD -MP -MF $(DEPDIR)/epson_escpr-custompage.Tpo -c -o epson_escpr-custompage.o `test -f 'custompage.c' || echo '$(srcdir)/'`custompage.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epson_escpr-custompage.Tpo $(DEPDIR)/epson_escpr-custompage.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='custompage.c' object='epson_escpr-custompage.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_CFLAGS) $(CFLAGS) -c -o epson_escpr-custompage.o `test -f 'custompage.c' || echo '$(srcdir)/'`custompage.c
+
+epson_escpr-custompage.obj: custompage.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_CFLAGS) $(CFLAGS) -MT epson_escpr-custompage.obj -MD -MP -MF $(DEPDIR)/epson_escpr-custompage.Tpo -c -o epson_escpr-custompage.obj `if test -f 'custompage.c'; then $(CYGPATH_W) 'custompage.c'; else $(CYGPATH_W) '$(srcdir)/custompage.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epson_escpr-custompage.Tpo $(DEPDIR)/epson_escpr-custompage.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='custompage.c' object='epson_escpr-custompage.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_CFLAGS) $(CFLAGS) -c -o epson_escpr-custompage.obj `if test -f 'custompage.c'; then $(CYGPATH_W) 'custompage.c'; else $(CYGPATH_W) '$(srcdir)/custompage.c'; fi`
+
 epson_escpr-linux_cmn.o: linux_cmn.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_CFLAGS) $(CFLAGS) -MT epson_escpr-linux_cmn.o -MD -MP -MF $(DEPDIR)/epson_escpr-linux_cmn.Tpo -c -o epson_escpr-linux_cmn.o `test -f 'linux_cmn.c' || echo '$(srcdir)/'`linux_cmn.c
 @am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epson_escpr-linux_cmn.Tpo $(DEPDIR)/epson_escpr-linux_cmn.Po
@@ -579,6 +600,20 @@ epson_escpr_wrapper-wrapper.obj: wrapper.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='wrapper.c' object='epson_escpr_wrapper-wrapper.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_wrapper_CFLAGS) $(CFLAGS) -c -o epson_escpr_wrapper-wrapper.obj `if test -f 'wrapper.c'; then $(CYGPATH_W) 'wrapper.c'; else $(CYGPATH_W) '$(srcdir)/wrapper.c'; fi`
+
+epson_escpr_wrapper-custompage.o: custompage.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_wrapper_CFLAGS) $(CFLAGS) -MT epson_escpr_wrapper-custompage.o -MD -MP -MF $(DEPDIR)/epson_escpr_wrapper-custompage.Tpo -c -o epson_escpr_wrapper-custompage.o `test -f 'custompage.c' || echo '$(srcdir)/'`custompage.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epson_escpr_wrapper-custompage.Tpo $(DEPDIR)/epson_escpr_wrapper-custompage.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='custompage.c' object='epson_escpr_wrapper-custompage.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_wrapper_CFLAGS) $(CFLAGS) -c -o epson_escpr_wrapper-custompage.o `test -f 'custompage.c' || echo '$(srcdir)/'`custompage.c
+
+epson_escpr_wrapper-custompage.obj: custompage.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_wrapper_CFLAGS) $(CFLAGS) -MT epson_escpr_wrapper-custompage.obj -MD -MP -MF $(DEPDIR)/epson_escpr_wrapper-custompage.Tpo -c -o epson_escpr_wrapper-custompage.obj `if test -f 'custompage.c'; then $(CYGPATH_W) 'custompage.c'; else $(CYGPATH_W) '$(srcdir)/custompage.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epson_escpr_wrapper-custompage.Tpo $(DEPDIR)/epson_escpr_wrapper-custompage.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='custompage.c' object='epson_escpr_wrapper-custompage.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epson_escpr_wrapper_CFLAGS) $(CFLAGS) -c -o epson_escpr_wrapper-custompage.obj `if test -f 'custompage.c'; then $(CYGPATH_W) 'custompage.c'; else $(CYGPATH_W) '$(srcdir)/custompage.c'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo

@@ -107,6 +107,7 @@ main (int argc, char *argv[])
 	cups_raster_t *ras;	/* raster stream for printing */
 	cups_page_header_t header; /* page device dictionary header */
 	filter_option_t fopt;
+	int customsize_flag = FALSE;
 
 /* attach point */
 #ifdef USE_DEBUGGER
@@ -165,6 +166,20 @@ main (int argc, char *argv[])
 		return 1;
 	}
 
+	/* Check Custom Size Range */
+
+	EPS_FLOAT  width_72dpi, height_72dpi;
+	if(strncmp(fopt.media, "Custom.", 7) == 0){
+		customsize_flag = TRUE;
+		convert_custom_pagesize_to_dot(fopt.media, &width_72dpi, &height_72dpi, 72);
+
+		if( (width_72dpi < fopt.custom_width_min) || (width_72dpi > fopt.custom_width_max) 
+			|| (height_72dpi < fopt.custom_height_min) || (height_72dpi > fopt.custom_height_max) ){
+			fprintf(stderr, "ERROR: Custom Page Size is out of range.\n");
+			return 1;
+		}	
+	}
+
 	/* Print start */
 	ras = cupsRasterOpen (fd, CUPS_RASTER_READ);
 	if (ras == NULL)
@@ -190,6 +205,8 @@ main (int argc, char *argv[])
 		int ret;
 		ret = cupsRasterReadHeader (ras, &header);
 
+		if (ret == 0 && customsize_flag) break;  //カスタムサイズのときはキャッシュしない
+		
 		if (ret == 0 || cancel_flg) //データをすべて読み終わった
 		{
 
@@ -289,7 +306,7 @@ main (int argc, char *argv[])
 		{
 			char tmpbuf[256];
 
-			sprintf (tmpbuf, "%s/%s \"%s\" %d %d %d %s %s %s %s %s %s %s %s",
+			sprintf (tmpbuf, "%s/%s \"%s\" %d %d %d %s %s %s %s %s %s %s %s %s",
 				 CUPS_FILTER_PATH,
 				 CUPS_FILTER_NAME,
 				 fopt.model,
@@ -303,7 +320,9 @@ main (int argc, char *argv[])
 				 fopt.inputslot,
 				 fopt.brightness,
 				 fopt.contrast,
-				 fopt.saturation);
+				 fopt.saturation,
+				 fopt.quietmode
+			);
 		
 			debug_msg("tmpbuf = [%s]\n", tmpbuf);
 
@@ -316,16 +335,29 @@ main (int argc, char *argv[])
 				return 1;
 			}
 
-			// +1 .. left page num (2 / 1 / 0) , *2 .. 2page分のバッファ
-			image_bytes = (WIDTH_BYTES(header.cupsBytesPerLine * 8 ) * header.cupsHeight + 1) * 2; 
-			page_raw = (char *)calloc (sizeof (char), image_bytes);
-			page_raw_cache = (char *)calloc (sizeof (char), image_bytes);
-
+			if (!customsize_flag) {
+				//2 page分のバッファを確保
+				image_bytes = (WIDTH_BYTES(header.cupsBytesPerLine * 8 ) * header.cupsHeight + 1) * 2;
+				page_raw = (char *)calloc (sizeof (char), image_bytes);
+				page_raw_cache = (char *)calloc (sizeof (char), image_bytes);
+			}
 		}
 
 		image_bytes = WIDTH_BYTES(header.cupsBytesPerLine * 8 ) * CUPS_READ_LINE;
 		image_raw = (char *)calloc (sizeof (char), image_bytes);
 
+		if (customsize_flag) {
+			
+			if(first_fwrite){//最初のfwriteだけ、フィルターへ送るページ数(1)を送信
+				int Num = 1;
+				fwrite(&Num, 1, 1, pfp);
+				first_fwrite = FALSE;
+			}	
+			
+			int pageno = 0;   //page番号(0)をフィルターへ送信
+			fwrite( &pageno, 1, 1, pfp);
+
+		}
 
 		int left_lines = header.cupsHeight;	
 		while(!cancel_flg)		
@@ -346,7 +378,11 @@ main (int argc, char *argv[])
 				break;
 			}
 
-			memcpy((page_raw + pageNum +1) + total_read, image_raw, readpixels);
+			if (customsize_flag){
+				fwrite (image_raw, readpixels, 1, pfp);
+			}else{
+				memcpy((page_raw + pageNum +1) + total_read, image_raw, readpixels);
+			}
 			total_read += readpixels;
 	
 			left_lines -= CUPS_READ_LINE;
@@ -355,12 +391,12 @@ main (int argc, char *argv[])
 
 			safeFree (image_raw);
 
-			pageNum++;
+			if (!customsize_flag) pageNum++;
 
 	}//while (cups header)
 
-	safeFree (page_raw);
-	safeFree (page_raw_cache);
+	if(page_raw != NULL ) safeFree (page_raw);
+	if(page_raw_cache != NULL ) safeFree (page_raw_cache);
 	
 	cupsRasterClose (ras);
 	
@@ -384,6 +420,8 @@ get_option_for_ppd (const char *printer, filter_option_t *filter_opt_p)
 	ppd_file_t *ppd_p;	/* Struct of PPD */
 	char *opt;		/* Temporary buffer (PPD option) */
 	int i;			/* loop */
+	ppd_attr_t *attr;	
+	char *tok;
 
 	/* Get option from PPD. */
 	ppd_path = (char *) cupsGetPPD (printer);
@@ -397,6 +435,42 @@ get_option_for_ppd (const char *printer, filter_option_t *filter_opt_p)
 	for (i = 0; i < NAME_MAX && filter_opt_p->model[i] != '\0' ; i ++)
 		filter_opt_p->model_low[i] = tolower (filter_opt_p->model[i]);
 	filter_opt_p->model_low[i] = '\0';
+
+	/* Custom Size Range (Width) */
+	attr = ppdFindAttr(ppd_p, "ParamCustomPageSize", NULL);
+	if(attr){
+		tok = strtok(attr->value, " ");
+		if(tok != NULL){
+			tok = strtok(NULL, " ");
+			if(tok != NULL){
+				tok = strtok(NULL, " ");
+				filter_opt_p->custom_width_min = atof(tok);	
+					if(tok != NULL){
+					tok = strtok(NULL, " ");
+					filter_opt_p->custom_width_max = atof(tok);
+				}
+			}
+		}
+	}
+
+	/* Custom Size Range (Height) */
+	attr = ppdFindNextAttr(ppd_p, "ParamCustomPageSize", NULL);
+	if(attr){
+		tok = strtok(attr->value, " ");
+		if(tok != NULL){
+			tok = strtok(NULL, " ");
+			if(tok != NULL){
+				tok = strtok(NULL, " ");
+				filter_opt_p->custom_height_min = atof(tok);	
+
+				if(tok != NULL){
+					tok = strtok(NULL, " ");
+					filter_opt_p->custom_height_max = atof(tok);
+				}
+			}
+		}
+	}
+
 
 	/* media */
 	if (filter_opt_p->media[0] == '\0')
@@ -502,6 +576,19 @@ get_option_for_ppd (const char *printer, filter_option_t *filter_opt_p)
 		strcpy (filter_opt_p->saturation, opt);
 	}
 
+	/* quietmode */
+	if (filter_opt_p->quietmode[0] == '\0')
+	{
+		opt = get_default_choice (ppd_p, "QuietMode");
+		if (!opt)
+		{
+			debug_msg("can not get quietmode\n");
+			strcpy (filter_opt_p->quietmode, "0");
+			
+		}
+		else
+		strcpy (filter_opt_p->quietmode, opt);
+	}
 
 #ifdef INK_CHANGE_SYSTEM
 	/* inkset */
@@ -590,6 +677,10 @@ get_option_for_arg (const char *opt_str, filter_option_t *filter_opt_p)
 	opt = cupsGetOption ("Saturation", opt_num, option_p);
 	if (opt)
 		strcpy (filter_opt_p->saturation, opt);
+
+	opt = cupsGetOption ("QuietMode", opt_num, option_p);
+	if (opt)
+		strcpy (filter_opt_p->quietmode, opt);
 
 	return 0;
 }

@@ -15,7 +15,7 @@
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA.
 
-AM_LDFLAGS = -lpthread
+AM_LDFLAGS = -lpthread -lm
 
 cupsfilterdir = $(CUPS_FILTER_DIR)
 ESCPR_LIB_DIR	=	../escprlib
@@ -30,7 +30,9 @@ epson_escpr_wrapper_CFLAGS =\
 	-DCUPS_FILTER_PATH=\"$(CUPS_FILTER_DIR)\" 
 
 epson_escpr_wrapper_SOURCES =\
-	wrapper.c
+	wrapper.c \
+	custompage.c \
+	custompage.h 
 
 epson_escpr_CFLAGS = \
 	-I$(top_srcdir)/lib
@@ -44,6 +46,7 @@ epson_escpr_SOURCES = \
 	str.c str.h \
 	err.c err.h \
 	mem.c mem.h \
+	custompage.c custompage.h \
 	linux_cmn.h linux_cmn.c \
 	xfifo.h xfifo.c
 

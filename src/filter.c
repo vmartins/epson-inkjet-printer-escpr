@@ -41,6 +41,7 @@
 #include "libprtX.h"
 #include "optBase.h"
 #include "linux_cmn.h"
+#include "custompage.h"
 
 #define WIDTH_BYTES(bits) (((bits) + 31) / 32 * 4)
 
@@ -179,6 +180,11 @@ void eps_toupper(char *str){
 static int  getMediaSizeID(char *media_name){
   int j;
 	debug_msg("media name = %s\n", media_name);
+
+  if (strncmp(media_name, "Custom.",7) == 0){
+	return PM_MSID_USER;
+  }
+
   for(j = 0; mediaSizeData[j].value != END_ARRAY; j++){
     if((strlen(mediaSizeData[j].rsc_name) == strlen(media_name)) && strncmp(mediaSizeData[j].rsc_name,media_name, strlen(mediaSizeData[j].rsc_name)) == 0){
     	debug_msg("mediaSizeData[%d].rsc_name: %s, x_name = %s\n", j, mediaSizeData[j].rsc_name, mediaSizeData[j].x_name);
@@ -240,7 +246,7 @@ main (int argc, char *argv[])
 	DEBUG_START;
 	err_init (argv[0]);
 
-	if (argc != 13)
+	if (argc != 14)
 	{
 		for ( i = 1; i < argc; i++ ) {
 			if ( (0 == strncmp(argv[i], "-v", (strlen("-v")+1)) )
@@ -286,6 +292,7 @@ main (int argc, char *argv[])
 	strncpy (fopt.brightness, argv[10], NAME_MAX);
 	strncpy (fopt.contrast, argv[11], NAME_MAX);
 	strncpy (fopt.saturation, argv[12], NAME_MAX);
+	strncpy (fopt.quietmode, argv[13], NAME_MAX);
 	
 	debug_msg("all para\n");
 	for(i = 0; i< argc; i++){
@@ -315,21 +322,38 @@ main (int argc, char *argv[])
 	eps_toupper(fopt.media);
 	jobAttr.mediaSizeIdx = getMediaSizeID(paper);
 
+	int base_dpi = 360;
 	switch(HWResolution){
 	case 360:
 		jobAttr.inputResolution = EPS_IR_360X360;
+		base_dpi = 360;
 		break;
 	case 720:
 		jobAttr.inputResolution = EPS_IR_720X720;
+		base_dpi = 720;
 		break;
 	case 300:
 		jobAttr.inputResolution = EPS_IR_300X300;
+		base_dpi = 300;
 		break;
 	case 600:
 		jobAttr.inputResolution = EPS_IR_600X600;
-		break;							
+		base_dpi = 600;
+		break;					
 	}
 
+	if (jobAttr.mediaSizeIdx == PM_MSID_USER){
+		EPS_FLOAT Custom_Width = 0;
+		EPS_FLOAT Custom_Height = 0;
+
+		convert_custom_pagesize_to_dot(paper, &Custom_Width, &Custom_Height, base_dpi);
+
+		jobAttr.userDefWidth = Custom_Width;
+		jobAttr.userDefHeight = Custom_Height;
+		jobAttr.mediaSizeIdx = EPS_MSID_USER;
+
+	}
+	
 	band_line = 1;
 
 	if (strcmp (fopt.ink, "COLOR") == 0)
@@ -394,6 +418,11 @@ main (int argc, char *argv[])
 
 	/* debug */
 	DEBUG_JOB_STRUCT (printJob);
+
+	if (jobAttr.mediaSizeIdx == PM_MSID_USER){
+	    print_area_x = width_pixel;
+	    print_area_y = height_pixel;
+	}
 
 	x_mag = (double)print_area_x / width_pixel;
 	y_mag = (double)print_area_y / height_pixel;
@@ -727,6 +756,7 @@ set_pips_parameter (filter_option_t *filter_opt_p, EPS_OPT *printOpt)
 	char *brightness = NULL;
 	char *contrast = NULL;
 	char *saturation = NULL;
+	char *quietmode = NULL;
 
 	/* Some model's ppd don't support duplex or inputslot option.*/
 	if (strlen (filter_opt_p->media) == 0
@@ -827,6 +857,18 @@ set_pips_parameter (filter_option_t *filter_opt_p, EPS_OPT *printOpt)
 	saturation = str_clone (filter_opt_p->saturation, strlen (filter_opt_p->saturation));
  	jobAttr.saturation =  atoi(saturation);
 
+	/* Quiet Mode */
+	quietmode = str_clone (filter_opt_p->quietmode, strlen (filter_opt_p->quietmode));
+	if(strcasecmp(quietmode, "Off") == 0){ 	
+		jobAttr.quietmode =  0;
+	}else if(strcasecmp(quietmode, "On") == 0){
+		jobAttr.quietmode =  1;
+	}else if(strcasecmp(quietmode, "Low") == 0){
+		jobAttr.quietmode =  2;
+	}else if(strcasecmp(quietmode, "Printer") == 0){
+		jobAttr.quietmode =  3;
+	}
+
 	/* Get number of pages */
 	char page_num;
 	read (STDIN_FILENO, &page_num, 1);
@@ -851,6 +893,7 @@ set_pips_parameter (filter_option_t *filter_opt_p, EPS_OPT *printOpt)
 	mem_free(brightness);
 	mem_free(contrast);
 	mem_free(saturation);
+	mem_free(quietmode);
 	
 	return 0;
 }
