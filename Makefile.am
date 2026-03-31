@@ -66,6 +66,7 @@ EXTRA_DIST = \
 	NEWS \
 	README \
 	README.ja \
+	README.fr \
 	bootstrap \
 	debian/changelog \
 	debian/compat \

@@ -109,6 +109,13 @@ enum eOUTPUT_FORMAT
 #define	    PM_MSID_KAKU_20             0x2F	// Lib5.6 [229.000,324.000]
 #define	    PM_MSID_A5_24HOLE           0x30	// Lib5.6 [148.000,210.000]
 #define	    PM_MSID_CHOKEI_40           0x34	// Lib5.6 [ 90.000,225.000]
+#define	    PM_MSID_QUADRAPLEPOSTCARD   0x35	
+#define	    PM_MSID_YOKEI_0   		0x36
+#define	    PM_MSID_ENV_C5_P   		0x38
+#define	    PM_MSID_ENYOKEI_6  		0x39
+#define	    PM_MSID_MEXICO_OFICIO	0x3A
+#define	    PM_MSID_OFICIO9		0x3B
+#define	    PM_MSID_INDIAN_LEGAL	0x3C
 
 #define	    PM_MSID_A3NOBI              0x3D
 #define	    PM_MSID_A3                  0x3E
@@ -128,6 +135,7 @@ enum eOUTPUT_FORMAT
 #define     PM_MSID_SP5                 0x4B	// Lib5.6 [192.000,132.000]
 #define     PM_MSID_16K                 0x4C	// Lib5.6 [195.000,270.000]
 #define     PM_MSID_8K                  0x4D	// Lib5.6 [270.000,390.000]
+#define     PM_MSID_SQUARE_5		0x58
 
 #define	    PM_MSID_USER                0x63
 

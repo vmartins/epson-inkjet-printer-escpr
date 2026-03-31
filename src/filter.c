@@ -20,7 +20,6 @@
 #ifdef HAVE_CONFIG_H
 #  include <config.h>
 #endif
-#define HAVE_PPM (0)
 
 #include <unistd.h>
 #include <fcntl.h>
@@ -450,6 +449,7 @@ main (int argc, char *argv[])
 		}		
 
 		page_count++;
+		
 		if (err)
 			err_fatal ("Error occurred in \"PINIT_FUNC\"."); /* exit */
 		debug_msg("ppm image width = %d; height = %d\n", bytes_per_line/3, (int)print_area_y);
@@ -676,15 +676,7 @@ main (int argc, char *argv[])
 				{
 					printHeight = band_line_count;
 					PrintBand (bandBmp.bits, bandBmp.widthBytes, &printHeight);
-#if (HAVE_PPM)
-					fp = fopen(ppmfilename, "a+");
-					int i=0;	
-					for(i=0; i<bytes_per_line/byte_par_pixel*3; i++){		
-						fprintf(fp, "%u ", (unsigned char)bandBmp.Bits[i]);
-					}
-					fprintf(fp, "\n");
-					fclose(fp);
-#endif
+
 					debug_msg("printHeight = %d\n", printHeight);
 					debug_msg("widthByte = %d\n", bandBmp.widthBytes);
 					band_line_count -= printHeight;
@@ -700,15 +692,7 @@ main (int argc, char *argv[])
 				debug_msg("printHeight = %d\n", printHeight);
 				if(err)
 					err_fatal ("Error occurred in \"OUT_FUNC\"."); /* exit */
-#if (HAVE_PPM)
-				fp = fopen(ppmfilename, "a+");
-				int i=0;	
-				for(i=0; i<bytes_per_line/byte_par_pixel*3; i++){		
-					fprintf(fp, "%u ", (unsigned char)bandBmp.Bits[i]);
-				}
-				fprintf(fp, "\n");
-				fclose(fp);
-#endif
+
 				band_line_count -= printHeight;
 				bandBmp.bits += band_line_count;
 			}

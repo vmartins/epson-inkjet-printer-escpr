@@ -194,8 +194,11 @@ static const EPS_UINT8 RemoteJH[] = {
                             0x45, 0x53, 0x43, 0x50, 0x52, 0x4c, 0x69, 0x62              };
 
 //Quiet Mode
-static const EPS_UINT8 RemoteQM[] = {
+static const EPS_UINT8 RemoteQM1[] = {
                             'U', 'S', 0x03, 0x00, 0x00, 0x05, 0x00                      };
+
+static const EPS_UINT8 RemoteQM2[] = {
+                            'U', 'S', 0x03, 0x00, 0x00, 0x08, 0x00                      };
 
 static const EPS_UINT8 RemotePP[] = {
                             'P', 'P', 0x03, 0x00, 0x00, 0x00, 0x00                      };
@@ -4315,27 +4318,49 @@ EPS_UINT32      retBufSize = 0;             /* Size of buffer written           
 	}
 	pCmdPos += sizeof(RemotePP);
 
-	/*** Remote Command - QM(quietmode) ***/ 
-	char qm_Buffer[7];
-	memcpy(qm_Buffer , RemoteQM, 7);
+	/*** Remote Command - QM1(quietmode, US 0x05) ***/ 
+	char qm1_Buffer[7];
+	memcpy(qm1_Buffer , RemoteQM1, 7);
 
 	switch(printJob.attr.quietmode){
 	case 0:			// off
-		qm_Buffer[6] = 0x00;
+		qm1_Buffer[6] = 0x00;
 		break;
 	case 1:			// on
-		qm_Buffer[6] = 0x01;
+		qm1_Buffer[6] = 0x01;
 		break;
 	case 2:			// low
-		qm_Buffer[6] = 0x02;
+		qm1_Buffer[6] = 0x02;
 		break;	
 	case 3:			// printer setting
-		qm_Buffer[6] = 0xff;
+		qm1_Buffer[6] = 0xff;
 		break;
 
 	}
 
-	SendStartJob_ADDCMD(qm_Buffer)
+	SendStartJob_ADDCMD(qm1_Buffer)
+
+	/*** Remote Command - QM1(quietmode, US 0x08) ***/ 
+	char qm2_Buffer[7];
+	memcpy(qm2_Buffer , RemoteQM2, 7);
+
+	switch(printJob.attr.quietmode){
+	case 0:			// off
+		qm2_Buffer[6] = 0x00;
+		break;
+	case 1:			// on
+		qm2_Buffer[6] = 0x01;
+		break;
+	case 2:			// low
+		qm2_Buffer[6] = 0x02;
+		break;	
+	case 3:			// printer setting
+		qm2_Buffer[6] = 0xff;
+		break;
+
+	}
+
+	SendStartJob_ADDCMD(qm2_Buffer)
 
 	/*** Remote Command - DP(duplex)                                                    */
 	if(EPS_DUPLEX_NONE != printJob.attr.duplex){

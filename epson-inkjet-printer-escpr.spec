@@ -1,6 +1,6 @@
 
 %define pkg     epson-inkjet-printer-escpr
-%define ver     1.8.6
+%define ver     1.8.7
 %define rel     1
 
 %define cupsfilterdir   /opt/epson-inkjet-printer-escpr/lib/cups/filter
@@ -55,7 +55,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING NEWS README README.ja
+%doc AUTHORS COPYING NEWS README README.ja README.fr
 %{cupsfilterdir}/epson-escpr
 %{cupsfilterdir}/epson-escpr-wrapper
 %{_libdir}/libescpr.*

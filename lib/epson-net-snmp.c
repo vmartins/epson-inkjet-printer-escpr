@@ -107,53 +107,53 @@ extern EPS_BOOL			g_FindBreak;			/* Find printer end flag                */
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      interfaces(2) ifTable(2) ifEntry(1) 6 } */
-static EPS_INT8 s_oidPhysAddress[]  = "1.3.6.1.2.1.2.2.1.6";
+static EPS_INT8 s_oidPhysAddress[]  = "0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
 	 tcp(6) tcpConnTable(13) tcpConnEntry(1) 3 } */
-static EPS_INT8 s_oidTcpConnLocalPort[]= "1.3.6.1.2.1.6.13.1.3";
+static EPS_INT8 s_oidTcpConnLocalPort[]= "0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      printmib(43) prtInterpreter(15) prtInterpreterTable(1) prtInterpreterEntry(1) prtInterpreterDescription(5) } */
-static EPS_INT8 s_oidInterpreterDescription[]	= "1.3.6.1.2.1.43.15.1.1.5";
+static EPS_INT8 s_oidInterpreterDescription[]	= "0.0.0.0.0.0.0.0.0.0.0";
 
 #ifdef GCOMSW_CMD_ESCPAGE
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
       host(25) hrDevice(3) hrDeviceTable(2) hrDeviceEntry(1) hrDeviceStatus(5) } */
-static EPS_INT8 s_oidDevStatus[]	= "1.3.6.1.2.1.25.3.2.1.5";
+static EPS_INT8 s_oidDevStatus[]	= "0.0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      host(25) hrDevice(3) hrPrinterTable(5) hrPrinterEntry(1) hrPrinterStatus(1) } */
-static EPS_INT8 s_oidPrinterStatus[]= "1.3.6.1.2.1.25.3.5.1.1";
+static EPS_INT8 s_oidPrinterStatus[]= "0.0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      host(25) hrDevice(3) hrPrinterTable(5) hrPrinterEntry(1) hrPrinterDetectedErrorState(2) } */
-static EPS_INT8 s_oidPrinterError[] = "1.3.6.1.2.1.25.3.5.1.2";
+static EPS_INT8 s_oidPrinterError[] = "0.0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) printmib(43) prtMarkerColorant(12)
       prtMarkerColorantTable(1) prtMarkerColorantEntry(1) 4 } */
-static EPS_INT8 s_oidMarkerColorant[] = "1.3.6.1.2.1.43.12.1.1.4";
+static EPS_INT8 s_oidMarkerColorant[] = "0.0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      printmib(43) prtMarkerSupplies(11) prtMarkerSuppliesTable(1) prtMarkerSuppliesEntry(1)
 	 prtMarkerSuppliesLevel(9) } */
-static EPS_INT8 s_oidMarkerLevel[]	= "1.3.6.1.2.1.43.11.1.1.9";
+static EPS_INT8 s_oidMarkerLevel[]	= "0.0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      printmib(43) prtMarkerSupplies(11) prtMarkerSuppliesTable(1) prtMarkerSuppliesEntry(1)
 	 prtMarkerSuppliesMaxCapacity(8) } */
-static EPS_INT8 s_oidMarkerMaxLevel[]	= "1.3.6.1.2.1.43.11.1.1.8";
+static EPS_INT8 s_oidMarkerMaxLevel[]	= "0.0.0.0.0.0.0.0.0.0.0";
 
 /* { iso(1) org(3) dod(6) internet(1) mgmt(2) mib-2(1) 
      printmib(43) prtInput(8) prtInputTable(2) prtInputEntry(1) prtInputName(13) } */
-static EPS_INT8 s_oidInputName[]	= "1.3.6.1.2.1.43.8.2.1.13";
+static EPS_INT8 s_oidInputName[]	= "0.0.0.0.0.0.0.0.0.0.0";
 #endif
 
-static EPS_INT8 s_oidPrvPrinter[]		= "1.3.6.1.4.1.1248.1.2.2.1.1.1.1";
-static EPS_INT8 s_oidPwgPrinter[]		= "1.3.6.1.4.1.2699.1.2.1.2.1.1.3";
-static EPS_INT8 s_oidPrvBonjourName[]	= "1.3.6.1.4.1.1248.1.1.3.1.14.4.1.2";
-static EPS_INT8 s_oidPrvStatus[]		= "1.3.6.1.4.1.1248.1.2.2.1.1.1.4";
-static EPS_INT8 s_oidPrvCtrl[]			= "1.3.6.1.4.1.1248.1.2.2.44.1.1.2";
+static EPS_INT8 s_oidPrvPrinter[]		= "0.0.0.0.0.0.0.0.0.0.0.0.0.0";
+static EPS_INT8 s_oidPwgPrinter[]		= "0.0.0.0.0.0.0.0.0.0.0.0.0.0";
+static EPS_INT8 s_oidPrvBonjourName[]	= "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0";
+static EPS_INT8 s_oidPrvStatus[]		= "0.0.0.0.0.0.0.0.0.0.0.0.0.0";
+static EPS_INT8 s_oidPrvCtrl[]			= "0.0.0.0.0.0.0.0.0.0.0.0.0.0";
 
 static EPS_INT8 g_TrnBuff[SNMP_MAX_BUF];
 

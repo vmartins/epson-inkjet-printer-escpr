@@ -79,7 +79,7 @@ install -d %{buildroot}%{_libdir}
 install -d %{buildroot}%{_datadir}
 install -d %{buildroot}%{_docdir}
 make install-strip DESTDIR=%{buildroot} pkgdatadir=%{_datadir}
-install -m 644 README README.ja COPYING AUTHORS NEWS %{buildroot}%{_docdir}
+install -m 644 README README.ja README.fr COPYING AUTHORS NEWS %{buildroot}%{_docdir}
 rm -f %{buildroot}%{_libdirglob}/*.a
 rm -f %{buildroot}%{_libdirglob}/*.la
 

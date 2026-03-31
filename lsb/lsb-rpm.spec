@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA.
 
 %define pkg     epson-inkjet-printer-escpr
-%define ver     1.8.6
+%define ver     1.8.7
 %define rel     1
 
 # used in RPM macro set for the LSB Driver Development Kit
@@ -79,7 +79,7 @@ install -d %{buildroot}%{_libdir}
 install -d %{buildroot}%{_datadir}
 install -d %{buildroot}%{_docdir}
 make install-strip DESTDIR=%{buildroot} pkgdatadir=%{_datadir}
-install -m 644 README README.ja COPYING AUTHORS NEWS %{buildroot}%{_docdir}
+install -m 644 README README.ja README.fr COPYING AUTHORS NEWS %{buildroot}%{_docdir}
 rm -f %{buildroot}%{_libdirglob}/*.a
 rm -f %{buildroot}%{_libdirglob}/*.la
 

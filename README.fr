@@ -1,0 +1,168 @@
+Manuel du pilote d'imprimante jet d'encre Epson (ESC/P-R)
+
+Copyright (C) Seiko Epson Corporation 2005-2023.
+
+Veuillez consulter notre site web pour les dernières informations :
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+Contenu
+1  Contrat de licence
+2  Historique des révisions
+3  Description du produit
+4  Installation et configuration de CUPS
+    4.1  Installation
+    4.2  Paramètres après installation
+5  Impression
+    5.1  Éléments à configurer
+    5.2  Détails des paramètres
+    5.3  Méthodes de configuration
+    5.4  Méthodes d'impression
+6  Compilation
+    6.1  Pour les distributions Redhat
+    6.2  Pour les distributions Debian
+    6.3  Autres distributions
+
+-------------------------------------------------------------------------------
+1  Contrat de licence
+-------------------------------------------------------------------------------
+Ce logiciel est couvert par la licence publique générale GNU (GPL).
+Veuillez consulter le fichier "COPYING" pour plus d'informations.
+
+-------------------------------------------------------------------------------
+2  Historique des révisions
+-------------------------------------------------------------------------------
+Voir ./NEWS.
+
+-------------------------------------------------------------------------------
+3  Description du produit
+-------------------------------------------------------------------------------
+Ce logiciel est un programme filtre utilisé avec le système d'impression CUPS sur Linux.
+Il permet une impression de haute qualité avec les imprimantes jet d'encre couleur Seiko Epson.
+
+Ce produit ne peut être utilisé qu'avec les imprimantes compatibles avec le langage Epson ESC/P-R.
+
+Consultez la liste des imprimantes compatibles :
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+
+-------------------------------------------------------------------------------
+4  Installation et configuration de CUPS
+-------------------------------------------------------------------------------
+4.1  Installation
+    Choisissez la commande appropriée pour votre distribution et exécutez-la avec les privilèges root.
+    Remarque : Le nom du paquet peut varier selon la version.
+
+    Pour les distributions Redhat :
+    -----------------
+    # rpm -i epson-inkjet-printer-escpr-1.8.xx-1.x86_64.rpm
+    -----------------
+
+    Pour les distributions Debian :
+    -----------------
+    # dpkg -i epson-inkjet-printer-escpr_1.8.xx-1_amd64.deb
+    -----------------
+
+4.2  Paramètres après installation
+    CUPS doit être configuré pour utiliser ce logiciel.
+
+    4.2.1  Redémarrer CUPS
+        Exécutez la commande suivante avec les privilèges root.
+
+        Exemple : Redhat
+        -----------------
+        # /etc/init.d/cups restart
+        -----------------
+        Debian
+        -----------------
+        # /etc/init.d/cupsys restart
+        -----------------
+
+    4.2.2  Ajouter une imprimante
+
+        Via la ligne de commande :
+        -----------------
+        # lpadmin -p [NOM_IMPRIMANTE] -v [URI_PÉRIPHÉRIQUE] -P [FICHIER_PPD] -E
+        -----------------
+
+        Via un navigateur :
+        (1) Allumez l'imprimante et connectez-la en USB.
+        (2) Accédez à http://localhost:631/
+        (3) Sélectionnez "Ajouter une imprimante"
+        (4) Entrez un nom et cliquez sur "Continuer"
+        (5) Sélectionnez le périphérique USB
+        (6) Choisissez le modèle et pilote approprié ou spécifiez le fichier PPD manuellement
+
+-------------------------------------------------------------------------------
+5  Impression
+-------------------------------------------------------------------------------
+5.1  Éléments à configurer
+    * Encre : couleur ou monochrome
+    * Taille du papier
+    * Qualité d'impression
+
+5.2  Détails des paramètres
+
+    Encre
+    Mot-clé  | Affichage navigateur | Explication
+    ---------+----------------------+--------------------------
+    COLOR    | Couleur              | Impression couleur
+    MONO     | Monochrome           | Impression monochrome
+
+    Taille du papier
+    Nom de paramètre : PageSize ou media
+
+    Qualité d'impression
+    Nom de paramètre : Quality
+
+    Impression recto verso
+    Nom de paramètre : Duplex
+
+    Source du papier
+    Nom de paramètre : InputSlot
+
+5.3  Méthodes de configuration
+
+    * Via lpoptions :
+        Exemple :
+        $ lpoptions -p ep901a -o ink=COLOR -o media=A4 -o quality=PLAIN_NORMAL
+
+    * Via navigateur :
+        Sélectionnez "Configurer l'imprimante"
+
+    * Lors de l'impression :
+        Exemple :
+        $ lpr -P a950 -o ink=MONO -o media=Legal <fichier>
+        $ lp -d a950 -o ink=MONO -o media=Legal <fichier>
+
+5.4  Méthodes d'impression
+
+    Formats pris en charge :
+    * Postscript
+    * PDF
+    * Texte
+    * Fichiers image
+
+    Exemple :
+    $ lpr -P NOM_IMPRIMANTE <fichier>
+    $ lp -d NOM_IMPRIMANTE <fichier>
+
+-------------------------------------------------------------------------------
+6  Compilation
+-------------------------------------------------------------------------------
+6.1  Pour Redhat
+    1. Décompressez le fichier src.rpm
+    2. Configurez et créez l'archive source
+    3. Créez les répertoires RPM
+    4. Copiez les fichiers source et spec
+    5. Compilez avec rpmbuild
+
+6.2  Pour Debian
+    1. Décompressez le fichier src.rpm
+    2. Configurez avec ./configure
+    3. Compilez avec debuild
+
+6.3  Autres distributions
+    1. Décompressez le fichier src.rpm
+    2. Configurez avec les options --with-cupsfilterdir et --with-cupsppddir si nécessaire
+    3. Compilez et installez avec make et sudo make install
+
+***Fin du fichier

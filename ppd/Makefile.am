@@ -184,6 +184,7 @@ Epson-L3280_Series-epson-escpr-en.ppd \
 Epson-L4150_Series-epson-escpr-en.ppd \
 Epson-L4160_Series-epson-escpr-en.ppd \
 Epson-L4260_Series-epson-escpr-en.ppd \
+Epson-L4350_Series-epson-escpr-en.ppd \
 Epson-L5190_Series-epson-escpr-en.ppd \
 Epson-L5290_Series-epson-escpr-en.ppd \
 Epson-L5310_Series-epson-escpr-en.ppd \

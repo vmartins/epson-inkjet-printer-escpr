@@ -36,6 +36,8 @@
 
 #include "libprtX.h"
 
+#define HAVE_PPM_W 0
+
 #define WIDTH_BYTES(bits) (((bits) + 31) / 32 * 4)
 
 #define PIPSLITE_WRAPPER_VERSION "* epson-escpr-wrapepr is a part of " PACKAGE_STRING
@@ -58,6 +60,11 @@ int cancel_flg;
 #if (HAVE_DEBUG)
 static FILE *debug_f = NULL;
 #endif
+
+#if (HAVE_PPM_W)
+#define PPM_FILE_PATH "/tmp/epson.ppm"
+FILE* fp = NULL;
+#endif 
 
 #define safeFree(x) { if (x !=NULL) free(x); }
 
@@ -326,6 +333,18 @@ main (int argc, char *argv[])
 		
 			debug_msg("tmpbuf = [%s]\n", tmpbuf);
 
+#if (HAVE_PPM_W)
+			{
+				fp=fopen(PPM_FILE_PATH, "w");
+				fprintf(fp, "P3\n");
+				fprintf(fp, "%d ",header.cupsWidth);
+				fprintf(fp, "%d\n",header.cupsHeight);
+				fprintf(fp, "255\n");
+				fclose(fp);
+
+			}
+#endif
+
 			pfp = popen (tmpbuf, "w");
 
 			if (pfp == NULL)
@@ -371,6 +390,17 @@ main (int argc, char *argv[])
 
 			int readpixels;
 			readpixels = cupsRasterReadPixels (ras, (unsigned char*)image_raw, header.cupsBytesPerLine * cups_read_lines);
+
+
+#if (HAVE_PPM_W)
+			fp = fopen(PPM_FILE_PATH, "a+");
+			int i=0;	
+			for(i=0; i<readpixels; i++){		
+				fprintf(fp, "%u ", (unsigned char)image_raw[i]);
+			}
+			fprintf(fp, "\n");
+			fclose(fp);
+#endif
 
 			if (readpixels == 0)
 			{	

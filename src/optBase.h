@@ -86,10 +86,13 @@ OPTION_DATA mediaSizeData[] = {
     {PM_MSID_ENV_C4_P,      "ENVC4P",   N_("ENV_C4_P 229 x 324 mm")},	// Lib5.6
     {PM_MSID_B6,            "B6",       N_("B6 128 x 182 mm")},			// Lib5.6
     {PM_MSID_KAKU_20,       "ENVK20",   N_("KAKU_20 229 x 324 mm")},	// Lib5.6
-    {PM_MSID_A5_24HOLE,     "A5_24HOLE", N_("A5_24HOLE 148 x 210 mm")},	// Lib5.6
+    {PM_MSID_A5_24HOLE,     "PhotoCraft", N_("A5_24HOLE 148 x 210 mm")},	// Lib5.6
     {PM_MSID_CHOKEI_40,     "ENVC40",   N_("CHOKEI_40 90 x 225 mm")},	// Lib5.6
+    {PM_MSID_SQUARE_5,      "127x127mm",   N_("127 x 127 mm")},
 
-    {EPS_MSID_INDIAN_LEGAL, "215x345mm", N_("Indian-Legal 215 x 345 mm")},
+    {PM_MSID_MEXICO_OFICIO, "Oficio"	, N_("Oficio 216 x 340 mm")},
+    {PM_MSID_OFICIO9, 	    "Oficio9", N_("Oficio 9 215 x 315 mm")},
+    {PM_MSID_INDIAN_LEGAL,  "IndianLegal", N_("Indian-Legal 215 x 345 mm")},
     {PM_MSID_A3NOBI,        "A3+",      N_("A3+ 329x483 mm")          },
     {PM_MSID_A3,            "A3",       N_("A3  297x420 mm")                    },
     {PM_MSID_B4,            "B4",       N_("B4  257x364 mm")                    },

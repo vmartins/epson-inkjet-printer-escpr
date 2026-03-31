@@ -481,6 +481,7 @@
 *PageSize TA4/A4 (Borderless): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*PageSize PhotoCraft/A5 (24 holes): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *PageSize Postcard/Postcard: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -496,6 +497,8 @@
 *PageSize T8x10/8 x 10 in (Borderless): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *PageSize 4X7/Hi-Vision size 102 x 181 mm: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *PageSize T4X7/Hi-Vision size 102 x 181 mm (Borderless): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*PageSize T127x127mm/127 x 127 mm (Borderless): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *PageSize ENVY1/Envelope 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *PageSize ENVY2/Envelope 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *PageSize ENVY3/Envelope 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -519,6 +522,7 @@
 *nl.PageSize TA4/A4 (Randloos): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *nl.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *nl.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*nl.PageSize PhotoCraft/A5 (24 gaten): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *nl.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *nl.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *nl.PageSize Postcard/Ansichtkaart: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -534,6 +538,8 @@
 *nl.PageSize T8x10/8 x 10 in (Randloos): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *nl.PageSize 4X7/16<3A>9 breedbeeldformaat (4 x 7,11 in): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *nl.PageSize T4X7/16<3A>9 breedbeeldformaat (4 x 7,11 in) (Randloos): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*nl.PageSize T127x127mm/127 x 127 mm (Randloos): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *nl.PageSize ENVY1/Enveloppe 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *nl.PageSize ENVY2/Enveloppe 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *nl.PageSize ENVY3/Enveloppe 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -545,6 +551,7 @@
 *fr.PageSize TA4/A4 (Sans marges): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *fr.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *fr.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*fr.PageSize PhotoCraft/A5 (24 perforations): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *fr.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *fr.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *fr.PageSize Postcard/Carte postale: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -560,6 +567,8 @@
 *fr.PageSize T8x10/8 x 10 p<2E> (Sans marges): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *fr.PageSize 4X7/16<3A>9 large (4 x 7,11 p<2E>): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *fr.PageSize T4X7/16<3A>9 large (4 x 7,11 p<2E>) (Sans marges): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*fr.PageSize T127x127mm/127 x 127 mm (Sans marges): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *fr.PageSize ENVY1/Enveloppe 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *fr.PageSize ENVY2/Enveloppe 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *fr.PageSize ENVY3/Enveloppe 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -571,6 +580,7 @@
 *de.PageSize TA4/DIN A4 (Randlos): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *de.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *de.PageSize A5/DIN A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*de.PageSize PhotoCraft/A5 (24 Löcher): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *de.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *de.PageSize A6/DIN A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *de.PageSize Postcard/Postkarte: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -586,6 +596,8 @@
 *de.PageSize T8x10/8 x 10 Zoll (Randlos): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *de.PageSize 4X7/16<3A>9 breit (4 x 7,11 Zoll): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *de.PageSize T4X7/16<3A>9 breit (4 x 7,11 Zoll) (Randlos): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*de.PageSize T127x127mm/127 x 127 mm (Randlos): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *de.PageSize ENVY1/Umschlag 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *de.PageSize ENVY2/Umschlag 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *de.PageSize ENVY3/Umschlag 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -597,6 +609,7 @@
 *it.PageSize TA4/A4 (Senza margini): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *it.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *it.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*it.PageSize PhotoCraft/A5 (24 fori): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *it.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *it.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *it.PageSize Postcard/Cartolina: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -612,6 +625,8 @@
 *it.PageSize T8x10/8 x 10 pol<2E> (Senza margini): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *it.PageSize 4X7/16<3A>9 ampio (4 x 7,11 pol<2E>): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *it.PageSize T4X7/16<3A>9 ampio (4 x 7,11 pol<2E>) (Senza margini): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*it.PageSize T127x127mm/127 x 127 mm (Senza margini): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *it.PageSize ENVY1/Busta 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *it.PageSize ENVY2/Busta 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *it.PageSize ENVY3/Busta 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -623,6 +638,7 @@
 *ja.PageSize TA4/A4 (フチなし): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *ja.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *ja.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ja.PageSize PhotoCraft/A5 (24穴): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *ja.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *ja.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *ja.PageSize Postcard/はがき: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -638,6 +654,8 @@
 *ja.PageSize T8x10/六切 (フチなし): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *ja.PageSize 4X7/ハイビジョンサイズ: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *ja.PageSize T4X7/ハイビジョンサイズ (フチなし): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*ja.PageSize T127x127mm/127 x 127 mm (フチなし): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *ja.PageSize ENVY1/洋形１号封筒: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *ja.PageSize ENVY2/洋形２号封筒: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *ja.PageSize ENVY3/洋形３号封筒: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -649,6 +667,7 @@
 *pt.PageSize TA4/A4 (Sem margens): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *pt.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *pt.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*pt.PageSize PhotoCraft/A5 (24 perfurações): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *pt.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *pt.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *pt.PageSize Postcard/Postal: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -664,6 +683,8 @@
 *pt.PageSize T8x10/8 x 10 pol<2E> (203 x 254 mm) (Sem margens): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *pt.PageSize 4X7/16<3A>9 de largura (102 x 181 mm): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *pt.PageSize T4X7/16<3A>9 de largura (102 x 181 mm) (Sem margens): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*pt.PageSize T127x127mm/127 x 127 mm (Sem margens): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *pt.PageSize ENVY1/Envelope 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *pt.PageSize ENVY2/Envelope 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *pt.PageSize ENVY3/Envelope 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -675,6 +696,7 @@
 *pt_PT.PageSize TA4/A4 (Sem margens): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*pt_PT.PageSize PhotoCraft/A5 (24 furos): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize Postcard/Postal: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -690,6 +712,8 @@
 *pt_PT.PageSize T8x10/8 x 10 pol (Sem margens): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize 4X7/16<3A>9 de largura (4 x 7,11 pol): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize T4X7/16<3A>9 de largura (4 x 7,11 pol) (Sem margens): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt_PT.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*pt_PT.PageSize T127x127mm/127 x 127 mm (Sem margens): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize ENVY1/Envelope 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize ENVY2/Envelope 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageSize ENVY3/Envelope 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -701,6 +725,7 @@
 *es.PageSize TA4/A4 (Sin márgenes): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *es.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *es.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*es.PageSize PhotoCraft/A5 (24 orificios): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *es.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *es.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *es.PageSize Postcard/Postal: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -716,6 +741,8 @@
 *es.PageSize T8x10/8 x 10 pulg (Sin márgenes): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *es.PageSize 4X7/16<3A>9 ancho (4 x 7,11 pulg): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *es.PageSize T4X7/16<3A>9 ancho (4 x 7,11 pulg) (Sin márgenes): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*es.PageSize T127x127mm/127 x 127 mm (Sin márgenes): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *es.PageSize ENVY1/Sobre 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *es.PageSize ENVY2/Sobre 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *es.PageSize ENVY3/Sobre 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -727,6 +754,7 @@
 *ko.PageSize TA4/A4 (여백 없음): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *ko.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *ko.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ko.PageSize PhotoCraft/A5 (24 홀): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *ko.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *ko.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *ko.PageSize Postcard/엽서: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -742,6 +770,8 @@
 *ko.PageSize T8x10/8 x 10 in (여백 없음): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *ko.PageSize 4X7/16<3A>9 너비 (4 x 7<2E>11 in): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *ko.PageSize T4X7/16<3A>9 너비 (4 x 7<2E>11 in) (여백 없음): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*ko.PageSize T127x127mm/127 x 127 mm (여백 없음): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *ko.PageSize ENVY1/Envelope 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *ko.PageSize ENVY2/Envelope 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *ko.PageSize ENVY3/Envelope 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -753,6 +783,7 @@
 *zh_TW.PageSize TA4/A4 (無邊): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize PhotoCraft/A5 (24 孔): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize Postcard/明信片: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -768,6 +799,8 @@
 *zh_TW.PageSize T8x10/8 x 10 in (無邊): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize 4X7/16<3A>9 寬 (4 x 7<2E>11 in): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize T4X7/16<3A>9 寬 (4 x 7<2E>11 in) (無邊): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize 127x127mm/127 x 127 mm: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageSize T127x127mm/127 x 127 mm (無邊): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize ENVY1/Envelope 120 x 176 mm: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize ENVY2/Envelope 114 x 162 mm: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageSize ENVY3/Envelope 98 x 148 mm: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -779,6 +812,7 @@
 *zh_CN.PageSize TA4/A4 (无边距): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize PhotoCraft/A5（24 孔）: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize Postcard/明信片: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -794,6 +828,8 @@
 *zh_CN.PageSize T8x10/8 x 10 英寸 (无边距): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize 4X7/16<3A>9 宽屏 (4 x 7<2E>11 英寸): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize T4X7/16<3A>9 宽屏 (4 x 7<2E>11 英寸) (无边距): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize 127x127mm/127 x 127 毫米: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageSize T127x127mm/127 x 127 毫米 (无边距): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize ENVY1/信封 120 x 176 毫米: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize ENVY2/信封 114 x 162 毫米: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageSize ENVY3/信封 98 x 148 毫米: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -805,6 +841,7 @@
 *ru.PageSize TA4/A4 (Без полей): "<</PageSize[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *ru.PageSize B5/JIS B5: "<</PageSize[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *ru.PageSize A5/A5: "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ru.PageSize PhotoCraft/A5 (24 отверстия): "<</PageSize[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *ru.PageSize B6/JIS B6: "<</PageSize[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *ru.PageSize A6/A6: "<</PageSize[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *ru.PageSize Postcard/Открытка: "<</PageSize[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -820,6 +857,8 @@
 *ru.PageSize T8x10/8 x 10 in (Без полей): "<</PageSize[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *ru.PageSize 4X7/Соотношение сторон 16<3A>9: "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *ru.PageSize T4X7/Соотношение сторон 16<3A>9 (Без полей): "<</PageSize[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ru.PageSize 127x127mm/127 x 127 мм: "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*ru.PageSize T127x127mm/127 x 127 мм (Без полей): "<</PageSize[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *ru.PageSize ENVY1/Конверт 120 x 176 мм: "<</PageSize[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *ru.PageSize ENVY2/Конверт 114 x 162 мм: "<</PageSize[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *ru.PageSize ENVY3/Конверт 98 x 148 мм: "<</PageSize[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -2943,76 +2982,6 @@
 *CloseUI: *Saturation
 
 
-*OpenUI *QuietMode/Quiet Mode: PickOne
-*OrderDependency: 416 AnySetup *QuietMode
-*DefaultQuietMode: Off
-*QuietMode Off/Off: ""
-*QuietMode Low/On (Low level): ""
-*QuietMode On/On: ""
-*QuietMode Printer/Printer Setting: ""
-*nl.Translation QuietMode/Stille modus: ""
-*fr.Translation QuietMode/Mode silencieux : ""
-*de.Translation QuietMode/Ruhemodus: ""
-*it.Translation QuietMode/Modo Quiete: ""
-*ja.Translation QuietMode/動作音低減モード: ""
-*pt.Translation QuietMode/Modo silencioso: ""
-*pt_PT.Translation QuietMode/Modo Silencioso: ""
-*es.Translation QuietMode/Modo silencioso: ""
-*ko.Translation QuietMode/저소음 모드: ""
-*zh_TW.Translation QuietMode/靜音模式: ""
-*zh_CN.Translation QuietMode/安静模式: ""
-*ru.Translation QuietMode/Тихий режим: ""
-*nl.QuietMode Off/Uit: ""
-*nl.QuietMode Low/Aan (laag niveau): ""
-*nl.QuietMode On/Aan: ""
-*nl.QuietMode Printer/Printerinstelling: ""
-*fr.QuietMode Off/Non: ""
-*fr.QuietMode Low/Activé (niveau bas): ""
-*fr.QuietMode On/Oui: ""
-*fr.QuietMode Printer/Paramètre de l'imprimante: ""
-*de.QuietMode Off/Aus: ""
-*de.QuietMode Low/Ein (geringer Stand): ""
-*de.QuietMode On/Ein: ""
-*de.QuietMode Printer/Druckereinstellung: ""
-*it.QuietMode Off/Off: ""
-*it.QuietMode Low/Attivo (livello basso): ""
-*it.QuietMode On/On: ""
-*it.QuietMode Printer/Impostazione stampante: ""
-*ja.QuietMode Off/オフ: ""
-*ja.QuietMode Low/オン(低減度：小): ""
-*ja.QuietMode On/オン: ""
-*ja.QuietMode Printer/本体設定に従う: ""
-*pt.QuietMode Off/Não: ""
-*pt.QuietMode Low/Ativado (nível baixo): ""
-*pt.QuietMode On/Sim: ""
-*pt.QuietMode Printer/Definição da impressora: ""
-*pt_PT.QuietMode Off/Não: ""
-*pt_PT.QuietMode Low/Ativado (nível baixo): ""
-*pt_PT.QuietMode On/Sim: ""
-*pt_PT.QuietMode Printer/Definição da Impressora: ""
-*es.QuietMode Off/Desactivado: ""
-*es.QuietMode Low/Activado (bajo nivel): ""
-*es.QuietMode On/Activado: ""
-*es.QuietMode Printer/Ajuste de impresora: ""
-*ko.QuietMode Off/사용 안 함: ""
-*ko.QuietMode Low/사용(잔량 부족): ""
-*ko.QuietMode On/사용: ""
-*ko.QuietMode Printer/프린터 설정: ""
-*zh_TW.QuietMode Off/關閉: ""
-*zh_TW.QuietMode Low/開啟 (墨水量偏低): ""
-*zh_TW.QuietMode On/開啟: ""
-*zh_TW.QuietMode Printer/印表機設定: ""
-*zh_CN.QuietMode Off/关: ""
-*zh_CN.QuietMode Low/开（墨量低）: ""
-*zh_CN.QuietMode On/开: ""
-*zh_CN.QuietMode Printer/打印机设置: ""
-*ru.QuietMode Off/Выключить: ""
-*ru.QuietMode Low/Вкл<2E> (Низкий уровень): ""
-*ru.QuietMode On/Включить: ""
-*ru.QuietMode Printer/Настройка компьютера: ""
-*CloseUI: *QuietMode
-
-
 *OpenUI *PageRegion: PickOne
 *OrderDependency: 10 AnySetup *PageRegion
 *DefaultPageRegion: A4
@@ -3020,6 +2989,7 @@
 *PageRegion TA4/A4 (Borderless): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*PageRegion PhotoCraft/A5 (24 holes): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *PageRegion Postcard/Postcard: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3035,6 +3005,8 @@
 *PageRegion T8x10/8 x 10 in (Borderless): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *PageRegion 4X7/Hi-Vision size 102 x 181 mm: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *PageRegion T4X7/Hi-Vision size 102 x 181 mm (Borderless): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*PageRegion T127x127mm/127 x 127 mm (Borderless): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *PageRegion ENVY1/Envelope 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *PageRegion ENVY2/Envelope 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *PageRegion ENVY3/Envelope 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3058,6 +3030,7 @@
 *nl.PageRegion TA4/A4 (Randloos): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion PhotoCraft/A5 (24 gaten): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion Postcard/Ansichtkaart: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3073,6 +3046,8 @@
 *nl.PageRegion T8x10/8 x 10 in (Randloos): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion 4X7/16<3A>9 breedbeeldformaat (4 x 7,11 in): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion T4X7/16<3A>9 breedbeeldformaat (4 x 7,11 in) (Randloos): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*nl.PageRegion T127x127mm/127 x 127 mm (Randloos): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion ENVY1/Enveloppe 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion ENVY2/Enveloppe 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *nl.PageRegion ENVY3/Enveloppe 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3084,6 +3059,7 @@
 *fr.PageRegion TA4/A4 (Sans marges): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion PhotoCraft/A5 (24 perforations): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion Postcard/Carte postale: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3099,6 +3075,8 @@
 *fr.PageRegion T8x10/8 x 10 p<2E> (Sans marges): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion 4X7/16<3A>9 large (4 x 7,11 p<2E>): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion T4X7/16<3A>9 large (4 x 7,11 p<2E>) (Sans marges): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*fr.PageRegion T127x127mm/127 x 127 mm (Sans marges): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion ENVY1/Enveloppe 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion ENVY2/Enveloppe 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *fr.PageRegion ENVY3/Enveloppe 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3110,6 +3088,7 @@
 *de.PageRegion TA4/DIN A4 (Randlos): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *de.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *de.PageRegion A5/DIN A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*de.PageRegion PhotoCraft/A5 (24 Löcher): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *de.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *de.PageRegion A6/DIN A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *de.PageRegion Postcard/Postkarte: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3125,6 +3104,8 @@
 *de.PageRegion T8x10/8 x 10 Zoll (Randlos): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *de.PageRegion 4X7/16<3A>9 breit (4 x 7,11 Zoll): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *de.PageRegion T4X7/16<3A>9 breit (4 x 7,11 Zoll) (Randlos): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*de.PageRegion T127x127mm/127 x 127 mm (Randlos): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *de.PageRegion ENVY1/Umschlag 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *de.PageRegion ENVY2/Umschlag 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *de.PageRegion ENVY3/Umschlag 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3136,6 +3117,7 @@
 *it.PageRegion TA4/A4 (Senza margini): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *it.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *it.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*it.PageRegion PhotoCraft/A5 (24 fori): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *it.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *it.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *it.PageRegion Postcard/Cartolina: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3151,6 +3133,8 @@
 *it.PageRegion T8x10/8 x 10 pol<2E> (Senza margini): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *it.PageRegion 4X7/16<3A>9 ampio (4 x 7,11 pol<2E>): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *it.PageRegion T4X7/16<3A>9 ampio (4 x 7,11 pol<2E>) (Senza margini): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*it.PageRegion T127x127mm/127 x 127 mm (Senza margini): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *it.PageRegion ENVY1/Busta 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *it.PageRegion ENVY2/Busta 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *it.PageRegion ENVY3/Busta 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3162,6 +3146,7 @@
 *ja.PageRegion TA4/A4 (フチなし): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion PhotoCraft/A5 (24穴): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion Postcard/はがき: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3177,6 +3162,8 @@
 *ja.PageRegion T8x10/六切 (フチなし): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion 4X7/ハイビジョンサイズ: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion T4X7/ハイビジョンサイズ (フチなし): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*ja.PageRegion T127x127mm/127 x 127 mm (フチなし): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion ENVY1/洋形１号封筒: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion ENVY2/洋形２号封筒: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *ja.PageRegion ENVY3/洋形３号封筒: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3188,6 +3175,7 @@
 *pt.PageRegion TA4/A4 (Sem margens): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion PhotoCraft/A5 (24 perfurações): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion Postcard/Postal: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3203,6 +3191,8 @@
 *pt.PageRegion T8x10/8 x 10 pol<2E> (203 x 254 mm) (Sem margens): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion 4X7/16<3A>9 de largura (102 x 181 mm): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion T4X7/16<3A>9 de largura (102 x 181 mm) (Sem margens): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*pt.PageRegion T127x127mm/127 x 127 mm (Sem margens): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion ENVY1/Envelope 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion ENVY2/Envelope 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *pt.PageRegion ENVY3/Envelope 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3214,6 +3204,7 @@
 *pt_PT.PageRegion TA4/A4 (Sem margens): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*pt_PT.PageRegion PhotoCraft/A5 (24 furos): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion Postcard/Postal: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3229,6 +3220,8 @@
 *pt_PT.PageRegion T8x10/8 x 10 pol (Sem margens): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion 4X7/16<3A>9 de largura (4 x 7,11 pol): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion T4X7/16<3A>9 de largura (4 x 7,11 pol) (Sem margens): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*pt_PT.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*pt_PT.PageRegion T127x127mm/127 x 127 mm (Sem margens): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion ENVY1/Envelope 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion ENVY2/Envelope 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *pt_PT.PageRegion ENVY3/Envelope 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3240,6 +3233,7 @@
 *es.PageRegion TA4/A4 (Sin márgenes): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *es.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *es.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*es.PageRegion PhotoCraft/A5 (24 orificios): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *es.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *es.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *es.PageRegion Postcard/Postal: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3255,6 +3249,8 @@
 *es.PageRegion T8x10/8 x 10 pulg (Sin márgenes): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *es.PageRegion 4X7/16<3A>9 ancho (4 x 7,11 pulg): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *es.PageRegion T4X7/16<3A>9 ancho (4 x 7,11 pulg) (Sin márgenes): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*es.PageRegion T127x127mm/127 x 127 mm (Sin márgenes): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *es.PageRegion ENVY1/Sobre 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *es.PageRegion ENVY2/Sobre 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *es.PageRegion ENVY3/Sobre 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3266,6 +3262,7 @@
 *ko.PageRegion TA4/A4 (여백 없음): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion PhotoCraft/A5 (24 홀): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion Postcard/엽서: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3281,6 +3278,8 @@
 *ko.PageRegion T8x10/8 x 10 in (여백 없음): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion 4X7/16<3A>9 너비 (4 x 7<2E>11 in): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion T4X7/16<3A>9 너비 (4 x 7<2E>11 in) (여백 없음): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*ko.PageRegion T127x127mm/127 x 127 mm (여백 없음): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion ENVY1/Envelope 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion ENVY2/Envelope 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *ko.PageRegion ENVY3/Envelope 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3292,6 +3291,7 @@
 *zh_TW.PageRegion TA4/A4 (無邊): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion PhotoCraft/A5 (24 孔): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion Postcard/明信片: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3307,6 +3307,8 @@
 *zh_TW.PageRegion T8x10/8 x 10 in (無邊): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion 4X7/16<3A>9 寬 (4 x 7<2E>11 in): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion T4X7/16<3A>9 寬 (4 x 7<2E>11 in) (無邊): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion 127x127mm/127 x 127 mm: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*zh_TW.PageRegion T127x127mm/127 x 127 mm (無邊): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion ENVY1/Envelope 120 x 176 mm: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion ENVY2/Envelope 114 x 162 mm: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *zh_TW.PageRegion ENVY3/Envelope 98 x 148 mm: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3318,6 +3320,7 @@
 *zh_CN.PageRegion TA4/A4 (无边距): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion PhotoCraft/A5（24 孔）: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion Postcard/明信片: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3333,6 +3336,8 @@
 *zh_CN.PageRegion T8x10/8 x 10 英寸 (无边距): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion 4X7/16<3A>9 宽屏 (4 x 7<2E>11 英寸): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion T4X7/16<3A>9 宽屏 (4 x 7<2E>11 英寸) (无边距): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion 127x127mm/127 x 127 毫米: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*zh_CN.PageRegion T127x127mm/127 x 127 毫米 (无边距): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion ENVY1/信封 120 x 176 毫米: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion ENVY2/信封 114 x 162 毫米: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *zh_CN.PageRegion ENVY3/信封 98 x 148 毫米: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3344,6 +3349,7 @@
 *ru.PageRegion TA4/A4 (Без полей): "<</PageRegion[595.20 841.80]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion B5/JIS B5: "<</PageRegion[516.00 728.60]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion A5/A5: "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
+*ru.PageRegion PhotoCraft/A5 (24 отверстия): "<</PageRegion[419.60 595.20]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion B6/JIS B6: "<</PageRegion[362.80 516.00]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion A6/A6: "<</PageRegion[297.60 419.60]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion Postcard/Открытка: "<</PageRegion[283.40 419.60]/ImagingBBox null>>setpagedevice"
@@ -3359,6 +3365,8 @@
 *ru.PageRegion T8x10/8 x 10 in (Без полей): "<</PageRegion[576.00 720.00]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion 4X7/Соотношение сторон 16<3A>9: "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion T4X7/Соотношение сторон 16<3A>9 (Без полей): "<</PageRegion[288.00 512.00]/ImagingBBox null>>setpagedevice"
+*ru.PageRegion 127x127mm/127 x 127 мм: "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
+*ru.PageRegion T127x127mm/127 x 127 мм (Без полей): "<</PageRegion[360.00 360.00]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion ENVY1/Конверт 120 x 176 мм: "<</PageRegion[340.20 498.80]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion ENVY2/Конверт 114 x 162 мм: "<</PageRegion[323.20 459.20]/ImagingBBox null>>setpagedevice"
 *ru.PageRegion ENVY3/Конверт 98 x 148 мм: "<</PageRegion[277.80 419.60]/ImagingBBox null>>setpagedevice"
@@ -3374,6 +3382,7 @@
 *ImageableArea TA4/A4 (Borderless): "0.00 0.00 595.20 841.80"
 *ImageableArea B5/JIS B5: "8.40 8.40 507.60 720.20"
 *ImageableArea A5/A5: "8.40 8.40 411.20 586.80"
+*ImageableArea PhotoCraft/A5 (24 holes): "28.20 28.20 391.40 567.00"
 *ImageableArea B6/JIS B6: "8.40 8.40 354.40 507.60"
 *ImageableArea A6/A6: "8.40 8.40 289.20 411.20"
 *ImageableArea Postcard/Postcard: "8.40 8.40 275.00 411.20"
@@ -3389,6 +3398,8 @@
 *ImageableArea T8x10/8 x 10 in (Borderless): "0.00 0.00 576.00 720.00"
 *ImageableArea 4X7/Hi-Vision size 102 x 181 mm: "8.40 8.40 279.60 503.60"
 *ImageableArea T4X7/Hi-Vision size 102 x 181 mm (Borderless): "0.00 0.00 288.00 512.00"
+*ImageableArea 127x127mm/127 x 127 mm: "8.40 8.40 351.60 351.60"
+*ImageableArea T127x127mm/127 x 127 mm (Borderless): "0.00 0.00 360.00 360.00"
 *ImageableArea ENVY1/Envelope 120 x 176 mm: "8.40 8.40 331.80 490.40"
 *ImageableArea ENVY2/Envelope 114 x 162 mm: "8.40 8.40 314.80 450.80"
 *ImageableArea ENVY3/Envelope 98 x 148 mm: "8.40 8.40 269.40 411.20"
@@ -3403,6 +3414,7 @@
 *PaperDimension TA4/A4 (Borderless): "595.20 841.80"
 *PaperDimension B5/JIS B5: "516.00 728.60"
 *PaperDimension A5/A5: "419.60 595.20"
+*PaperDimension PhotoCraft/A5 (24 holes): "419.60 595.20"
 *PaperDimension B6/JIS B6: "362.80 516.00"
 *PaperDimension A6/A6: "297.60 419.60"
 *PaperDimension Postcard/Postcard: "283.40 419.60"
@@ -3418,6 +3430,8 @@
 *PaperDimension T8x10/8 x 10 in (Borderless): "576.00 720.00"
 *PaperDimension 4X7/Hi-Vision size 102 x 181 mm: "288.00 512.00"
 *PaperDimension T4X7/Hi-Vision size 102 x 181 mm (Borderless): "288.00 512.00"
+*PaperDimension 127x127mm/127 x 127 mm: "360.00 360.00"
+*PaperDimension T127x127mm/127 x 127 mm (Borderless): "360.00 360.00"
 *PaperDimension ENVY1/Envelope 120 x 176 mm: "340.20 498.80"
 *PaperDimension ENVY2/Envelope 114 x 162 mm: "323.20 459.20"
 *PaperDimension ENVY3/Envelope 98 x 148 mm: "277.80 419.60"
@@ -3426,6 +3440,8 @@
 *PaperDimension TLetter/US Letter (Borderless): "612.00 792.00"
 *PaperDimension Legal/US Legal: "612.00 1008.00"
 
+
+*HWMargins: 9 9 9 9
 
 *VariablePaperSize: Yes
 *ParamCustomPageSize Width: 1 points 144.00 612.20
@@ -3481,6 +3497,7 @@
 *UIConstraints: *PageSize T2L *MediaType MINIPHOTO_HIGH
 *UIConstraints: *PageSize T8x10 *MediaType MINIPHOTO_HIGH
 *UIConstraints: *PageSize T4X7 *MediaType MINIPHOTO_HIGH
+*UIConstraints: *PageSize T127x127mm *MediaType MINIPHOTO_HIGH
 *UIConstraints: *PageSize TLetter *MediaType MINIPHOTO_HIGH
 *UIConstraints: *PageSize TA4 *MediaType IRON_HIGH
 *UIConstraints: *PageSize TPostcard *MediaType IRON_HIGH
@@ -3489,6 +3506,7 @@
 *UIConstraints: *PageSize T2L *MediaType IRON_HIGH
 *UIConstraints: *PageSize T8x10 *MediaType IRON_HIGH
 *UIConstraints: *PageSize T4X7 *MediaType IRON_HIGH
+*UIConstraints: *PageSize T127x127mm *MediaType IRON_HIGH
 *UIConstraints: *PageSize TLetter *MediaType IRON_HIGH
 *UIConstraints: *PageSize TA4 *MediaType ENV_HIGH
 *UIConstraints: *PageSize TPostcard *MediaType ENV_HIGH
@@ -3497,6 +3515,7 @@
 *UIConstraints: *PageSize T2L *MediaType ENV_HIGH
 *UIConstraints: *PageSize T8x10 *MediaType ENV_HIGH
 *UIConstraints: *PageSize T4X7 *MediaType ENV_HIGH
+*UIConstraints: *PageSize T127x127mm *MediaType ENV_HIGH
 *UIConstraints: *PageSize TLetter *MediaType ENV_HIGH
 *UIConstraints: *PageSize TA4 *MediaType ENV_NORMAL
 *UIConstraints: *PageSize TPostcard *MediaType ENV_NORMAL
@@ -3505,6 +3524,7 @@
 *UIConstraints: *PageSize T2L *MediaType ENV_NORMAL
 *UIConstraints: *PageSize T8x10 *MediaType ENV_NORMAL
 *UIConstraints: *PageSize T4X7 *MediaType ENV_NORMAL
+*UIConstraints: *PageSize T127x127mm *MediaType ENV_NORMAL
 *UIConstraints: *PageSize TLetter *MediaType ENV_NORMAL
 *UIConstraints: *InputSlot Auto *MediaType VELVET_FINE_HIGH
 *UIConstraints: *InputSlot Auto *MediaType VELVET_FINE_NORMAL
@@ -3556,6 +3576,8 @@
 *UIConstraints: *MediaType ENV_NORMAL *Duplex DuplexTumble
 *UIConstraints: *PageSize A5 *Duplex DuplexNoTumble
 *UIConstraints: *PageSize A5 *Duplex DuplexTumble
+*UIConstraints: *PageSize PhotoCraft *Duplex DuplexNoTumble
+*UIConstraints: *PageSize PhotoCraft *Duplex DuplexTumble
 *UIConstraints: *PageSize B6 *Duplex DuplexNoTumble
 *UIConstraints: *PageSize B6 *Duplex DuplexTumble
 *UIConstraints: *PageSize A6 *Duplex DuplexNoTumble
@@ -3570,6 +3592,8 @@
 *UIConstraints: *PageSize 8x10 *Duplex DuplexTumble
 *UIConstraints: *PageSize 4X7 *Duplex DuplexNoTumble
 *UIConstraints: *PageSize 4X7 *Duplex DuplexTumble
+*UIConstraints: *PageSize 127x127mm *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 127x127mm *Duplex DuplexTumble
 *UIConstraints: *PageSize ENVY1 *Duplex DuplexNoTumble
 *UIConstraints: *PageSize ENVY1 *Duplex DuplexTumble
 *UIConstraints: *PageSize ENVY2 *Duplex DuplexNoTumble
@@ -3594,6 +3618,8 @@
 *UIConstraints: *PageSize T8x10 *Duplex DuplexTumble
 *UIConstraints: *PageSize T4X7 *Duplex DuplexNoTumble
 *UIConstraints: *PageSize T4X7 *Duplex DuplexTumble
+*UIConstraints: *PageSize T127x127mm *Duplex DuplexNoTumble
+*UIConstraints: *PageSize T127x127mm *Duplex DuplexTumble
 *UIConstraints: *PageSize TLetter *Duplex DuplexNoTumble
 *UIConstraints: *PageSize TLetter *Duplex DuplexTumble
 *UIConstraints: *InputSlot Rear *Duplex DuplexNoTumble
