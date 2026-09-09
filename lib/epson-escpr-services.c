@@ -456,7 +456,7 @@ EPS_ERR_CODE    serAnalyzeStatus (
     
         Header        = (EPS_UINT8) Field[0];
         ParameterByte = (EPS_UINT8) Field[1];
-        memcpy(Parameter, Field+2, (EPS_INT8)ParameterByte );
+        memcpy(Parameter, Field+2, Min(ParameterByte, sizeof(Parameter)));
         
         Field = Field + 2 + ParameterByte;
         
