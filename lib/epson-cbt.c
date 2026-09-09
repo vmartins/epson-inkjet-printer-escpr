@@ -2793,6 +2793,8 @@ static EPS_INT16 CbtDataRead (
         if ( Cnt > 6 ) {
             Cnt -= 6;
             RBuff += 6;
+            if (ChPtr->ReadSize + Cnt > CBT_MAX_RTMP)
+                return EPCBT_ERR_PARAM;
             SBuff += ChPtr->ReadSize;
             for ( lp1 = 0; lp1 < Cnt; lp1++ )
                 *SBuff++ = *RBuff++;
