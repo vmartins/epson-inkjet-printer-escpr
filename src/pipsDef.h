@@ -225,11 +225,13 @@ enum eOUTPUT_FORMAT
 #define	    PM_MTID_HIGHQUALITY_PLAIN   0x46	// Lib5.6 "High Quality Plain Paper\0"
 #define	    PM_MTID_BS_HALFGLOSSY_DS    0x47	// Lib5.6 "Bussines card Harf Glossy Double-sided\0"
 
+#define	    PM_MTID_PGPHOTO_DS          0x5A	// Double-sided photo paper <Glossy>
 #define	    PM_MTID_CDDVD               0x5B
 #define	    PM_MTID_CDDVDHIGH           0x5C
 
 #define	    PM_MTID_CDDVDGLOSSY         0x5D	// Lib5.6 "CD/DVD Glossy Surface\0"
 
+#define	    PM_MTID_PSPHOTO_DS          0x62	// Double-sided photo paper <semi-glossy>
 #define	    PM_MTID_CLEANING            0x63
 
 #define	    PM_MTID_PLOOFING_WHITE_MAT  0x8E	// Lib5.6 "Proofing Paper White Semimatte\0"

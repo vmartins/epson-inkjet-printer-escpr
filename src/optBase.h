@@ -129,8 +129,7 @@ OPTION_DATA mediaTypeData[] = {
     { PM_MTID_PLAIN,         "PLAIN",    N_("plain papers")                      },
     { PM_MTID_360INKJET,     "FINE",     N_("360dpi Ink Jet Paper")              },
     { PM_MTID_IRON,          "IRON",     N_("Iron-On Cool Peel Transfer Paper")  },
-//    { PM_MTID_PHOTOINKJET,   "SFINE",    N_("Photo Quality Ink Jet Paper")       },
-    { PM_MTID_MATTE,   	     "SFINE",    N_("Photo Quality Ink Jet Paper")       }, /* Treated as "EPSON Matte" */
+    { PM_MTID_PHOTOINKJET2,   "SFINE",    N_("EPSON Super Fine Paper")       },
     { PM_MTID_PHOTOADSHEET,  "PADSHEET", N_("Photo Quality Self Adhesive Sheets")},
     { PM_MTID_MATTE,         "PMMATT",   N_("EPSON Matte")                       },
     { PM_MTID_PHOTO,         "GPPAPER",  N_("Photo Paper")            	 },
@@ -152,8 +151,7 @@ OPTION_DATA mediaTypeData[] = {
     { PM_MTID_DSMATTE,       "DBSMATT",  N_("Double-Sided Matte Paper")},
     { PM_MTID_CLPHOTO,       "CLPP",     N_("ColorLife Photo Paper")},
     { PM_MTID_ECOPHOTO,      "EPHOTO",   N_("Economy Photo Paper")},
-//    { PM_MTID_VELVETFINEART, "VELVET_FINE", N_("Velvet Fine Art Paper")},
-    { PM_MTID_MATTE, 	     "VELVET_FINE", N_("Velvet Fine Art Paper")},	/* Treated as "EPSON Matte" */
+    { PM_MTID_VELVETFINEART, "VELVET_FINE", N_("Velvet Fine Art Paper")},
     { PM_MTID_PROOFSEMI,     "PROOF_S",  N_("Proofing Paper Semimatte")},
     { PM_MTID_HAGAKIRECL,    "RCPC",     N_("Recycled Paper Postcard")},
     { PM_MTID_HAGAKIINKJET,  "IJPC",     N_("Ink Jet Postcard")},
@@ -171,8 +169,7 @@ OPTION_DATA mediaTypeData[] = {
     { PM_MTID_SFHAGAKI,      "SFHAGAKI",  N_("Super Fine Postcard")},
     { PM_MTID_PHOTOSTD,      "PHOTOSTD",  N_("Premium Glossy Photo Paper")},
     { PM_MTID_GLOSSYHAGAKI,  "GLOSSYHAGAKI", N_("Glossy Postcard")},
-//    { PM_MTID_GLOSSYPHOTO,  "GLOSSYPHOTO",  N_("Glossy Photo Paper")},
-    { PM_MTID_PGPHOTO,      "GLOSSYPHOTO",  N_("Glossy Photo Paper")},		/* Treated as "EPSON Premium Glossy" */
+    { PM_MTID_GLOSSYPHOTO,  "GLOSSYPHOTO",  N_("Glossy Photo Paper")},
     { PM_MTID_GLOSSYCAST,	"GLOSSYCAST",  N_("Epson Photo")},
     { PM_MTID_BUSINESSCOAT, "BUSINESSCOAT", N_("Business Ink Jet Coat Paper")},
 
@@ -193,7 +190,7 @@ OPTION_DATA mediaTypeData[] = {
 
     { PM_MTID_PLAIN_ROLL_STICKER, "PLAINROLLSTICKER", N_("Plain Roll Sticker")},				// Lib5.6
     { PM_MTID_GROSSY_ROLL_STICKER, "GROSSYROLLSTICKER", N_("Glossy Roll Sticker")},				// Lib5.6
-    { PM_MTID_BS_HALFGLOSSY_DS, "BSHALFGLOSSYDS", N_("Bussines card Harf Glossy Double-sided")},	// Lib5.6
+    { PM_MTID_BS_HALFGLOSSY_DS, "PGBC_DS", N_("Bussines card Harf Glossy Double-sided")},	// Lib5.6
 
     { PM_MTID_CDDVD,         "CDDVD",       N_("CD/DVD")},
     { PM_MTID_CDDVDHIGH,     "CDDVDHIGH",   N_("CD/DVD Premium Surface")},
@@ -211,6 +208,8 @@ OPTION_DATA mediaTypeData[] = {
     { PM_MTID_THICKPAPER2,    "THICK2",  N_("ThickPaper2")},										// Lib5.6
     { PM_MTID_THICKPAPER3,    "THICK3",  N_("ThickPaper3")},										// Lib5.6
 
+    { PM_MTID_PGPHOTO_DS,       "PG_DS",     N_("Double-sided photo paper <Glossy>")},
+    { PM_MTID_PSPHOTO_DS,       "PS_DS",     N_("Double-sided photo paper <semi-glossy>")},
 
     { PM_MTID_UNKNOWN,       "UNKNOWN",     N_("Unknown Paper Type")},
     { END_ARRAY,             "",            ""                      }

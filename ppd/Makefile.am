@@ -477,7 +477,9 @@ Epson-WF-2810_Series-epson-escpr-en.ppd \
 Epson-WF-2830_Series-epson-escpr-en.ppd \
 Epson-WF-2850_Series-epson-escpr-en.ppd \
 Epson-WF-2930_Series-epson-escpr-en.ppd \
+Epson-WF-2940_Series-epson-escpr-en.ppd \
 Epson-WF-2950_Series-epson-escpr-en.ppd \
+Epson-WF-2970_Series-epson-escpr-en.ppd \
 Epson-WF-3010_Series-epson-escpr-en.ppd \
 Epson-WF-3520_Series-epson-escpr-en.ppd \
 Epson-WF-3530_Series-epson-escpr-en.ppd \
@@ -633,6 +635,7 @@ Epson-XP-2200_Series-epson-escpr-en.ppd \
 Epson-XP-3100_Series-epson-escpr-en.ppd \
 Epson-XP-4100_Series-epson-escpr-en.ppd \
 Epson-XP-4200_Series-epson-escpr-en.ppd \
+Epson-XP-4250_Series-epson-escpr-en.ppd \
 Epson-XP-7100_Series-epson-escpr-en.ppd
 
 EXTRA_DIST = $(cupsppd_DATA)
